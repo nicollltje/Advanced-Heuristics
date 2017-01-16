@@ -9,13 +9,10 @@ import csv
 parameter_file = open("parameters.txt", "w")
 
 # give the board size
-board_size = 9
-
-# full / total
-filled_tiles = 0.5 * board_size*board_size
+dimension = 9
 
 # amount of boards to generate
-boards = 100
+boards = 3
 
 # 1 = smart (1x1)
 # 2 = car (1x2)
@@ -23,46 +20,88 @@ boards = 100
 # 4 = long car (1x4)
 # 5 = betonwagen (2x3)
 
-i = 0
-for (i in range boards):
+for i in range (boards):
+	filled_tiles = (dimension * dimension) / 2
+	board = "board"+str(i)+".csv"
+	print board
+	params = "board: "+str(i)+" dimension: "+str(dimension)+" filled tiles: "+str(filled_tiles)+'\n'
+	print params
+	parameter_file.write(params)
 
-	i += 1
-	board = tostring("board"+i+".csv")
-	
-	outputfile = open(board, "w")
+	with open(board, 'wb') as csvfile:
 
-	# Horizontal / Vertical, random
-	orientation_ratio = random.randrange(0.5, 5, 0.1)
+		boardwriter = csv.writer(csvfile, delimiter=',',
+								quotechar='|', quoting=csv.QUOTE_MINIMAL)
 
-	parameter_file.write(i, fill_ratio, vehicle_ratio, orientation_ratio)
+		# write the board size as the first line of the csv
+		boardwriter.writerow([dimension])
 
-	# write the board size as the first line of the csv
-	outputfile.writerow(board_size)
+		# position of the red car (x, y, type, orientation, id)
+		y = dimension / 2
+		boardwriter.writerow([2, y, 2, "H", 1])
+		filled_tiles -= 2
 
-	# position of the red car (x, y, type, orientation, id)
-	y = board_size / 2
-	outputfile.writerow(2, y, 2, "H", 1)
+		j = 2
+		while filled_tiles > 0:
+			# picks a random orientation
+			orientation = random.randrange (1, 3, 1)
+			if orientation == 1:
+				orientation = "H"
+			else:
+				orientation = "V"
 
-	j = 2
-	for (j in range cars):
-		length = 2
-		x_pos = random.randrange(0, board_size, 1)
-		y_pos = random.randrange(0, board_size, 1)
-		vehicle_id = i
-		# TODO
-		orientation = "H"
-		vehicle = x_pos, y_pos, length, orientation, vehicle_id
-		outputfile.writerow(vehicle)
-		i += 1
+			# assign id to the vehicle
+			vehicle_id = j
+			j += 1
 
+			# pick a random type of vehicle that fits in the amount of space available
+			if filled_tiles == 5 or filled_tiles == 4:
+				type = random.randrange(1, 5, 1)
+			elif filled_tiles == 3:
+				type = random.randrange(1, 4, 1)
+			elif filled_tiles == 2:
+				type = random.randrange(1, 3, 1)
+			elif filled_tiles == 1:
+				type = 1
+			else:
+				type = random.randrange(1, 6, 1)
 
-	for (j in range trucks):
-		length = 3
-		x_pos = random.randrange(0, board_size, 1)
-		y_pos = random.randrange(0, board_size, 1)
-		vehicle_id = i
-		# TODO
-		orientation = "H"
-		vehicle = x_pos, y_pos, length, orientation, vehicle_id
-		outputfile.writerow(vehicle)
-		i += 1
+			# give a vehicle a random position on the board
+			x_pos = random.randrange(0, dimension, 1)
+			y_pos = random.randrange(0, dimension, 1)
+			filled_tiles -= 1
+
+			# adjust the coordinates to make sure the vehicle does not go out of bounds
+			if orientation == "H":
+				if type == 2:
+					x_pos = random.randrange(0, dimension - 1, 1)
+					filled_tiles -= 1
+				if type == 3:
+					x_pos = random.randrange(0, dimension - 2, 1)
+					filled_tiles -= 2
+				if type == 4:
+					x_pos = random.randrange(0, dimension - 3, 1)
+					filled_tiles -= 3
+				if type == 5:
+					x_pos = random.randrange(0, dimension - 2, 1)
+					y_pos = random.randrange(0, dimension - 1, 1)
+					filled_tiles -= 5
+
+			if orientation == "V":
+				if type == 2:
+					y_pos = random.randrange(0, dimension - 1, 1)
+					filled_tiles -= 1
+				if type == 3:
+					y_pos = random.randrange(0, dimension - 2, 1)
+					filled_tiles -= 2
+				if type == 4:
+					y_pos = random.randrange(0, dimension - 3, 1)
+					filled_tiles -= 3
+				if type == 5:
+					y_pos = random.randrange(0, dimension - 2, 1)
+					x_pos = random.randrange(0, dimension - 1, 1)
+					filled_tiles -= 5
+
+			vehicle = x_pos, y_pos, type, orientation, vehicle_id
+			boardwriter.writerow(vehicle)
+
