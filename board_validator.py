@@ -47,6 +47,7 @@ def validateCar(cars, dimension):
 
     for car in cars:
         print "validating car"
+        print board
         print car.x, car.y, car.type
         x = car.x
         y = car.y
@@ -54,48 +55,154 @@ def validateCar(cars, dimension):
         type = car.type
         id = car.id
 
-        if board[x, y] == 0:
-            board[x,y] = id
-            print board
-        else:
-            print "jdksafklsa Not possible to add this car"
-            break
+        # if board[x, y] == 0:
+        #     board[x,y] = id
+        #     print board
+        # else:
+        #     print "jdksafklsa Not possible to add this car"
+        #     break
 
-        if type >= 2 and orientation == "H":
-            if board[x+1,y] == 0:
-                board[x+1, y] = id
-            if type >= 3:
-                if board[x+2,y] == 0:
-                    board[x + 2, y] = id
-            if type == 4:
-                if board[x+3,y] == 0:
-                    board[x+3,y] = id
-            if type == 5:
-                if board[x, y+1] == 0 and board [x+1, y+1] == 0 and board[x+2, y+1] == 0:
-                    board[x, y+1] =id
-                    board[x+1, y+1] = id
-                    board[x+2, y+1] = id
+        # if type > '1' and orientation == "H":
+        #     if board[x+1,y] == 0:
+        #         board[x+1, y] = id
+        #     if type >= 3:
+        #         if board[x+2,y] == 0:
+        #             board[x + 2, y] = id
+        #         else:
+        #             print "Not possible to add this car"
+        #         if type == 4:
+        #             if board[x+3,y] == 0:
+        #                 board[x+3,y] = id
+        #             else:
+        #                 print "Not possible to add this car"
+        #         elif type == 5:
+        #             if board[x, y+1] == 0 and board [x+1, y+1] == 0 and board[x+2, y+1] == 0:
+        #                 board[x, y+1] =id
+        #                 board[x+1, y+1] = id
+        #                 board[x+2, y+1] = id
+        #             else:
+        #                 print "Not possible to add this car"
+        #     else:
+        #         print " JOE Not possible to add this car"
+        #         break
+
+        if type == 1:
+            if board[x,y] == 0:
+                board[x,y] = id
             else:
-                print "Not possible to add this car"
+                print "Not possible to add car with type 1"
                 break
 
-        elif type >= 2 and orientation == "V":
-            if board[x,y+1] == 0:
+        elif type == 2 and orientation == "H":
+            if board[x,y] == 0 and board[x+1,y] == 0:
+                board[x,y] = id
+                board[x+1,y] = id
+            else:
+                print " Not possible to add car with type 2 horizontally"
+                break
+
+        elif type == 2 and orientation == "V":
+            if board[x,y] == 0 and board[x,y+1] == 0:
+                board[x,y] = id
                 board[x,y+1] = id
-            if type >= 3:
-                if board[x, y+2] == 0:
-                    board[x,y+2] = id
-            if type == 4:
-                if board[x, y+3] == 0:
-                    board[x,y+3] = id
-            if type == 5:
-                if board[x +1, y] == 0 and board [x+1, y+1] == 0 and board[x+1, y+2] == 0:
-                    board[x+1, y] =id
-                    board[x+1, y+1] = id
-                    board[x+1, y+2] = id
             else:
-                print "Not possible to add this car"
+                print "Not possible to add car with type 2 vertically"
                 break
+
+        elif type == 3 and orientation == "H":
+            if board[x,y] == 0 and board[x+1,y] == 0 and board[x+2,y] == 0:
+                board[x,y] = id
+                board[x+1,y] = id
+                board[x+2, y] = id
+            else:
+                print "Not possible to add car with type 3 horizontally"
+                break
+
+        elif type == 3 and orientation =="V":
+            if board[x,y] == 0 and board[x,y+1] == 0 and board[x,y+2] == 0:
+                board[x,y] = id
+                board[x,y+1] = id
+                board[x,y+2] = id
+            else:
+                print "Not possible to add car with type 3 vertically"
+                break
+
+        elif type == 4 and orientation == "H":
+            if board[x,y] == 0 and board[x+1,y] == 0 and board[x+2,y] == 0 and board[x+3,y] == 0:
+                board[x,y] = id
+                board[x+1,y] = id
+                board[x+2,y] = id
+                board[x+3,y] = id
+            else:
+                print "Not possible to add car with type 4 horizontally"
+                break
+
+        elif type == 4 and orientation =="V":
+            if board[x,y] == 0 and board[x,y+1] == 0 and board[x,y+2] == 0 and board[x,y+3] == 0:
+                board[x, y] = id
+                board[x, y+1] = id
+                board[x, y+2] = id
+                board[x, y+3] = id
+            else:
+                print "Not possible to add car with type 4 vertically"
+                break
+
+        elif type == 5 and orientation == "H":
+            if board[x,y] == 0 and board [x+1,y] == 0 and board[x+2,y] == 0:
+                if board[x,y+1] == 0 and board[x+1,y+1] == 0 and board[x+2,y+1] == 0:
+                    board[x,y] = id
+                    board[x,y+1] = id
+                    board[x+1,y] = id
+                    board[x+1,y+1] = id
+                    board[x+2,y] = id
+                    board[x+2,y+1] = id
+                else:
+                    print "Not possible to add car with type 5 horizontally"
+                    break
+            else:
+                print "Not possible to add car with type 5 horizontally"
+                break
+
+        elif type == 5 and orientation =="V":
+            if board[x,y] == 0 and board[x,y+1] == 0 and board[x,y+2] == 0:
+                if board[x+1,y] == 0 and board[x+1,y+1] == 0 and board[x+1,y+2] == 0:
+                    board[x,y] = id
+                    board[x+1,y] = id
+                    board[x,y+1] = id
+                    board[x+1,y+1] = id
+                    board[x,y+2] = id
+                    board[x+1,y+2] = id
+                else:
+                    print "Not possible to add car with type 5 vertically"
+                    break
+            else:
+                print "Not possible to add car with type 5 vertically"
+                break
+
+
+        # elif type >= 2 and orientation == "V":
+        #     if board[x,y+1] == 0:
+        #         board[x,y+1] = id
+        #     if type >= 3:
+        #         if board[x, y+2] == 0:
+        #             board[x,y+2] = id
+        #         else:
+        #             print "Not possible to add this car"
+        #         if type == 4:
+        #             if board[x, y+3] == 0:
+        #                 board[x,y+3] = id
+        #             else:
+        #                 print "Not possible to add this car"
+        #         elif type == 5:
+        #             if board[x +1, y] == 0 and board [x+1, y+1] == 0 and board[x+1, y+2] == 0:
+        #                 board[x+1, y] =id
+        #                 board[x+1, y+1] = id
+        #                 board[x+1, y+2] = id
+        #             else:
+        #                 print "Not possible to add this car"
+        #     else:
+        #         print "Not possible to add this car"
+        #         break
 
 if (len(sys.argv) != 2):
     print "improper usage. USAGE: board_validator.py boardfile.csv"
