@@ -31,6 +31,7 @@ class Car(object):
 def loadDataset(filename, cars):
 
     with open(filename, 'rb') as csvfile:
+        print filename
         lines = csv.reader(csvfile)
         dataset = list(lines)
         # the first line of the imput file is always the dimension
@@ -94,8 +95,6 @@ def validateCar(foldername):
                 if board[x,y] == 0:
                     board[x,y] = id
                 else:
-                    print "Not possible to add car with type 1"
-                    print "Removing board from directory"
                     os.remove(filename)
                     break
 
@@ -104,8 +103,6 @@ def validateCar(foldername):
                     board[x,y] = id
                     board[x+1,y] = id
                 else:
-                    print " Not possible to add car with type 2 horizontally"
-                    print "Removing board from directory"
                     os.remove(filename)
                     break
 
@@ -114,8 +111,6 @@ def validateCar(foldername):
                     board[x,y] = id
                     board[x,y+1] = id
                 else:
-                    print "Not possible to add car with type 2 vertically"
-                    print "Removing board from directory"
                     os.remove(filename)
                     break
 
@@ -125,8 +120,6 @@ def validateCar(foldername):
                     board[x+1,y] = id
                     board[x+2, y] = id
                 else:
-                    print "Not possible to add car with type 3 horizontally"
-                    print "Removing board from directory"
                     os.remove(filename)
                     break
 
@@ -136,8 +129,6 @@ def validateCar(foldername):
                     board[x,y+1] = id
                     board[x,y+2] = id
                 else:
-                    print "Not possible to add car with type 3 vertically"
-                    print "Removing board from directory"
                     os.remove(filename)
                     break
 
@@ -148,8 +139,6 @@ def validateCar(foldername):
                     board[x+2,y] = id
                     board[x+3,y] = id
                 else:
-                    print "Not possible to add car with type 4 horizontally"
-                    print "Removing board from directory"
                     os.remove(filename)
                     break
 
@@ -160,8 +149,6 @@ def validateCar(foldername):
                     board[x, y+2] = id
                     board[x, y+3] = id
                 else:
-                    print "Not possible to add car with type 4 vertically"
-                    print "Removing board from directory"
                     os.remove(filename)
                     break
 
@@ -175,13 +162,9 @@ def validateCar(foldername):
                         board[x+2,y] = id
                         board[x+2,y+1] = id
                     else:
-                        print "Not possible to add car with type 5 horizontally"
-                        print "Removing board from directory"
                         os.remove(filename)
                         break
                 else:
-                    print "Not possible to add car with type 5 horizontally"
-                    print "Removing board from directory"
                     os.remove(filename)
                     break
 
@@ -195,16 +178,11 @@ def validateCar(foldername):
                         board[x,y+2] = id
                         board[x+1,y+2] = id
                     else:
-                        print "Not possible to add car with type 5 vertically"
-                        print "Removing board from directory"
                         os.remove(filename)
                         break
                 else:
-                    print "Not possible to add car with type 5 vertically"
-                    print "Removing board from directory"
                     os.remove(filename)
                     break
-
 
         # elif type >= 2 and orientation == "V":
         #     if board[x,y+1] == 0:

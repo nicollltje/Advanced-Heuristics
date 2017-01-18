@@ -1,0 +1,30 @@
+board: 0 dimension: 9 filled tiles: 0
+type1 = 2, type2 = 2, type3 = 0, type4 = 2, type5 = 0
+ 
+board: 1 dimension: 9 filled tiles: 0
+type1 = 2, type2 = 1, type3 = 0, type4 = 1, type5 = 1
+ 
+board: 2 dimension: 9 filled tiles: 0
+type1 = 2, type2 = 1, type3 = 0, type4 = 1, type5 = 1
+ 
+board: 3 dimension: 9 filled tiles: 0
+type1 = 4, type2 = 0, type3 = 0, type4 = 1, type5 = 1
+ 
+board: 4 dimension: 9 filled tiles: 0
+type1 = 0, type2 = 1, type3 = 0, type4 = 3, type5 = 0
+ 
+board: 5 dimension: 9 filled tiles: 0
+type1 = 1, type2 = 0, type3 = 1, type4 = 1, type5 = 1
+ 
+board: 6 dimension: 9 filled tiles: 0
+type1 = 2, type2 = 2, type3 = 0, type4 = 2, type5 = 0
+ 
+board: 7 dimension: 9 filled tiles: 0
+type1 = 2, type2 = 1, type3 = 0, type4 = 1, type5 = 1
+ 
+board: 8 dimension: 9 filled tiles: 0
+type1 = 3, type2 = 1, type3 = 1, type4 = 0, type5 = 1
+ 
+board: 9 dimension: 9 filled tiles: 0
+type1 = 2, type2 = 0, type3 = 0, type4 = 0, type5 = 2
+ 
