@@ -66,8 +66,8 @@ def generateBoards(boards, foldername, dimension):
 		filled_tiles = int((dimension * dimension) * filling)
 		board = "board"+str(i)+".csv"
 		filename = '%s/%s' %(foldername, board)
-		print board
 
+		# set counters to keep track of how many vehicles per type are generated
 		counter1 = 0
 		counter2 = 0
 		counter3 = 0
@@ -141,8 +141,6 @@ def generateBoards(boards, foldername, dimension):
 
 				f_lenght = 0
 
-
-
 				while i_length == f_lenght:
 
 					start_coordinate = pickPosition(dimension, type, orientation)
@@ -161,13 +159,14 @@ def generateBoards(boards, foldername, dimension):
 				vehicle = start_x, start_y, type, orientation, vehicle_id
 				boardwriter.writerow(vehicle)
 
+		# write all parameters of the board into a parameter file
 		counters = "type1 = %d, type2 = %d, type3 = %d, type4 = %d, type5 = %d" %(counter1, counter2, counter3, counter4, counter5)
 		params = "board: %d, dimension: %d, filling: %f \n %s \n \n" %(i, dimension, filling, counters)
 		parameter_file.write(params)
 
 
 if (len(sys.argv) != 4):
-    print "improper usage. USAGE: board_generator.py dimension boards foldername"
+	print "improper usage. USAGE: board_generator.py dimension boards foldername"
 else:
 	try:
 		# try and get the proper parameters from command line argument
@@ -179,6 +178,7 @@ else:
 		generateBoards(boards, foldername, dimension)
 
 	except ValueError:
+
 		# if the imput is invalid inform the user with a print statement
 		print("boards and dimension should be of type integer")
 
