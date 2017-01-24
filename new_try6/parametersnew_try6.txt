@@ -1,0 +1,30 @@
+board: 5, dimension: 6, filling: 0.200000 
+ type1 = 0, type2 = 3, type3 = 0, type4 = 0, type5 = 0 
+ 
+board: 5, dimension: 6, filling: 0.200000 
+ type1 = 0, type2 = 3, type3 = 0, type4 = 0, type5 = 0 
+ 
+board: 5, dimension: 6, filling: 0.200000 
+ type1 = 0, type2 = 0, type3 = 2, type4 = 0, type5 = 0 
+ 
+board: 5, dimension: 6, filling: 0.200000 
+ type1 = 0, type2 = 3, type3 = 0, type4 = 0, type5 = 0 
+ 
+board: 5, dimension: 6, filling: 0.200000 
+ type1 = 0, type2 = 1, type3 = 1, type4 = 0, type5 = 0 
+ 
+board: 5, dimension: 6, filling: 0.200000 
+ type1 = 0, type2 = 1, type3 = 1, type4 = 0, type5 = 0 
+ 
+board: 5, dimension: 6, filling: 0.200000 
+ type1 = 0, type2 = 3, type3 = 0, type4 = 0, type5 = 0 
+ 
+board: 5, dimension: 6, filling: 0.200000 
+ type1 = 0, type2 = 1, type3 = 1, type4 = 0, type5 = 0 
+ 
+board: 5, dimension: 6, filling: 0.200000 
+ type1 = 0, type2 = 0, type3 = 2, type4 = 0, type5 = 0 
+ 
+board: 5, dimension: 6, filling: 0.200000 
+ type1 = 0, type2 = 1, type3 = 1, type4 = 0, type5 = 0 
+ 
