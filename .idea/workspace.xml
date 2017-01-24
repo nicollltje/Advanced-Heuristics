@@ -2,29 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23a45af5-ceb0-41a5-bfa0-5598417593fd" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/parameters.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/parametersboards_dim6_try1.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/parametersboards_dim6_try2.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/parametersboards_dim9_try1.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/parametersboards_dim9_try10.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/parametersboards_dim9_try11.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/parametersboards_dim9_try12.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/parametersboards_dim9_try13.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/parametersboards_dim9_try14.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/parametersboards_dim9_try15.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/parametersboards_dim9_try16.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/parametersboards_dim9_try17.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/parametersboards_dim9_try18.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/parametersboards_dim9_try19.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/parametersboards_dim9_try2.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/parametersboards_dim9_try3.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/parametersboards_dim9_try4.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/parametersboards_dim9_try5.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/parametersboards_dim9_try6.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/parametersboards_dim9_try7.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/parametersboards_dim9_try8.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/parametersboards_dim9_try9.txt" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/board_generator.py" afterPath="$PROJECT_DIR$/board_generator.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/board_validator.py" afterPath="$PROJECT_DIR$/board_validator.py" />
     </list>
     <ignored path="Avanced-Heuristics.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,7 +23,69 @@
     <favorites_list name="Avanced-Heuristics" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="board_validator.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/board_validator.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2010">
+              <caret line="153" column="25" selection-start-line="56" selection-start-column="12" selection-end-line="153" selection-end-column="25" />
+              <folding>
+                <element signature="e#60#78#0" expanded="true" />
+                <element signature="e#136#708#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="board_generator.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/board_generator.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="551">
+              <caret line="424" column="26" selection-start-line="424" selection-start-column="26" selection-end-line="424" selection-end-column="26" />
+              <folding>
+                <element signature="n#!!doc" expanded="false" />
+                <element signature="e#68#81#0" expanded="true" />
+                <element signature="e#158#730#0" expanded="false" />
+                <element signature="e#782#1830#0" expanded="false" />
+                <element signature="e#1856#2045#0" expanded="false" />
+                <element signature="e#2082#6745#0" expanded="false" />
+                <element signature="e#9892#9928#0" expanded="false" />
+                <element signature="e#9954#9990#0" expanded="false" />
+                <element signature="e#10172#10203#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BFS_Advanced.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BFS_Advanced.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1515">
+              <caret line="475" column="25" selection-start-line="475" selection-start-column="25" selection-end-line="475" selection-end-column="25" />
+              <folding>
+                <element signature="e#383#961#0" expanded="false" />
+                <element signature="e#1376#2850#0" expanded="false" />
+                <element signature="e#2894#4116#0" expanded="false" />
+                <element signature="e#4160#4779#0" expanded="false" />
+                <element signature="e#4822#5400#0" expanded="false" />
+                <element signature="e#5441#5994#0" expanded="false" />
+                <element signature="e#6037#6638#0" expanded="false" />
+                <element signature="e#6681#7410#0" expanded="false" />
+                <element signature="e#7452#8192#0" expanded="false" />
+                <element signature="e#8234#8942#0" expanded="false" />
+                <element signature="e#8982#9694#0" expanded="false" />
+                <element signature="e#9731#9966#0" expanded="false" />
+                <element signature="e#11143#11915#0" expanded="false" />
+                <element signature="e#11963#14601#0" expanded="false" />
+                <element signature="e#14647#15446#0" expanded="false" />
+                <element signature="e#16967#19225#0" expanded="false" />
+                <element signature="e#19264#20048#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -61,7 +103,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="50" />
     <option name="width" value="1280" />
-    <option name="height" value="654" />
+    <option name="height" value="678" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -88,8 +130,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -110,6 +150,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -309,26 +351,26 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="50" width="1280" height="654" extended-state="0" />
+    <frame x="0" y="50" width="1280" height="678" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20015885" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19936457" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291815" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39323843" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32740214" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32423207" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39323843" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -349,90 +391,40 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/board_generator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <element signature="e#68#81#0" expanded="true" />
-            <element signature="e#165#1213#0" expanded="false" />
-            <element signature="e#3136#3172#0" expanded="false" />
-            <element signature="e#3198#3234#0" expanded="false" />
-            <element signature="e#3260#3296#0" expanded="false" />
-            <element signature="e#3312#3348#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/parameters.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/board0.csv">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/board1.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boards/board0.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boards_try1/board0.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/board_generator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="176" column="45" selection-start-line="176" selection-start-column="45" selection-end-line="176" selection-end-column="45" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <element signature="e#68#81#0" expanded="true" />
-            <element signature="e#165#1213#0" expanded="false" />
-            <element signature="e#3136#3172#0" expanded="false" />
-            <element signature="e#3198#3234#0" expanded="false" />
-            <element signature="e#3260#3296#0" expanded="false" />
-            <element signature="e#3312#3348#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/board_validator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="41" column="12" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
+        <state relative-caret-position="2295">
+          <caret line="153" column="25" selection-start-line="56" selection-start-column="12" selection-end-line="153" selection-end-column="25" />
           <folding>
             <element signature="e#60#78#0" expanded="true" />
-            <element signature="e#6545#6585#0" expanded="false" />
+            <element signature="e#136#708#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/board_generator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="e#68#81#0" expanded="true" />
+            <element signature="e#158#730#0" expanded="false" />
+            <element signature="e#782#1830#0" expanded="false" />
+            <element signature="e#1856#2045#0" expanded="false" />
+            <element signature="e#2082#6745#0" expanded="false" />
+            <element signature="e#9892#9928#0" expanded="false" />
+            <element signature="e#9954#9990#0" expanded="false" />
+            <element signature="e#10172#10203#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/BFS_Advanced.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="43">
-          <caret line="317" column="0" selection-start-line="317" selection-start-column="0" selection-end-line="317" selection-end-column="0" />
+        <state relative-caret-position="1515">
+          <caret line="475" column="25" selection-start-line="475" selection-start-column="25" selection-end-line="475" selection-end-column="25" />
           <folding>
-            <element signature="e#199#217#0" expanded="true" />
             <element signature="e#383#961#0" expanded="false" />
             <element signature="e#1376#2850#0" expanded="false" />
             <element signature="e#2894#4116#0" expanded="false" />
@@ -448,9 +440,92 @@
             <element signature="e#11143#11915#0" expanded="false" />
             <element signature="e#11963#14601#0" expanded="false" />
             <element signature="e#14647#15446#0" expanded="false" />
-            <element signature="e#15478#16928#0" expanded="false" />
             <element signature="e#16967#19225#0" expanded="false" />
             <element signature="e#19264#20048#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/board_generator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="e#68#81#0" expanded="true" />
+            <element signature="e#158#730#0" expanded="false" />
+            <element signature="e#782#1830#0" expanded="false" />
+            <element signature="e#1856#2045#0" expanded="false" />
+            <element signature="e#2082#6745#0" expanded="false" />
+            <element signature="e#9892#9928#0" expanded="false" />
+            <element signature="e#9954#9990#0" expanded="false" />
+            <element signature="e#10172#10203#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parameters.txt" />
+    <entry file="file://$PROJECT_DIR$/board0.csv" />
+    <entry file="file://$PROJECT_DIR$/board1.csv" />
+    <entry file="file://$PROJECT_DIR$/boards/board0.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boards_try1/board0.csv" />
+    <entry file="file://$PROJECT_DIR$/board_validator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2010">
+          <caret line="153" column="25" selection-start-line="56" selection-start-column="12" selection-end-line="153" selection-end-column="25" />
+          <folding>
+            <element signature="e#60#78#0" expanded="true" />
+            <element signature="e#136#708#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BFS_Advanced.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1515">
+          <caret line="475" column="25" selection-start-line="475" selection-start-column="25" selection-end-line="475" selection-end-column="25" />
+          <folding>
+            <element signature="e#383#961#0" expanded="false" />
+            <element signature="e#1376#2850#0" expanded="false" />
+            <element signature="e#2894#4116#0" expanded="false" />
+            <element signature="e#4160#4779#0" expanded="false" />
+            <element signature="e#4822#5400#0" expanded="false" />
+            <element signature="e#5441#5994#0" expanded="false" />
+            <element signature="e#6037#6638#0" expanded="false" />
+            <element signature="e#6681#7410#0" expanded="false" />
+            <element signature="e#7452#8192#0" expanded="false" />
+            <element signature="e#8234#8942#0" expanded="false" />
+            <element signature="e#8982#9694#0" expanded="false" />
+            <element signature="e#9731#9966#0" expanded="false" />
+            <element signature="e#11143#11915#0" expanded="false" />
+            <element signature="e#11963#14601#0" expanded="false" />
+            <element signature="e#14647#15446#0" expanded="false" />
+            <element signature="e#16967#19225#0" expanded="false" />
+            <element signature="e#19264#20048#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/board_generator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="424" column="26" selection-start-line="424" selection-start-column="26" selection-end-line="424" selection-end-column="26" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="e#68#81#0" expanded="true" />
+            <element signature="e#158#730#0" expanded="false" />
+            <element signature="e#782#1830#0" expanded="false" />
+            <element signature="e#1856#2045#0" expanded="false" />
+            <element signature="e#2082#6745#0" expanded="false" />
+            <element signature="e#9892#9928#0" expanded="false" />
+            <element signature="e#9954#9990#0" expanded="false" />
+            <element signature="e#10172#10203#0" expanded="false" />
           </folding>
         </state>
       </provider>

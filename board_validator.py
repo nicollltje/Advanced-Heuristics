@@ -60,37 +60,6 @@ def validateCar(foldername):
             type = car.type
             id = car.id
 
-            # if board[x, y] == 0:
-            #     board[x,y] = id
-            #     print board
-            # else:
-            #     print "jdksafklsa Not possible to add this car"
-            #     break
-
-            # if type > '1' and orientation == "H":
-            #     if board[x+1,y] == 0:
-            #         board[x+1, y] = id
-            #     if type >= 3:
-            #         if board[x+2,y] == 0:
-            #             board[x + 2, y] = id
-            #         else:
-            #             print "Not possible to add this car"
-            #         if type == 4:
-            #             if board[x+3,y] == 0:
-            #                 board[x+3,y] = id
-            #             else:
-            #                 print "Not possible to add this car"
-            #         elif type == 5:
-            #             if board[x, y+1] == 0 and board [x+1, y+1] == 0 and board[x+2, y+1] == 0:
-            #                 board[x, y+1] =id
-            #                 board[x+1, y+1] = id
-            #                 board[x+2, y+1] = id
-            #             else:
-            #                 print "Not possible to add this car"
-            #     else:
-            #         print " JOE Not possible to add this car"
-            #         break
-
             if type == 1:
                 if board[x,y] == 0:
                     board[x,y] = id
@@ -183,30 +152,6 @@ def validateCar(foldername):
                 else:
                     os.remove(filename)
                     break
-
-        # elif type >= 2 and orientation == "V":
-        #     if board[x,y+1] == 0:
-        #         board[x,y+1] = id
-        #     if type >= 3:
-        #         if board[x, y+2] == 0:
-        #             board[x,y+2] = id
-        #         else:
-        #             print "Not possible to add this car"
-        #         if type == 4:
-        #             if board[x, y+3] == 0:
-        #                 board[x,y+3] = id
-        #             else:
-        #                 print "Not possible to add this car"
-        #         elif type == 5:
-        #             if board[x +1, y] == 0 and board [x+1, y+1] == 0 and board[x+1, y+2] == 0:
-        #                 board[x+1, y] =id
-        #                 board[x+1, y+1] = id
-        #                 board[x+1, y+2] = id
-        #             else:
-        #                 print "Not possible to add this car"
-        #     else:
-        #         print "Not possible to add this car"
-        #         break
 
 if (len(sys.argv) != 2):
     print "improper usage. USAGE: board_validator.py foldername"
