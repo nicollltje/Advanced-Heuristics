@@ -8,6 +8,9 @@ import os
 import sys
 import numpy as np
 
+position_list = []
+position_list_2 = []
+
 class Car(object):
 
     """
@@ -29,51 +32,90 @@ class Car(object):
         self.type = type
         self.id = id
 
-def pickPosition(dimension, type, orientation):
+def pickPosition():
 
-	print "**********************************************"
-	print "picking NEW position"
-	# give a vehicle a random position on the board
-	x_pos = random.randrange(0, dimension, 1)
-	y_pos = random.randrange(0, dimension, 1)
+	start_position = random.choice(position_list)
 
-	# adjust the coordinates to make sure the vehicle does not go out of bounds
-	if orientation == "H":
-		if type == 2:
-			x_pos = random.randrange(0, dimension - 1, 1)
-		if type == 3:
-			x_pos = random.randrange(0, dimension - 2, 1)
-		if type == 4:
-			x_pos = random.randrange(0, dimension - 3, 1)
-		if type == 5:
-			x_pos = random.randrange(0, dimension - 2, 1)
-			y_pos = random.randrange(0, dimension - 1, 1)
+	return start_position
 
-	if orientation == "V":
-		if type == 2:
-			y_pos = random.randrange(0, dimension - 1, 1)
-		if type == 3:
-			y_pos = random.randrange(0, dimension - 2, 1)
-		if type == 4:
-			y_pos = random.randrange(0, dimension - 3, 1)
-		if type == 5:
-			y_pos = random.randrange(0, dimension - 2, 1)
-			x_pos = random.randrange(0, dimension - 1, 1)
+	# print "**********************************************"
+	# print "picking NEW position"
+	# # give a vehicle a random position on the board
+	# x_pos = random.randrange(0, dimension, 1)
+	# y_pos = random.randrange(0, dimension, 1)
+    #
+	# # adjust the coordinates to make sure the vehicle does not go out of bounds
+	# if orientation == "H":
+	# 	if type == 2:
+	# 		x_pos = random.randrange(0, dimension - 1, 1)
+	# 	if type == 3:
+	# 		x_pos = random.randrange(0, dimension - 2, 1)
+	# 	if type == 4:
+	# 		x_pos = random.randrange(0, dimension - 3, 1)
+	# 	if type == 5:
+	# 		x_pos = random.randrange(0, dimension - 2, 1)
+	# 		y_pos = random.randrange(0, dimension - 1, 1)
+    #
+	# if orientation == "V":
+	# 	if type == 2:
+	# 		y_pos = random.randrange(0, dimension - 1, 1)
+	# 	if type == 3:
+	# 		y_pos = random.randrange(0, dimension - 2, 1)
+	# 	if type == 4:
+	# 		y_pos = random.randrange(0, dimension - 3, 1)
+	# 	if type == 5:
+	# 		y_pos = random.randrange(0, dimension - 2, 1)
+	# 		x_pos = random.randrange(0, dimension - 1, 1)
+    #
+	# print "printing positions"
+	# print str(x_pos) + str(y_pos)
+    #
+	# return [x_pos, y_pos]
+def validatePosition(dimension, board, type, orientation, x, y):
+	if type == 1:
+		if board[x, y] == 0:
+			return True
 
-	print "printing positions"
-	print str(x_pos) + str(y_pos)
+	elif type == 2 and orientation == "H":
+		if x < dimension - 1:
+			if board[x, y] == 0 and board[x + 1, y] == 0:
+				return True
 
-	return [x_pos, y_pos]
+	elif type == 2 and orientation == "V":
+		if y < dimension - 1:
+			if board[x, y] == 0 and board[x, y + 1] == 0:
+				return True
 
-def boardWriter(car):
+	elif type == 3 and orientation == "H":
+		if x < dimension - 2:
+			if board[x, y] == 0 and board[x + 1, y] == 0 and board[x + 2, y] == 0:
+				return True
 
-	boardwriter = csv.writer(csvfile, delimiter=',',
-							 quotechar='|', quoting=csv.QUOTE_MINIMAL)
+	elif type == 3 and orientation == "V":
+		if y < dimension - 3:
+			if board[x, y] == 0 and board[x, y + 1] == 0 and board[x, y + 2] == 0:
+				return True
 
-	vehicle = car.x, car.y, car.type, car.orientation, car.id
-	boardwriter.writerow(vehicle)
+	elif type == 4:
+		if x < dimension - 1 and y < dimension - 1:
+			if board[x,y] == 0 and board[x+1,y] == 0 and board[x,y+1] == 0 and board[x+1,y+1] == 0:
+				return True
 
-def validateCar(car, dimension):
+	elif type == 5 and orientation == "H":
+		if x < dimension - 2 and y < dimension - 1:
+			if board[x, y] == 0 and board[x + 1, y] == 0 and board[x + 2, y] == 0:
+				if board[x, y + 1] == 0 and board[x + 1, y + 1] == 0 and board[x + 2, y + 1] == 0:
+					return True
+
+	elif type == 5 and orientation == "V":
+		if x < dimension - 1 and y < dimension - 2:
+			if board[x, y] == 0 and board[x, y + 1] == 0 and board[x, y + 2] == 0:
+				if board[x + 1, y] == 0 and board[x + 1, y + 1] == 0 and board[x + 1, y + 2] == 0:
+					return True
+
+	return False
+
+def validateCar(car, dimension, board):
 
 	# get the parameters from the car object
 	x = car.x
@@ -81,151 +123,169 @@ def validateCar(car, dimension):
 	orientation = car.orientation
 	type = car.type
 
-	if type == 1:
-		if board[x, y] == 0:
-			pos = str(x)+str(y)
+	valid_position = validatePosition(dimension, board, type, orientation, x, y)
+
+	if type == 1 and valid_position:
+
+		# remove all taken positions from list of available positions
+		pos = str(x)+str(y)
+		position_list.remove(pos)
+
+		if orientation == "H":
+			board[x,y] = "SH"
+			return (board, car)
+
+		else:
+			board[x, y] = "SV"
+			return (board, car)
+
+	elif type == 2 and valid_position:
+		if orientation == "H":
+
+			board[x, y] = "CH"
+			board[x + 1, y] = "CH"
+
+			# remove all taken positions from list of available positions
+			pos = str(x) + str(y)
 			position_list.remove(pos)
-			vehicle = x, y, type, orientation, car.id
-			boardwriter.writerow(vehicle)
-			if orientation == "H":
-				board[x,y] = "SH"
-			else:
-				board[x, y] = "SV"
-		else:
-			print "NO"
+			pos = str(x+1) + str(y)
+			position_list.remove(pos)
 
-	elif type == 2 and orientation == "H":
-		if x < dimension - 1:
-			if board[x, y] == 0 and board[x + 1, y] == 0:
-				board[x, y] = "CH"
-				pos = str(x) + str(y)
-				position_list.remove(pos)
-				board[x + 1, y] = "CH"
-				pos = str(x+1) + str(y)
-				position_list.remove(pos)
-		else:
-			print "NO"
+			return (board, car)
 
-	elif type == 2 and orientation == "V":
-		if y < dimension - 1:
-			if board[x, y] == 0 and board[x, y + 1] == 0:
-				board[x, y] = "CV"
-				pos = str(x) + str(y)
-				position_list.remove(pos)
-				board[x, y + 1] = "CV"
-				pos = str(x) + str(y+1)
-				position_list.remove(pos)
-		else:
-			print "NO"
+		elif orientation == "V":
+			board[x, y] = "CV"
+			board[x, y + 1] = "CV"
 
-	elif type == 3 and orientation == "H":
-		if x < dimension - 2:
-			if board[x, y] == 0 and board[x + 1, y] == 0 and board[x + 2, y] == 0:
-				board[x, y] = "TH"
-				pos = str(x) + str(y)
-				position_list.remove(pos)
-				board[x + 1, y] = "TH"
-				pos = str(x+1) + str(y)
-				position_list.remove(pos)
-				board[x + 2, y] = "TH"
-				pos = str(x+2) + str(y)
-				position_list.remove(pos)
-		else:
-			print "NO"
+			# remove all taken positions from list of available positions
+			pos = str(x) + str(y)
+			position_list.remove(pos)
+			pos = str(x) + str(y + 1)
+			position_list.remove(pos)
 
-	elif type == 3 and orientation == "V":
-		if y < dimension - 3:
-			if board[x, y] == 0 and board[x, y + 1] == 0 and board[x, y + 2] == 0:
-				board[x, y] = "TV"
-				pos = str(x) + str(y)
-				position_list.remove(pos)
-				board[x, y + 1] = "TV"
-				pos = str(x) + str(y+1)
-				position_list.remove(pos)
-				board[x, y + 2] = "TV"
-				pos = str(x) + str(y+2)
-				position_list.remove(pos)
-		else:
-			print "NO"
+			return (board, car)
 
-	elif type == 4:
-		if x < dimension - 1 and y < dimension - 1:
-			if board[x,y] == 0 and board[x+1,y] == 0 and board[x,y+1] == 0 and board[x+1,y+1] == 0:
-				pos = str(x) + str(y)
-				position_list.remove(pos)
-				pos = str(x+1) + str(y)
-				position_list.remove(pos)
-				pos = str(x+1) + str(y+1)
-				position_list.remove(pos)
-				pos = str(x) + str(y+1)
-				position_list.remove(pos)
-				if orientation == "H":
-					board[x,y] = "QH"
-					board[x + 1,y] = "QH"
-					board[x,y + 1] = "QH"
-					board[x + 1,y + 1] = "QH"
-				else:
-					board[x, y] = "QV"
-					board[x + 1, y] = "QV"
-					board[x, y + 1] = "QV"
-					board[x + 1, y + 1] = "QV"
-		else:
-			print "NO"
+	elif type == 3 and valid_position:
+		if orientation == "H":
 
-	elif type == 5 and orientation == "H":
-		if x < dimension - 2 and y < dimension - 1:
-			if board[x, y] == 0 and board[x + 1, y] == 0 and board[x + 2, y] == 0:
-				if board[x, y + 1] == 0 and board[x + 1, y + 1] == 0 and board[x + 2, y + 1] == 0:
-					board[x, y] = "BH"
-					pos = str(x) + str(y)
-					position_list.remove(pos)
-					board[x, y + 1] = "BH"
-					pos = str(x) + str(y+1)
-					position_list.remove(pos)
-					board[x + 1, y] = "BH"
-					pos = str(x+1) + str(y)
-					position_list.remove(pos)
-					board[x + 1, y + 1] = "BH"
-					pos = str(x+1) + str(y+1)
-					position_list.remove(pos)
-					board[x + 2, y] = "BH"
-					pos = str(x+2) + str(y)
-					position_list.remove(pos)
-					board[x + 2, y + 1] = "BH"
-					pos = str(x+2) + str(y+1)
-					position_list.remove(pos)
-			else:
-				print "NO"
-		else:
-			print "NO"
+			board[x, y] = "TH"
+			board[x + 1, y] = "TH"
+			board[x + 2, y] = "TH"
 
-	elif type == 5 and orientation == "V":
-		if x < dimension - 1 and y < dimension - 2:
-			if board[x, y] == 0 and board[x, y + 1] == 0 and board[x, y + 2] == 0:
-				if board[x + 1, y] == 0 and board[x + 1, y + 1] == 0 and board[x + 1, y + 2] == 0:
-					board[x, y] = "BV"
-					pos = str(x) + str(y)
-					position_list.remove(pos)
-					board[x + 1, y] = "BV"
-					pos = str(x+1) + str(y)
-					position_list.remove(pos)
-					board[x, y + 1] = "BV"
-					pos = str(x) + str(y+1)
-					position_list.remove(pos)
-					board[x + 1, y + 1] = "BV"
-					pos = str(x+1) + str(y+1)
-					position_list.remove(pos)
-					board[x, y + 2] = "BV"
-					pos = str(x) + str(y+2)
-					position_list.remove(pos)
-					board[x + 1, y + 2] = "BV"
-					pos = str(x+1) + str(y+2)
-					position_list.remove(pos)
-				else:
-					print "NO"
-		else:
-			print "NO"
+			# remove all taken positions from list of available positions
+			pos = str(x) + str(y)
+			position_list.remove(pos)
+			pos = str(x + 1) + str(y)
+			position_list.remove(pos)
+			pos = str(x+2) + str(y)
+			position_list.remove(pos)
 
+			return (board, car)
+
+		elif orientation == "V":
+
+			board[x, y] = "TV"
+			board[x, y + 1] = "TV"
+			board[x, y + 2] = "TV"
+
+			# remove all taken positions from list of available positions
+			pos = str(x) + str(y)
+			position_list.remove(pos)
+			pos = str(x) + str(y + 1)
+			position_list.remove(pos)
+			pos = str(x) + str(y + 2)
+			position_list.remove(pos)
+
+			return (board, car)
+
+	elif type == 4 and valid_position:
+
+		# remove all taken positions from list of available positions
+		pos = str(x) + str(y)
+		position_list.remove(pos)
+		pos = str(x+1) + str(y)
+		position_list.remove(pos)
+		pos = str(x+1) + str(y+1)
+		position_list.remove(pos)
+		pos = str(x) + str(y+1)
+		position_list.remove(pos)
+		if orientation == "H":
+
+			board[x,y] = "QH"
+			board[x + 1,y] = "QH"
+			board[x,y + 1] = "QH"
+			board[x + 1,y + 1] = "QH"
+
+			return (board, car)
+
+		else:
+
+			board[x, y] = "QV"
+			board[x + 1, y] = "QV"
+			board[x, y + 1] = "QV"
+			board[x + 1, y + 1] = "QV"
+
+			return (board, car)
+
+	elif type == 5 and valid_position:
+
+		if orientation == "H":
+
+			board[x, y] = "BH"
+			board[x, y + 1] = "BH"
+			board[x + 1, y] = "BH"
+			board[x + 1, y + 1] = "BH"
+			board[x + 2, y] = "BH"
+			board[x + 2, y + 1] = "BH"
+
+			# remove all taken positions from list of available positions
+			pos = str(x) + str(y)
+			position_list.remove(pos)
+			pos = str(x) + str(y + 1)
+			position_list.remove(pos)
+			pos = str(x + 1) + str(y)
+			position_list.remove(pos)
+			pos = str(x + 1) + str(y + 1)
+			position_list.remove(pos)
+			pos = str(x + 2) + str(y)
+			position_list.remove(pos)
+			pos = str(x+2) + str(y+1)
+			position_list.remove(pos)
+
+			return (board, car)
+
+		elif orientation == "V":
+			# set board positions
+			board[x, y] = "BV"
+			board[x + 1, y] = "BV"
+			board[x, y + 1] = "BV"
+			board[x + 1, y + 1] = "BV"
+			board[x, y + 2] = "BV"
+			board[x + 1, y + 2] = "BV"
+
+			# remove all taken positions from list of available positions
+			pos = str(x) + str(y)
+			position_list.remove(pos)
+			pos = str(x + 1) + str(y)
+			position_list.remove(pos)
+			pos = str(x) + str(y + 1)
+			position_list.remove(pos)
+			pos = str(x + 1) + str(y + 1)
+			position_list.remove(pos)
+			pos = str(x) + str(y + 2)
+			position_list.remove(pos)
+			pos = str(x + 1) + str(y + 2)
+			position_list.remove(pos)
+
+			return (board, car)
+
+	else:
+		print "NO"
+		if len(position_list_2) > 0:
+			new_position = pickPosition()
+			x = new_position[0]
+			y = new_position[1]
+			valid_position = validatePosition(dimension, board, type, orientation, x, y)
 	# elif type == 6 and orientation == "H":
 	# 	if board[x, y] == 0 and board[x + 1, y] == 0 and board[x + 2, y] == 0 and board[x + 3, y] == 0:
 	# 		board[x, y] = id
@@ -296,11 +356,13 @@ def generateBoards(boards, foldername, dimension):
 			car_types = [2, 3]
 
 			# create a list of all positions on the board
-			position_list = []
+
 			for i in range(dimension):
 				for j in range(dimension):
 					pos = str(i)+str(j)
 					position_list.append(pos)
+
+			position_list_2 = position_list
 
 			# position of the red car (x, y, type, orientation, id)
 			y = (dimension / 2) - 1
@@ -339,6 +401,8 @@ def generateBoards(boards, foldername, dimension):
 				# pick a vehicle type from the available vehicle types
 				type = random.choice(car_types)
 
+
+				# TODO: NICOLE
 				# pick a random type of vehicle that fits in the amount of space available
 				# if filled_tiles == 5 or filled_tiles == 4:
 				# 	type = random.randrange(1, 5, 1)
@@ -352,14 +416,17 @@ def generateBoards(boards, foldername, dimension):
 				# 	type = random.randrange(1, 6, 1)
 				# pick a random starting position from the list of available positions
 
-				start_position = random.choice(position_list)
+				start_position = pickPosition()
 				x_pos = int(start_position[0])
 				y_pos = int(start_position[1])
 
-				car = Car(x_pos, y_pos, type, orientation, id)
-				validateCar(car, dimension)
-
-				#start_coordinate = pickPosition(dimension, type, orientation)
+				car = Car(x_pos, y_pos, type, orientation, vehicle_id)
+				result = validateCar(car, dimension, board)
+				if result != None:
+					board = result[0]
+					car = result[1]
+					vehicle = car.x, car.y, car.type, car.orientation, car.id
+					boardwriter.writerow(vehicle)
 
 				if type == 1:
 					counter1 += 1
@@ -404,9 +471,6 @@ def generateBoards(boards, foldername, dimension):
                 #
 				# 	print i_length, f_lenght
 
-				vehicle = x_pos, y_pos, type, orientation, vehicle_id
-				boardwriter.writerow(vehicle)
-
 		# write all parameters of the board into a parameter file
 		counters = "type1 = %d, type2 = %d, type3 = %d, type4 = %d, type5 = %d" %(counter1, counter2, counter3, counter4, counter5)
 		params = "board: %d, dimension: %d, filling: %f \n %s \n \n" %(i, dimension, filling, counters)
@@ -421,8 +485,6 @@ else:
 		dimension = int(sys.argv[1])
 		boards = int(sys.argv[2])
 		foldername = str(sys.argv[3])
-
-		position_list = []
 
 		# generate boards with given parameters
 		generateBoards(boards, foldername, dimension)
