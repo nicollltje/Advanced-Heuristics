@@ -402,11 +402,43 @@ def generateBoards(boards, foldername, dimension):
 				vehicle_id = j
 				j += 1
 
-				# pick a vehicle type from the available vehicle types
-				type = random.choice(car_types)
+				# # pick a vehicle type from the available vehicle types
+				# type = random.choice(car_types)
 
 
 				# TODO: NICOLE
+
+				if filled_tiles == 5:
+					if 5 in car_types:
+						car_types.remove(5)
+					if 1 not in car_types:
+						if 4 in car_types:
+							car_types.remove(4)
+				elif filled_tiles == 4:
+					if 5 in car_types:
+						car_types.remove(5)
+					if 1 not in car_types:
+						if 3 in car_types:
+							car_types.remove(3)
+				elif filled_tiles == 3:
+					if 5 in car_types:
+						car_types.remove(5)
+					if 4 in car_types:
+						car_types.remove(4)
+					if 1 not in car_types:
+						if 2 in car_types:
+							car_types.remove(2)
+				elif filled_tiles == 2:
+					if 5 in car_types:
+						car_types.remove(5)
+					if 4 in car_types:
+						car_types.remove(4)
+					if 3 in car_types:
+						car_types.remove(3)
+
+				# pick a vehicle type from the available vehicle types
+				type = random.choice(car_types)
+
 				# pick a random type of vehicle that fits in the amount of space available
 				# if filled_tiles == 5 or filled_tiles == 4:
 				# 	type = random.randrange(1, 5, 1)
