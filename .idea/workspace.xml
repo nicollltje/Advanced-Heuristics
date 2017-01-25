@@ -2,6 +2,125 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23a45af5-ceb0-41a5-bfa0-5598417593fd" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_1/board0.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_1/zzparameters2try_1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_10/board0.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_10/board1.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_10/board2.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_10/board3.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_10/board4.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_10/zzparameters2try_10.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_11/board0.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_11/board1.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_11/board2.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_11/board3.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_11/board4.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_11/zzparameters2try_11.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_12/board0.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_12/zzparameters2try_12.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_13/board0.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_13/zzparameters2try_13.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_14/board0.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_14/zzparameters2try_14.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_15/board0.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_15/board1.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_15/board2.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_15/board3.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_15/board4.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_15/zzparameters2try_15.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_16/board0.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_16/zzparameters2try_16.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_17/board0.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_17/zzparameters2try_17.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_18/board0.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_18/board1.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_18/zzparameters2try_18.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_19/board0.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_19/board1.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_19/board2.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_19/board3.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_19/board4.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_19/zzparameters2try_19.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_2/board0.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_2/zzparameters2try_2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_20/board0.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_20/zzparameters2try_20.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_21/board0.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_21/board1.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_21/board2.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_21/board3.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_21/board4.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_21/zzparameters2try_21.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_22/board0.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_22/board1.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_22/board2.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_22/board3.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_22/board4.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_22/zzparameters2try_22.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_23/board0.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_23/board1.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_23/board2.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_23/board3.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_23/board4.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_23/zzparameters2try_23.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_24/board0.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_24/board1.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_24/board2.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_24/board3.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_24/board4.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_24/zzparameters2try_24.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_25/board0.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_25/board1.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_25/board2.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_25/board3.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_25/board4.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_25/zzparameters2try_25.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_26/board0.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_26/board1.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_26/board2.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_26/board3.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_26/board4.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_26/zzparameters2try_26.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_27/board0.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_27/board1.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_27/board2.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_27/board3.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_27/board4.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_27/zzparameters2try_27.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_3/board0.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_3/board1.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_3/board2.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_3/board3.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_3/board4.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_3/zzparameters2try_3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_4/board0.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_4/board1.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_4/board2.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_4/board3.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_4/board4.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_4/zzparameters2try_4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_5/board0.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_5/board1.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_5/board2.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_5/board3.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_5/board4.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_5/zzparameters2try_5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_6/board0.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_6/board1.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_6/board2.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_6/board3.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_6/board4.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_6/zzparameters2try_6.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_7/board0.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_7/zzparameters2try_7.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_8/board0.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_8/zzparameters2try_8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_9/board0.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_9/board1.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_9/board2.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_9/board3.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_9/board4.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/2try_9/zzparameters2try_9.txt" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/board_generator.py" afterPath="$PROJECT_DIR$/board_generator.py" />
     </list>
     <ignored path="Avanced-Heuristics.iws" />
@@ -38,23 +157,22 @@
       <file leaf-file-name="board_generator.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/board_generator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="287" column="88" selection-start-line="287" selection-start-column="88" selection-end-line="287" selection-end-column="88" />
+            <state relative-caret-position="235">
+              <caret line="430" column="48" selection-start-line="430" selection-start-column="48" selection-end-line="430" selection-end-column="48" />
               <folding>
                 <element signature="e#68#81#0" expanded="true" />
-                <element signature="e#199#771#0" expanded="false" />
-                <element signature="e#795#864#0" expanded="false" />
-                <element signature="e#867#923#0" expanded="false" />
-                <element signature="e#2060#3397#0" expanded="false" />
-                <element signature="e#3669#3904#0" expanded="false" />
-                <element signature="e#3944#4493#0" expanded="false" />
-                <element signature="e#4533#5251#0" expanded="false" />
-                <element signature="e#5292#5857#0" expanded="false" />
-                <element signature="e#5898#7174#0" expanded="false" />
-                <element signature="e#7387#7427#0" expanded="false" />
-                <element signature="e#11211#11247#0" expanded="false" />
-                <element signature="e#11273#11309#0" expanded="false" />
-                <element signature="e#11491#11522#0" expanded="false" />
+                <element signature="e#752#773#0" expanded="false" />
+                <element signature="e#854#910#0" expanded="false" />
+                <element signature="e#2047#3384#0" expanded="false" />
+                <element signature="e#3657#3892#0" expanded="false" />
+                <element signature="e#3932#4481#0" expanded="false" />
+                <element signature="e#4521#5239#0" expanded="false" />
+                <element signature="e#5280#5845#0" expanded="false" />
+                <element signature="e#5886#7162#0" expanded="false" />
+                <element signature="e#11554#11590#0" expanded="false" />
+                <element signature="e#11616#11652#0" expanded="false" />
+                <element signature="e#11836#11867#0" expanded="false" />
+                <marker date="1485336931000" expanded="false" signature="172:750" ph="..." />
               </folding>
             </state>
           </provider>
@@ -389,7 +507,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -411,19 +529,18 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#68#81#0" expanded="true" />
-            <element signature="e#199#771#0" expanded="false" />
-            <element signature="e#795#864#0" expanded="false" />
-            <element signature="e#867#923#0" expanded="false" />
-            <element signature="e#2060#3397#0" expanded="false" />
-            <element signature="e#3669#3904#0" expanded="false" />
-            <element signature="e#3944#4493#0" expanded="false" />
-            <element signature="e#4533#5251#0" expanded="false" />
-            <element signature="e#5292#5857#0" expanded="false" />
-            <element signature="e#5898#7174#0" expanded="false" />
-            <element signature="e#7387#7427#0" expanded="false" />
-            <element signature="e#11211#11247#0" expanded="false" />
-            <element signature="e#11273#11309#0" expanded="false" />
-            <element signature="e#11491#11522#0" expanded="false" />
+            <element signature="e#752#773#0" expanded="false" />
+            <element signature="e#854#910#0" expanded="false" />
+            <element signature="e#2047#3384#0" expanded="false" />
+            <element signature="e#3657#3892#0" expanded="false" />
+            <element signature="e#3932#4481#0" expanded="false" />
+            <element signature="e#4521#5239#0" expanded="false" />
+            <element signature="e#5280#5845#0" expanded="false" />
+            <element signature="e#5886#7162#0" expanded="false" />
+            <element signature="e#11554#11590#0" expanded="false" />
+            <element signature="e#11616#11652#0" expanded="false" />
+            <element signature="e#11836#11867#0" expanded="false" />
+            <marker date="1485336931000" expanded="false" signature="172:750" ph="..." />
           </folding>
         </state>
       </provider>
@@ -460,19 +577,18 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#68#81#0" expanded="true" />
-            <element signature="e#199#771#0" expanded="false" />
-            <element signature="e#795#864#0" expanded="false" />
-            <element signature="e#867#923#0" expanded="false" />
-            <element signature="e#2060#3397#0" expanded="false" />
-            <element signature="e#3669#3904#0" expanded="false" />
-            <element signature="e#3944#4493#0" expanded="false" />
-            <element signature="e#4533#5251#0" expanded="false" />
-            <element signature="e#5292#5857#0" expanded="false" />
-            <element signature="e#5898#7174#0" expanded="false" />
-            <element signature="e#7387#7427#0" expanded="false" />
-            <element signature="e#11211#11247#0" expanded="false" />
-            <element signature="e#11273#11309#0" expanded="false" />
-            <element signature="e#11491#11522#0" expanded="false" />
+            <element signature="e#752#773#0" expanded="false" />
+            <element signature="e#854#910#0" expanded="false" />
+            <element signature="e#2047#3384#0" expanded="false" />
+            <element signature="e#3657#3892#0" expanded="false" />
+            <element signature="e#3932#4481#0" expanded="false" />
+            <element signature="e#4521#5239#0" expanded="false" />
+            <element signature="e#5280#5845#0" expanded="false" />
+            <element signature="e#5886#7162#0" expanded="false" />
+            <element signature="e#11554#11590#0" expanded="false" />
+            <element signature="e#11616#11652#0" expanded="false" />
+            <element signature="e#11836#11867#0" expanded="false" />
+            <marker date="1485336931000" expanded="false" signature="172:750" ph="..." />
           </folding>
         </state>
       </provider>
@@ -527,23 +643,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/board_generator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="287" column="88" selection-start-line="287" selection-start-column="88" selection-end-line="287" selection-end-column="88" />
+        <state relative-caret-position="235">
+          <caret line="430" column="48" selection-start-line="430" selection-start-column="48" selection-end-line="430" selection-end-column="48" />
           <folding>
             <element signature="e#68#81#0" expanded="true" />
-            <element signature="e#199#771#0" expanded="false" />
-            <element signature="e#795#864#0" expanded="false" />
-            <element signature="e#867#923#0" expanded="false" />
-            <element signature="e#2060#3397#0" expanded="false" />
-            <element signature="e#3669#3904#0" expanded="false" />
-            <element signature="e#3944#4493#0" expanded="false" />
-            <element signature="e#4533#5251#0" expanded="false" />
-            <element signature="e#5292#5857#0" expanded="false" />
-            <element signature="e#5898#7174#0" expanded="false" />
-            <element signature="e#7387#7427#0" expanded="false" />
-            <element signature="e#11211#11247#0" expanded="false" />
-            <element signature="e#11273#11309#0" expanded="false" />
-            <element signature="e#11491#11522#0" expanded="false" />
+            <element signature="e#752#773#0" expanded="false" />
+            <element signature="e#854#910#0" expanded="false" />
+            <element signature="e#2047#3384#0" expanded="false" />
+            <element signature="e#3657#3892#0" expanded="false" />
+            <element signature="e#3932#4481#0" expanded="false" />
+            <element signature="e#4521#5239#0" expanded="false" />
+            <element signature="e#5280#5845#0" expanded="false" />
+            <element signature="e#5886#7162#0" expanded="false" />
+            <element signature="e#11554#11590#0" expanded="false" />
+            <element signature="e#11616#11652#0" expanded="false" />
+            <element signature="e#11836#11867#0" expanded="false" />
+            <marker date="1485336931000" expanded="false" signature="172:750" ph="..." />
           </folding>
         </state>
       </provider>

@@ -9,7 +9,6 @@ import sys
 import numpy as np
 
 position_list = []
-position_list_2 = []
 
 class Car(object):
 
@@ -32,11 +31,11 @@ class Car(object):
         self.type = type
         self.id = id
 
-def pickPosition():
-
-	start_position = random.choice(position_list)
-
-	return start_position
+# def pickPosition():
+#
+# 	start_position = random.choice(position_list)
+#
+# 	return start_position
 
 	# print "**********************************************"
 	# print "picking NEW position"
@@ -115,11 +114,9 @@ def validatePosition(dimension, board, type, orientation, x, y):
 
 	return False
 
-def validateCar(car, dimension, board):
+def validateCar(car, dimension, board, x, y, position_list_2):
 
 	# get the parameters from the car object
-	x = car.x
-	y = car.y
 	orientation = car.orientation
 	type = car.type
 
@@ -280,12 +277,18 @@ def validateCar(car, dimension, board):
 			return (board, car)
 
 	else:
-		print "NO"
+		print "length postion list 2"
+		print len(position_list_2)
 		if len(position_list_2) > 0:
-			new_position = pickPosition()
-			x = new_position[0]
-			y = new_position[1]
-			valid_position = validatePosition(dimension, board, type, orientation, x, y)
+			pos = str(x)+str(y)
+			position_list_2.remove(pos)
+			new_position = random.choice(position_list_2)
+			x2 = int(new_position[0])
+			y2 = int(new_position[1])
+			print "old pos %d, %d, new pos %d, %d" %(x,y,x2,y2)
+			validateCar(car, dimension, board, x2, y2, position_list_2)
+		else:
+			return None
 	# elif type == 6 and orientation == "H":
 	# 	if board[x, y] == 0 and board[x + 1, y] == 0 and board[x + 2, y] == 0 and board[x + 3, y] == 0:
 	# 		board[x, y] = id
@@ -355,14 +358,13 @@ def generateBoards(boards, foldername, dimension):
 			# define which types will be present on the board
 			car_types = [2, 3]
 
-			# create a list of all positions on the board
+			del position_list[:]
 
+			# create a list of all positions on the board
 			for i in range(dimension):
 				for j in range(dimension):
 					pos = str(i)+str(j)
 					position_list.append(pos)
-
-			position_list_2 = position_list
 
 			# position of the red car (x, y, type, orientation, id)
 			y = (dimension / 2) - 1
@@ -377,6 +379,8 @@ def generateBoards(boards, foldername, dimension):
 			position_list.remove(pos)
 			pos2 = str(x+1)+str(y)
 			position_list.remove(pos2)
+
+			position_list_2 = position_list
 
 			# write the red car to the output csv file
 			boardwriter.writerow([1, y, 2, "H", 1])
@@ -416,17 +420,22 @@ def generateBoards(boards, foldername, dimension):
 				# 	type = random.randrange(1, 6, 1)
 				# pick a random starting position from the list of available positions
 
-				start_position = pickPosition()
+				start_position = random.choice(position_list)
 				x_pos = int(start_position[0])
 				y_pos = int(start_position[1])
 
 				car = Car(x_pos, y_pos, type, orientation, vehicle_id)
-				result = validateCar(car, dimension, board)
+				result = validateCar(car, dimension, board, x_pos, y_pos, position_list_2)
 				if result != None:
 					board = result[0]
 					car = result[1]
 					vehicle = car.x, car.y, car.type, car.orientation, car.id
 					boardwriter.writerow(vehicle)
+				else:
+					print "could not place vehicle"
+					break
+
+				position_list_2 = position_list
 
 				if type == 1:
 					counter1 += 1
@@ -446,6 +455,8 @@ def generateBoards(boards, foldername, dimension):
 				else:
 					counter6 += 1
 					filled_tiles -= 4
+
+
 
 				# start_x = start_coordinate[0]
 				# start_y = start_coordinate[1]
@@ -492,9 +503,7 @@ else:
 	except ValueError:
 
 		# if the input is invalid inform the user with a print statement
-		print boards
+		print "boards:%d"%(boards)
 		print dimension
 		print foldername
 		print("boards and dimension should be of type integer")
-
-
