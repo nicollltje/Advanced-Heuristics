@@ -21,7 +21,7 @@ class Car(object):
     which can move around the board.
     """
 
-    def __init__(self, x, y, length, orientation, id):
+    def __init__(self, x, y, type, orientation, id):
 
         """
         Initializes a car with a position with coordinates [x, y] on a board with a given length,
@@ -32,7 +32,7 @@ class Car(object):
         self.x = x
         self.y = y
         self.orientation = orientation
-        self.length = length
+        self.type = type
         self.id = id
 
 class Game(object):
@@ -92,6 +92,10 @@ class Game(object):
         # create a start state to check for the end of the path
         self.start_state = start
 
+        # keep track of the amount of horizontal and vertical vehicles
+        self.horizontals = 0
+        self.verticals = 0
+
     def addCarToGrid(self, car):
 
         """
@@ -106,28 +110,92 @@ class Game(object):
         x = car.x
         y = car.y
 
-        # check orientation of car
-        if car.orientation == "H":
+        # get the parameters from the car object
+        orientation = car.orientation
+        type = car.type
 
-            # replace 0 with idcar integer for length of car
-            for i in range(0, car.length):
-                if self.grid[x, y] == 0:
-                    self.grid[x, y] = car.id
-                    x += 1
+        if type == 1:
 
-                # if a non-zero value is present, print error statement
+                if orientation == "H":
+                    self.horizontals += 1
+                    self.board[x, y] = car.id
+
                 else:
-                    print "Error, car cannot be placed on a tile that contains another car."
+                    self.verticals += 1
+                    self.board[x, y] = car.id
 
-        elif car.orientation == "V":
-            for i in range(0, car.length):
-                if self.grid[x, y] == 0:
-                    self.grid[x, y] = car.id
-                    y += 1
-                else:
-                    print "Error, car cannot be placed on a tile that contains another car."
-        else:
-            print "Orientation has incorrect value."
+        elif type == 2:
+
+            if orientation == "H":
+
+                self.horizontals += 1
+
+                self.board[x, y] = car.id
+                self.board[x + 1, y] = car.id
+
+            elif orientation == "V":
+
+                self.verticals += 1
+
+                self.board[x, y] = car.id
+                self.board[x, y + 1] = car.id
+
+        elif type == 3:
+
+            if orientation == "H":
+                self.horizontals += 2
+
+                self.board[x, y] = car.id
+                self.board[x + 1, y] = car.id
+                self.board[x + 2, y] = car.id
+
+            elif orientation == "V":
+                self.verticals += 1
+
+                self.board[x, y] = car.id
+                self.board[x, y + 1] = car.id
+                self.board[x, y + 2] = car.id
+
+        elif type == 4:
+
+            if orientation == "H":
+
+                self.horizontals += 1
+
+                self.board[x, y] = car.id
+                self.board[x + 1, y] = car.id
+                self.board[x, y + 1] = car.id
+                self.board[x + 1, y + 1] = car.id
+
+            else:
+                self.verticals += 1
+
+                self.board[x, y] = car.id
+                self.board[x + 1, y] = car.id
+                self.board[x, y + 1] = car.id
+                self.board[x + 1, y + 1] = car.id
+
+        elif type == 5:
+
+            if orientation == "H":
+                self.horizontals += 1
+
+                self.board[x, y] = car.id
+                self.board[x, y + 1] = car.id
+                self.board[x + 1, y] = car.id
+                self.board[x + 1, y + 1] = car.id
+                self.board[x + 2, y] = car.id
+                self.board[x + 2, y + 1] = car.id
+
+            elif orientation == "V":
+                self.verticals += 1
+
+                self.board[x, y] = car.id
+                self.board[x + 1, y] = car.id
+                self.board[x, y + 1] = car.id
+                self.board[x + 1, y + 1] = car.id
+                self.board[x, y + 2] = car.id
+                self.board[x + 1, y + 2] = car.id
 
     def canMoveRight(self, car):
 
@@ -479,6 +547,7 @@ class Game(object):
         # set starting number of iterations to 0
         iterations = 0
 
+
         # check if board has reached the winning state, if not, keep executing body
         while self.grid[self.dimension - 1, self.cars[0].y] != 1:
 
@@ -494,14 +563,25 @@ class Game(object):
 
         # calculate time needed to solve board
         time_duration = time.clock() - start_time
-        print "Winning position:"
-        print self.grid.T
-        print "Number of moves needed to finish game: " + str(self.moves[self.gridToString()])
-        print "Number of iterations: ", iterations
-        print "Seconds needed to run program: ", time_duration
+        # print "Winning position:"
+        # print self.grid.T
+        # print "Number of moves needed to finish game: " + str(self.moves[self.gridToString()])
+        # print "Number of iterations: ", iterations
+        # print "Seconds needed to run program: ", time_duration
+        filename = "foldername-output.csv"
+        with open(filename, 'wb') as csvfile:
+
+            outputwriter = csv.writer(csvfile, delimiter=',', quotechar='|', quoting=csv.QUOTE_MINIMAL)
+
+            # write the board size as the first line of the csv
+            outputwriter.writerow(["iterations", "moves", "solved", "H/V", dimension])
+            # solved yes or no
+            stats = iterations, self.moves[self.gridToString()], "yes", (self.horizontals/self.vercals)
+            outputwriter.writerow([stats])
+
 
         # save the board states for the fastest path from start to finish
-        self.makeBestPath()
+        #self.makeBestPath()
 
     def makeBestPath(self):
 

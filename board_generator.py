@@ -503,7 +503,6 @@ def generateBoards(boards, foldername, dimension):
             car_types = car_types_OG
 
         else:
-
             # write all parameters of the board into a parameter file
             counters = "type1 = %d, type2 = %d, type3 = %d, type4 = %d, type5 = %d" %(counter1, counter2, counter3, counter4, counter5)
             params = "board: %d, dimension: %d, filling: %f \n %s \n \n" %(i, dimension, filling, counters)
