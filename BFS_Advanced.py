@@ -97,6 +97,9 @@ class Game(object):
         self.horizontals = 0
         self.verticals = 0
 
+        # set starting number of iterations to 0
+        self.iterations = 0
+
     def addCarToGrid(self, car):
 
         """
@@ -509,25 +512,17 @@ class Game(object):
                     self.addToPath(parent_string)
                 self.moveRight(car)
 
-    # def writeFile(self, filename):
-    #
-    #     # Generate some test data
-    #     data = self.all_boards_path
-    #
-    #     # Write the array to disk
-    #     with file(filename, 'w') as outfile:
-    #         # I'm writing a header here just for the sake of readability
-    #         # Any line starting with "#" will be ignored by numpy.loadtxt
-    #         # outfile.write('# Array shape: {0}\n'.format(self.dimension))
-    #
-    #         # Iterating through a ndimensional array produces slices along
-    #         # the last axis. This is equivalent to data[i,:,:] in this case
-    #         for data_slice in data:
-    #
-    #             # The formatting string indicates that I'm writing out
-    #             # the values in left-justified columns 7 characters in width
-    #             # with 2 decimal places.
-    #             np.savetxt(outfile, data_slice, fmt='%d')
+    def writeFile(self, directory):
+
+        filename = "%s-output.csv" %(directory)
+        with open(filename, 'wb') as csvfile:
+            outputwriter = csv.writer(csvfile, delimiter=',', quotechar='|', quoting=csv.QUOTE_MINIMAL)
+
+            # write the board size as the first line of the csv
+            outputwriter.writerow(["iterations", "moves", "solved", "H/V", dimension])
+            # solved yes or no
+            stats = iterations, self.moves[self.gridToString()], "yes", (self.horizontals / self.vercals)
+            outputwriter.writerow([stats])
 
     def deque(self):
 
@@ -545,9 +540,6 @@ class Game(object):
         print self.grid.T
         print "\n"
 
-        # set starting number of iterations to 0
-        iterations = 0
-
 
         # check if board has reached the winning state, if not, keep executing body
         while self.grid[self.dimension - 1, self.cars[0].y] != 1:
@@ -557,7 +549,7 @@ class Game(object):
             self.cars = self.carsQueue.get()
 
             # add 1 iteration after each movement
-            iterations += 1
+            self.iterations += 1
 
             # start solving algorithm
             self.queueAllPossibleMoves()
@@ -569,16 +561,6 @@ class Game(object):
         # print "Number of moves needed to finish game: " + str(self.moves[self.gridToString()])
         # print "Number of iterations: ", iterations
         # print "Seconds needed to run program: ", time_duration
-        filename = "foldername-output.csv"
-        with open(filename, 'wb') as csvfile:
-
-            outputwriter = csv.writer(csvfile, delimiter=',', quotechar='|', quoting=csv.QUOTE_MINIMAL)
-
-            # write the board size as the first line of the csv
-            outputwriter.writerow(["iterations", "moves", "solved", "H/V", dimension])
-            # solved yes or no
-            stats = iterations, self.moves[self.gridToString()], "yes", (self.horizontals/self.vercals)
-            outputwriter.writerow([stats])
 
 
         # save the board states for the fastest path from start to finish
@@ -651,47 +633,58 @@ class Game(object):
             # add this board to the list of all the boards in the path
             self.all_boards_path.append(board_path)
 
-def loadDataset(filename, cars):
+def loadDataset(directory, filename, cars):
     """
     Reads an input file and converts this to usable game parameters
     :param filename: the input file that needs to be read
     :param cars: the list of cars that the cars need to be added to
     :return: the dimension as an int
     """
-    with open(filename, 'rb') as csvfile:
+
+    path = "%s/%s" %(directory, filename)
+
+    with open(path, 'rb') as csvfile:
+
+        print "opened", path
         lines = csv.reader(csvfile)
         dataset = list(lines)
         # the first line of the imput file is always the dimension
         dimension = dataset[0][0]
         # the rest of the lines contains the parameters needed to create car objects
         for carLine in dataset[1:]:
-            car = Car(int(carLine[0]), int(carLine[1]), int(carLine[2]), carLine[3], int(carLine[4]))
-            # appends all cars to a list of cars
-            cars.append(car)
+            if len(carLine) > 3:
+                car = Car(int(carLine[0]), int(carLine[1]), int(carLine[2]), carLine[3], int(carLine[4]))
+                # appends all cars to a list of cars
+                cars.append(car)
         return int(dimension)
 
-# 3 commandline arguments are given the algorithm should be run with the loaded board and an outputfile
-# should be created with the name of the third command line argurment.
-if (len(sys.argv) == 3):
-    cars = []
-    # opens the file that contains the board and cars parameters
-    filename = str(sys.argv[1])
-    # gets the dimension of the board from the input file
-    dimension = loadDataset(filename, cars)
-    # initializes a game with cars and a dimension
-    game = Game(dimension, cars)
-    # runs the algorithm
-    game.deque()
-    # writes an output file
-    game.writeFile(str(sys.argv[2]))
 # if the usage is incorrect the user is informed with a print statement
-elif (len(sys.argv) != 2):
+if (len(sys.argv) != 2):
     print('Error, USAGE: program.py foldername')
 # if 2 commandline afgumens are given the algorithm is run without creating an output file
 else:
-    cars = []
-    path = "%s/" %(str(sys.argv[1]))
-    for filename in os.listdir(path):
-        dimension = loadDataset(filename, cars)
-        game = Game(dimension, cars)
-        game.deque()
+    try:
+        cars = []
+
+        directory = str(sys.argv[1])
+
+        for filename in os.listdir(directory):
+
+            if filename.endswith(".csv"):
+                # print(os.path.join(directory, filename))
+                print "found csv file"
+                dimension = loadDataset(directory, filename, cars)
+                game = Game(dimension, cars)
+                # game.deque()
+                game.writeFile(directory)
+            else:
+                print "did not find csv file"
+
+    except ValueError:
+        print "no proper input was given, try again"
+
+
+    # for filename in os.listdir(path):
+    #     dimension = loadDataset(filename, cars)
+    #     game = Game(dimension, cars)
+    #     game.deque()
