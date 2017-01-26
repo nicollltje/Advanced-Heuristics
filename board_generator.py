@@ -31,6 +31,16 @@ class Car(object):
         self.type = type
         self.id = id
 
+def resetPositionList(board, dimension):
+
+    del position_list[:]
+
+    for i in range(dimension):
+        for j in range(dimension):
+            if board[i,j] == 0:
+                pos = str(i)+str(j)
+                position_list.append(pos)
+
 def validatePosition(dimension, board, type, orientation, x, y):
     if type == 1:
         if board[x, y] == 0:
@@ -75,7 +85,7 @@ def validatePosition(dimension, board, type, orientation, x, y):
 
     return False
 
-def validateCar(car, dimension, board, x, y, position_list_2):
+def validateCar(car, dimension, board, x, y):
 
     print "____________validating__________________"
 
@@ -91,8 +101,8 @@ def validateCar(car, dimension, board, x, y, position_list_2):
         if valid_position == True:
 
             # remove all taken positions from list of available positions
-            pos = str(x)+str(y)
-            position_list.remove(pos)
+            # pos = str(x)+str(y)
+            # position_list.remove(pos)
 
             if orientation == "H":
                 board[x,y] = "SH"
@@ -111,10 +121,10 @@ def validateCar(car, dimension, board, x, y, position_list_2):
                 board[x + 1, y] = "CH"
 
                 # remove all taken positions from list of available positions
-                pos = str(x) + str(y)
-                position_list.remove(pos)
-                pos = str(x+1) + str(y)
-                position_list.remove(pos)
+                # pos = str(x) + str(y)
+                # position_list.remove(pos)
+                # pos = str(x+1) + str(y)
+                # position_list.remove(pos)
 
                 return (board, car)
 
@@ -125,10 +135,10 @@ def validateCar(car, dimension, board, x, y, position_list_2):
                 board[x, y + 1] = "CV"
 
                 # remove all taken positions from list of available positions
-                pos = str(x) + str(y)
-                position_list.remove(pos)
-                pos = str(x) + str(y + 1)
-                position_list.remove(pos)
+                # pos = str(x) + str(y)
+                # position_list.remove(pos)
+                # pos = str(x) + str(y + 1)
+                # position_list.remove(pos)
 
                 return (board, car)
 
@@ -141,12 +151,12 @@ def validateCar(car, dimension, board, x, y, position_list_2):
                 board[x + 2, y] = "TH"
 
                 # remove all taken positions from list of available positions
-                pos = str(x) + str(y)
-                position_list.remove(pos)
-                pos = str(x + 1) + str(y)
-                position_list.remove(pos)
-                pos = str(x+2) + str(y)
-                position_list.remove(pos)
+                # pos = str(x) + str(y)
+                # position_list.remove(pos)
+                # pos = str(x + 1) + str(y)
+                # position_list.remove(pos)
+                # pos = str(x+2) + str(y)
+                # position_list.remove(pos)
 
                 return (board, car)
 
@@ -157,12 +167,12 @@ def validateCar(car, dimension, board, x, y, position_list_2):
                 board[x, y + 2] = "TV"
 
                 # remove all taken positions from list of available positions
-                pos = str(x) + str(y)
-                position_list.remove(pos)
-                pos = str(x) + str(y + 1)
-                position_list.remove(pos)
-                pos = str(x) + str(y + 2)
-                position_list.remove(pos)
+                # pos = str(x) + str(y)
+                # position_list.remove(pos)
+                # pos = str(x) + str(y + 1)
+                # position_list.remove(pos)
+                # pos = str(x) + str(y + 2)
+                # position_list.remove(pos)
 
                 return (board, car)
 
@@ -170,14 +180,15 @@ def validateCar(car, dimension, board, x, y, position_list_2):
         if valid_position == True:
 
             # remove all taken positions from list of available positions
-            pos = str(x) + str(y)
-            position_list.remove(pos)
-            pos = str(x+1) + str(y)
-            position_list.remove(pos)
-            pos = str(x+1) + str(y+1)
-            position_list.remove(pos)
-            pos = str(x) + str(y+1)
-            position_list.remove(pos)
+            # pos = str(x) + str(y)
+            # position_list.remove(pos)
+            # pos = str(x+1) + str(y)
+            # position_list.remove(pos)
+            # pos = str(x+1) + str(y+1)
+            # position_list.remove(pos)
+            # pos = str(x) + str(y+1)
+            # position_list.remove(pos)
+
             if orientation == "H":
 
                 board[x,y] = "QH"
@@ -209,18 +220,18 @@ def validateCar(car, dimension, board, x, y, position_list_2):
                 board[x + 2, y + 1] = "BH"
 
                 # remove all taken positions from list of available positions
-                pos = str(x) + str(y)
-                position_list.remove(pos)
-                pos = str(x) + str(y + 1)
-                position_list.remove(pos)
-                pos = str(x + 1) + str(y)
-                position_list.remove(pos)
-                pos = str(x + 1) + str(y + 1)
-                position_list.remove(pos)
-                pos = str(x + 2) + str(y)
-                position_list.remove(pos)
-                pos = str(x+2) + str(y+1)
-                position_list.remove(pos)
+                # pos = str(x) + str(y)
+                # position_list.remove(pos)
+                # pos = str(x) + str(y + 1)
+                # position_list.remove(pos)
+                # pos = str(x + 1) + str(y)
+                # position_list.remove(pos)
+                # pos = str(x + 1) + str(y + 1)
+                # position_list.remove(pos)
+                # pos = str(x + 2) + str(y)
+                # position_list.remove(pos)
+                # pos = str(x+2) + str(y+1)
+                # position_list.remove(pos)
 
                 return (board, car)
 
@@ -234,31 +245,31 @@ def validateCar(car, dimension, board, x, y, position_list_2):
                 board[x + 1, y + 2] = "BV"
 
                 # remove all taken positions from list of available positions
-                pos = str(x) + str(y)
-                position_list.remove(pos)
-                pos = str(x + 1) + str(y)
-                position_list.remove(pos)
-                pos = str(x) + str(y + 1)
-                position_list.remove(pos)
-                pos = str(x + 1) + str(y + 1)
-                position_list.remove(pos)
-                pos = str(x) + str(y + 2)
-                position_list.remove(pos)
-                pos = str(x + 1) + str(y + 2)
-                position_list.remove(pos)
+                # pos = str(x) + str(y)
+                # position_list.remove(pos)
+                # pos = str(x + 1) + str(y)
+                # position_list.remove(pos)
+                # pos = str(x) + str(y + 1)
+                # position_list.remove(pos)
+                # pos = str(x + 1) + str(y + 1)
+                # position_list.remove(pos)
+                # pos = str(x) + str(y + 2)
+                # position_list.remove(pos)
+                # pos = str(x + 1) + str(y + 2)
+                # position_list.remove(pos)
 
                 return (board, car)
 
     else:
-        print "length postion list 2: %d" %(len(position_list_2))
-        if len(position_list_2) > 0:
+        print "length postion list 2: %d" %(len(position_list))
+        if len(position_list) > 0:
             pos = str(x)+str(y)
-            position_list_2.remove(pos)
-            new_position = random.choice(position_list_2)
+            position_list.remove(pos)
+            new_position = random.choice(position_list)
             x2 = int(new_position[0])
             y2 = int(new_position[1])
             print "old pos %d, %d, new pos %d, %d" %(x,y,x2,y2)
-            validateCar(car, dimension, board, x2, y2, position_list_2)
+            validateCar(car, dimension, board, x2, y2)
         else:
             return None
 
@@ -301,8 +312,7 @@ def generateBoards(boards, foldername, dimension):
 
         with open(filename, 'wb') as csvfile:
 
-            boardwriter = csv.writer(csvfile, delimiter=',',
-                                    quotechar='|', quoting=csv.QUOTE_MINIMAL)
+            boardwriter = csv.writer(csvfile, delimiter=',', quotechar='|', quoting=csv.QUOTE_MINIMAL)
 
             # write the board size as the first line of the csv
             boardwriter.writerow([dimension])
@@ -310,13 +320,7 @@ def generateBoards(boards, foldername, dimension):
             # define which types will be present on the board
             car_types = [2, 3]
 
-            del position_list[:]
 
-            # create a list of all positions on the board
-            for i in range(dimension):
-                for j in range(dimension):
-                    pos = str(i)+str(j)
-                    position_list.append(pos)
 
             # position of the red car (x, y, type, orientation, id)
             y = (dimension / 2) - 1
@@ -326,13 +330,13 @@ def generateBoards(boards, foldername, dimension):
             board[x, y] = 'CH'
             board[x + 1, y] = 'CH'
 
-            # remove the positions of the red car from the list of available positions
-            pos = str(x)+str(y)
-            position_list.remove(pos)
-            pos2 = str(x+1)+str(y)
-            position_list.remove(pos2)
+            resetPositionList(board, dimension)
 
-            position_list_2 = position_list
+            # remove the positions of the red car from the list of available positions
+            # pos = str(x)+str(y)
+            # position_list.remove(pos)
+            # pos2 = str(x+1)+str(y)
+            # position_list.remove(pos2)
 
             # write the red car to the output csv file
             boardwriter.writerow([1, y, 2, "H", 1])
@@ -391,7 +395,7 @@ def generateBoards(boards, foldername, dimension):
                 y_pos = int(start_position[1])
 
                 car = Car(x_pos, y_pos, type, orientation, vehicle_id)
-                result = validateCar(car, dimension, board, x_pos, y_pos, position_list_2)
+                result = validateCar(car, dimension, board, x_pos, y_pos)
 
                 if result != None:
                     board = result[0]
@@ -405,7 +409,8 @@ def generateBoards(boards, foldername, dimension):
                     else:
                         car.orientation ="H"
 
-                result = validateCar(car, dimension, board, x_pos, y_pos, position_list_2)
+                resetPositionList(board, dimension)
+                result = validateCar(car, dimension, board, x_pos, y_pos)
 
                 old_cars = []
 
@@ -420,28 +425,26 @@ def generateBoards(boards, foldername, dimension):
                     print "changing car type"
                     while len(car_types) > 1:
                         old_type = car.type
+                        old_cars.append(old_type)
                         car_types.remove(old_type)
+                        print "TEMPORARY car types", car_types
                         car.type = random.choice(car_types)
-                        result = validateCar(car, dimension, board, x_pos, y_pos, position_list_2)
+                        result = validateCar(car, dimension, board, x_pos, y_pos)
                         if result != None:
                             board = result[0]
                             car = result[1]
                             vehicle = car.x, car.y, car.type, car.orientation, car.id
                             boardwriter.writerow(vehicle)
-                            old_cars.append(old_type)
-                            #car_types.append(old_type)
+
                         else:
                             print "could not place vehicle"
                             # delete the whole board and start over with the same board number.
                             # break
-                            old_cars.append(old_type)
 
                 for item in old_cars:
                     car_types.append(item)
 
                 print "Check car types again...................", car_types
-
-                position_list_2 = position_list
 
                 if type == 1:
                     counter1 += 1
