@@ -218,7 +218,14 @@ class Game(object):
 
             # check if movement to the right would cause collision between Cars
             if self.grid[car.x + car.length, car.y] == 0:
-                return True
+                if car.type == 4 or car.type == 5:
+                    if self.grid[car.x + car.lenght, car.y + 1] == 0:
+                        return True
+                    else:
+                        return False
+                else:
+                    return True
+
         return False
 
     def canMoveLeft(self, car):
@@ -238,6 +245,11 @@ class Game(object):
 
             # check if movement to the left would cause collision between Cars
             if self.grid[car.x - 1, car.y] == 0:
+                if car.type == 4 or car.type == 5:
+                    if self.grid[car.x - 1, car.y + 1] == 0:
+                        return True
+                    else:
+                        return False
                 return True
         return False
 
@@ -258,6 +270,11 @@ class Game(object):
 
             # check if upward movement would cause collision between Cars
             if self.grid[car.x, car.y - 1] == 0:
+                if car.type == 4 or car.type == 5:
+                    if self.grid[car.x + 1, car.y - 1] == 0:
+                        return True
+                    else:
+                        return False
                 return True
         return False
 
@@ -278,6 +295,11 @@ class Game(object):
 
             # check if downward movement would cause collision between Cars
             if self.grid[car.x, car.y + car.length] == 0:
+                if car.type == 4 or car.type == 5:
+                    if self.grid[car.x + 1, car.y + car.lenght] == 0:
+                        return True
+                    else:
+                        return False
                 return True
         return False
 
@@ -298,6 +320,10 @@ class Game(object):
 
         # replace the left side of the Car with a 0 (empty)
         self.grid[car.x, car.y] = 0
+
+        if car.type == 4 or car.type == 5:
+            self.grid[car.x + car.lenght, car.y + 1] = car.id
+            self.grid[car.x, car.y + 1] = 0
 
         # update x coordinate
         car.x = car.x + 1
@@ -323,6 +349,10 @@ class Game(object):
         # replace the right side of the Car with a 0 (empty)
         self.grid[car.x + (car.length - 1), car.y] = 0
 
+        if car.type == 4 or car.type == 5:
+            self.grid[car.x - 1, car.y + 1] = car.id
+            self.grid[car.x + (car.lenght - 1), car.y + 1] = 0
+
         # update x coordinate
         car.x = car.x - 1
 
@@ -347,6 +377,10 @@ class Game(object):
         # replace the top of the Car with a 0 (empty)
         self.grid[car.x, car.y] = 0
 
+        if car.type == 4 or car.type == 5:
+            self.grid[car.x + 1, car.y + car.length] = car.id
+            self.grid[car.x + 1, car.y] = 0
+
         # update y coordinate
         car.y = car.y + 1
 
@@ -370,6 +404,10 @@ class Game(object):
 
         # replace the bottom of the Car with a 0 (empty)
         self.grid[car.x, car.y + (car.length - 1)] = 0
+
+        if car.type == 4 or car.type == 5:
+            self.grid[car.x + 1, car.y - 1] = car.id
+            self.grid[car.x + 1, car.y + (car.lenght - 1)] = 0
 
         # update y coordinate
         car.y = car.y - 1
@@ -648,12 +686,16 @@ def loadDataset(directory, filename, cars):
         print "opened", path
         lines = csv.reader(csvfile)
         dataset = list(lines)
+
         # the first line of the imput file is always the dimension
         dimension = dataset[0][0]
+
         # the rest of the lines contains the parameters needed to create car objects
         for carLine in dataset[1:]:
             if len(carLine) > 3:
+                
                 car = Car(int(carLine[0]), int(carLine[1]), int(carLine[2]), carLine[3], int(carLine[4]))
+
                 # appends all cars to a list of cars
                 cars.append(car)
         return int(dimension)
@@ -661,7 +703,8 @@ def loadDataset(directory, filename, cars):
 # if the usage is incorrect the user is informed with a print statement
 if (len(sys.argv) != 2):
     print('Error, USAGE: program.py foldername')
-# if 2 commandline afgumens are given the algorithm is run without creating an output file
+
+# if 2 commandline arguments are given the algorithm is run without creating an output file
 else:
     try:
         cars = []
