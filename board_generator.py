@@ -116,6 +116,8 @@ def validatePosition(dimension, board, type, orientation, x, y):
 
 def validateCar(car, dimension, board, x, y, position_list_2):
 
+	print "____________validating__________________"
+
 	# get the parameters from the car object
 	orientation = car.orientation
 	type = car.type
@@ -277,8 +279,7 @@ def validateCar(car, dimension, board, x, y, position_list_2):
 			return (board, car)
 
 	else:
-		print "length postion list 2"
-		print len(position_list_2)
+		print "length postion list 2: %d" %(len(position_list_2))
 		if len(position_list_2) > 0:
 			pos = str(x)+str(y)
 			position_list_2.remove(pos)
@@ -322,7 +323,7 @@ def generateBoards(boards, foldername, dimension):
 	parameter_file = open("%s/zzparameters%s.txt" %(foldername, foldername), "w")
 
 	# set the filling
-	filling = 0.2
+	filling = 0.5
 
 	for i in range (boards):
 
@@ -340,9 +341,6 @@ def generateBoards(boards, foldername, dimension):
 		counter4 = 0
 		counter5 = 0
 		counter6 = 0
-
-		# set empty archive for start positions
-		# position_set = set()
 
 		# create an empty board
 		board = np.zeros(shape=(dimension, dimension), dtype=object)
@@ -426,6 +424,21 @@ def generateBoards(boards, foldername, dimension):
 
 				car = Car(x_pos, y_pos, type, orientation, vehicle_id)
 				result = validateCar(car, dimension, board, x_pos, y_pos, position_list_2)
+
+				if result != None:
+					board = result[0]
+					car = result[1]
+					vehicle = car.x, car.y, car.type, car.orientation, car.id
+					boardwriter.writerow(vehicle)
+				else:
+					print "changing orientation"
+					if car.orientation == "H":
+						car.orientation ="V"
+					else:
+						car.orientation ="H"
+
+				result = validateCar(car, dimension, board, x_pos, y_pos, position_list_2)
+
 				if result != None:
 					board = result[0]
 					car = result[1]
@@ -433,7 +446,9 @@ def generateBoards(boards, foldername, dimension):
 					boardwriter.writerow(vehicle)
 				else:
 					print "could not place vehicle"
-					break
+					# pick another type and try again
+					# if that does not work; delete the whole board and start over with the same board number.
+					# break
 
 				position_list_2 = position_list
 
@@ -455,8 +470,6 @@ def generateBoards(boards, foldername, dimension):
 				else:
 					counter6 += 1
 					filled_tiles -= 4
-
-
 
 				# start_x = start_coordinate[0]
 				# start_y = start_coordinate[1]
@@ -503,7 +516,4 @@ else:
 	except ValueError:
 
 		# if the input is invalid inform the user with a print statement
-		print "boards:%d"%(boards)
-		print dimension
-		print foldername
 		print("boards and dimension should be of type integer")
