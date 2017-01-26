@@ -13,6 +13,7 @@ import Queue as QueueClass
 import copy
 import csv
 import sys
+import os
 
 class Car(object):
 
@@ -440,25 +441,25 @@ class Game(object):
                     self.addToPath(parent_string)
                 self.moveRight(car)
 
-    def writeFile(self, filename):
-
-        # Generate some test data
-        data = self.all_boards_path
-
-        # Write the array to disk
-        with file(filename, 'w') as outfile:
-            # I'm writing a header here just for the sake of readability
-            # Any line starting with "#" will be ignored by numpy.loadtxt
-            # outfile.write('# Array shape: {0}\n'.format(self.dimension))
-
-            # Iterating through a ndimensional array produces slices along
-            # the last axis. This is equivalent to data[i,:,:] in this case
-            for data_slice in data:
-
-                # The formatting string indicates that I'm writing out
-                # the values in left-justified columns 7 characters in width
-                # with 2 decimal places.
-                np.savetxt(outfile, data_slice, fmt='%d')
+    # def writeFile(self, filename):
+    #
+    #     # Generate some test data
+    #     data = self.all_boards_path
+    #
+    #     # Write the array to disk
+    #     with file(filename, 'w') as outfile:
+    #         # I'm writing a header here just for the sake of readability
+    #         # Any line starting with "#" will be ignored by numpy.loadtxt
+    #         # outfile.write('# Array shape: {0}\n'.format(self.dimension))
+    #
+    #         # Iterating through a ndimensional array produces slices along
+    #         # the last axis. This is equivalent to data[i,:,:] in this case
+    #         for data_slice in data:
+    #
+    #             # The formatting string indicates that I'm writing out
+    #             # the values in left-justified columns 7 characters in width
+    #             # with 2 decimal places.
+    #             np.savetxt(outfile, data_slice, fmt='%d')
 
     def deque(self):
 
@@ -605,11 +606,12 @@ if (len(sys.argv) == 3):
     game.writeFile(str(sys.argv[2]))
 # if the usage is incorrect the user is informed with a print statement
 elif (len(sys.argv) != 2):
-    print('Error, USAGE: program.py boardfile.csv')
+    print('Error, USAGE: program.py foldername')
 # if 2 commandline afgumens are given the algorithm is run without creating an output file
 else:
     cars = []
-    filename = str(sys.argv[1])
-    dimension = loadDataset(filename, cars)
-    game = Game(dimension, cars)
-    game.deque()
+    path = "%s/" %(str(sys.argv[1]))
+    for filename in os.listdir(path):
+        dimension = loadDataset(filename, cars)
+        game = Game(dimension, cars)
+        game.deque()
