@@ -359,18 +359,21 @@ def generateBoards(boards, foldername, dimension):
                 j += 1
 
                 # determine which car types are available based on the amount of filled tiles
+                print "tiles left: %d" %(filled_tiles)
                 if filled_tiles == 5:
                     if 5 in car_types:
                         car_types.remove(5)
                     if 1 not in car_types:
                         if 4 in car_types:
                             car_types.remove(4)
+                    print "car types left: ", car_types
                 elif filled_tiles == 4:
                     if 5 in car_types:
                         car_types.remove(5)
                     if 1 not in car_types:
                         if 3 in car_types:
                             car_types.remove(3)
+                    print "car types left: ", car_types
                 elif filled_tiles == 3:
                     if 5 in car_types:
                         car_types.remove(5)
@@ -379,6 +382,7 @@ def generateBoards(boards, foldername, dimension):
                     if 1 not in car_types:
                         if 2 in car_types:
                             car_types.remove(2)
+                    print "car types left: ", car_types
                 elif filled_tiles == 2:
                     if 5 in car_types:
                         car_types.remove(5)
@@ -386,6 +390,9 @@ def generateBoards(boards, foldername, dimension):
                         car_types.remove(4)
                     if 3 in car_types:
                         car_types.remove(3)
+                    print "car types left: ", car_types
+
+                print "car types left: ", car_types
 
                 # pick a vehicle type from the available vehicle types
                 type = random.choice(car_types)
