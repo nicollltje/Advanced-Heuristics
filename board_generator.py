@@ -396,6 +396,7 @@ def generateBoards(boards, foldername, dimension):
 
                     print "%%%%%%%%%%%%%% resetting board %%%%%%%%%%%%%%%%%"
                     print filename
+                    print "test"
 
                     filled_tiles = int((dimension * dimension) * filling)
                     # set counters to keep track of how many vehicles per type are generated
