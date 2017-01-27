@@ -695,7 +695,7 @@ def loadDataset(directory, filename, cars):
             if len(carLine) > 3:
 
                 car = Car(int(carLine[0]), int(carLine[1]), int(carLine[2]), carLine[3], int(carLine[4]))
-                
+
                 # appends all cars to a list of cars
                 cars.append(car)
         return int(dimension)
