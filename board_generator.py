@@ -241,9 +241,9 @@ def generateBoards(boards, foldername, dimension):
 
         with open(filename, 'wb') as csvfile:
 
-            print "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
-            print "MAKING NEW BOARD - MAKING NEW BOARD - MAKING NEW BOARD - MAKING NEW BOARD - MAKING NEW BOARD"
-            print "vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv"
+            # print "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+            # print "MAKING NEW BOARD - MAKING NEW BOARD - MAKING NEW BOARD - MAKING NEW BOARD - MAKING NEW BOARD"
+            # print "vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv"
 
             boardwriter = csv.writer(csvfile, delimiter=',', quotechar='|', quoting=csv.QUOTE_MINIMAL)
 
@@ -395,6 +395,7 @@ def generateBoards(boards, foldername, dimension):
                 elif type == "STOP":
 
                     print "%%%%%%%%%%%%%% resetting board %%%%%%%%%%%%%%%%%"
+                    print filename
 
                     filled_tiles = int((dimension * dimension) * filling)
                     # set counters to keep track of how many vehicles per type are generated
@@ -404,7 +405,12 @@ def generateBoards(boards, foldername, dimension):
                     counter4 = 0
                     counter5 = 0
                     counter6 = 0
+
+                    csvfile.seek(0)
+                    csvfile.truncate()
+
                     # write the board size as the first line of the csv
+
                     boardwriter.writerow([dimension])
 
                     # define which types will be present on the board
