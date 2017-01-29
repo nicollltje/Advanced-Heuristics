@@ -217,7 +217,7 @@ def generateBoards(boards, foldername, dimension):
     parameter_file = open("%s/zzparameters%s.txt" %(foldername, foldername), "w")
 
     # set the filling
-    filling = 0.9
+    filling = 0.5
 
     for i in range (boards):
 
@@ -329,6 +329,7 @@ def generateBoards(boards, foldername, dimension):
                 start_position = random.choice(position_list)
                 x_pos = int(start_position[0])
                 y_pos = int(start_position[1])
+
 
                 car = Car(x_pos, y_pos, type, orientation, vehicle_id)
                 result = validateCar(car, dimension, board, x_pos, y_pos)
@@ -463,6 +464,8 @@ def generateBoards(boards, foldername, dimension):
         for xcoor in range(dimension):
             for ycoor in range(dimension):
                 hash += str(board[xcoor,ycoor])
+
+        print hash
 
         # add hash to set
         a = len(boardArchive)
