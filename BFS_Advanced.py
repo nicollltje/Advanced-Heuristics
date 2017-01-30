@@ -58,6 +58,17 @@ class Game(object):
         # create a 2D grid consisting of 0's, with type integer
         self.grid = np.zeros(shape=(dimension, dimension), dtype=np.int)
 
+        # keep track of the amount of horizontal and vertical vehicles
+        self.horizontals = 0
+        self.verticals = 0
+
+        # keep track of amounts of different cartypes
+        self.counter1 = 0
+        self.counter2 = 0
+        self.counter3 = 0
+        self.counter4 = 0
+        self.counter5 = 0
+
         # add every given car to the grid
         for car in self.cars:
             self.addCarToGrid(car)
@@ -93,11 +104,6 @@ class Game(object):
         # create a start state to check for the end of the path
         self.start_state = start
 
-        # keep track of the amount of horizontal and vertical vehicles
-
-        # self.horizontals = 0
-        # self.verticals = 0
-
         self.solvable = "yes"
 
         # set starting number of iterations to 0
@@ -124,42 +130,46 @@ class Game(object):
 
         if type == 1:
 
+                self.counter1 += 1
                 if orientation == "H":
-                    #self.horizontals += 1
+                    self.horizontals += 1
                     self.grid[x, y] = car.id
 
                 else:
-                    #self.verticals += 1
+                    self.verticals += 1
                     self.grid[x, y] = car.id
 
         elif type == 2:
 
+            self.counter2 += 1
             if orientation == "H":
 
-                #self.horizontals += 1
+                self.horizontals += 1
 
                 self.grid[x, y] = car.id
                 self.grid[x + 1, y] = car.id
 
             elif orientation == "V":
 
-                #self.verticals += 1
+                self.verticals += 1
 
                 self.grid[x, y] = car.id
                 self.grid[x, y + 1] = car.id
 
         elif type == 3:
 
+            self.counter3 += 1
             if orientation == "H":
 
-                #self.horizontals += 1
+                self.horizontals += 1
 
                 self.grid[x, y] = car.id
                 self.grid[x + 1, y] = car.id
                 self.grid[x + 2, y] = car.id
 
             elif orientation == "V":
-                #self.verticals += 1
+
+                self.verticals += 1
 
                 self.grid[x, y] = car.id
                 self.grid[x, y + 1] = car.id
@@ -167,9 +177,10 @@ class Game(object):
 
         elif type == 4:
 
+            self.counter4 += 1
             if orientation == "H":
 
-                #self.horizontals += 1
+                self.horizontals += 1
 
                 self.grid[x, y] = car.id
                 self.grid[x + 1, y] = car.id
@@ -177,7 +188,8 @@ class Game(object):
                 self.grid[x + 1, y + 1] = car.id
 
             else:
-                #self.verticals += 1
+
+                self.verticals += 1
 
                 self.grid[x, y] = car.id
                 self.grid[x + 1, y] = car.id
@@ -186,9 +198,10 @@ class Game(object):
 
         elif type == 5:
 
+            self.counter5 += 1
             if orientation == "H":
 
-                #self.horizontals += 1
+                self.horizontals += 1
 
                 self.grid[x, y] = car.id
                 self.grid[x, y + 1] = car.id
@@ -198,7 +211,8 @@ class Game(object):
                 self.grid[x + 2, y + 1] = car.id
 
             elif orientation == "V":
-                #self.verticals += 1
+
+                self.verticals += 1
 
                 self.grid[x, y] = car.id
                 self.grid[x + 1, y] = car.id
@@ -630,20 +644,6 @@ class Game(object):
                     self.addToPath(parent_string)
                 self.moveRight(car)
 
-    # def writeFile(self, directory):
-    #
-    #     filename = "%s-output.csv" %(directory)
-    #
-    #     with open(filename, 'wb') as csvfile:
-    #         outputwriter = csv.writer(csvfile, delimiter=',', quotechar='|', quoting=csv.QUOTE_MINIMAL)
-    #
-    #         # write the board size as the first line of the csv
-    #         outputwriter.writeheader(["iterations", "moves", "solved", "H/V", dimension])
-    #         # solved yes or no
-    #         stats = self.iterations, self.moves[self.gridToString()], "yes"
-    #         #stats = self.iterations, self.moves[self.gridToString()], "yes", (self.horizontals / self.verticals)
-    #         outputwriter.writerow([stats])
-
     def deque(self):
 
         """
@@ -656,12 +656,10 @@ class Game(object):
         start_time = time.clock()
 
         # print starting grid
-        print "Starting grid:"
+        # print "Starting grid:"
         starting_grid = copy.deepcopy(self.grid.T)
-        #print self.grid.T
-        print starting_grid
-        print "\n"
-
+        # print starting_grid
+        # print "\n"
 
         # check if board has reached the winning state, if not, keep executing body
 
@@ -685,24 +683,22 @@ class Game(object):
 
                 self.solvable = "no"
 
-
-
-
-
-
         # calculate time needed to solve board
-        time_duration = time.clock() - start_time
+        # time_duration = time.clock() - start_time
+        # hor_ver_ratio = float(self.horizontals) / self.verticals
+        types_ratio = "%d:%d:%d:%d:%d" %(self.counter1, self.counter2, self.counter3, self.counter4, self.counter5)
         if self.solvable == "yes":
-            print "Winning position:"
-            print self.grid.T
+
+            print "SOLVED"
+            # print "Winning position:"
+            # print self.grid.T
             moves_needed = self.moves[self.gridToString()]
-            print "Number of moves needed to finish game: " + str(moves_needed)
-            print "Number of iterations: ", self.iterations
-            return self.iterations, moves_needed
+            # print "Number of moves needed to finish game: " + str(moves_needed)
+            # print "Number of iterations: ", self.iterations
+            return self.iterations, moves_needed, self.solvable, self.horizontals, self.verticals, types_ratio, self.counter1, self.counter2, self.counter3, self.counter4, self.counter5
         else:
-            print "\n"
-            print "No solution possible"
-            return None
+            print "\n No solution possible"
+            return self.iterations, "-", self.solvable, self.horizontals, self.verticals, types_ratio, self.counter1, self.counter2, self.counter3, self.counter4, self.counter5
         # print "Seconds needed to run program: ", time_duration
 
 
@@ -810,7 +806,7 @@ def loadDataset(directory, filename, cars):
 if (len(sys.argv) != 2):
     print('Error, USAGE: program.py foldername')
 
-# if 2 commandline arguments are given the algorithm is run without creating an output file
+# if 2 commandline arguments are given the algorithm is run with creating an output file
 else:
     try:
         cars = []
@@ -821,37 +817,55 @@ else:
         solved = 0
         iterations = 0
         moves = 0
+        horizontal = 0
+        vertical = 0
+        type1 = 0
+        type2 = 0
+        type3 = 0
+        type4 = 0
+        type5 = 0
 
+        filename = "outputfiles/%s-output.csv" %(directory)
 
-        for filename in os.listdir(directory):
+        with open(filename, 'wb') as csvfile:
+            outputwriter = csv.writer(csvfile, delimiter=',', quotechar='|', quoting=csv.QUOTE_MINIMAL)
 
-            if filename.endswith(".csv"):
-                # print(os.path.join(directory, filename))
-                print "found csv file"
-                total_boards += 1
-                dimension = loadDataset(directory, filename, cars)
-                game = Game(dimension, cars)
-                result = game.deque()
-                if result != None:
-                    solved += 1.0
-                    iterations += result[0]
-                    moves += result[1]
-                #game.writeFile(directory)
-            else:
-                print "did not find csv file"
+            # write the board size as the first line of the csv
+            outputwriter.writerow(["filename", "iterations", "moves", "solved", "H/V", "types", "dimension"])
 
+            for filename in os.listdir(directory):
 
-        percentage_solved = solved/total_boards
-        percentage_solved = float(percentage_solved)
-        mean_its = iterations/solved
-        mean_moves = moves/solved
-        print "Percentage solvable: %2f. Mean number of iterations: %d. Mean number of moves: %d" %(percentage_solved, mean_its, mean_moves)
+                if filename.endswith(".csv"):
+                    total_boards += 1
+                    dimension = loadDataset(directory, filename, cars)
+                    game = Game(dimension, cars)
+                    result = game.deque()
+                    if result[2] == "yes":
+                        solved += 1.0
+                        iterations += result[0]
+                        moves += result[1]
+                        horizontal += result[3]
+                        vertical += result[4]
+                        type1 += result[6]
+                        type2 += result[7]
+                        type3 += result[8]
+                        type4 += result[9]
+                        type5 += result[10]
+                    hor_ver = "%d:%d" %(result[3], result[4])
+                    outputwriter.writerow([filename, result[0], result[1], result[2], hor_ver, result[5], dimension])
+
+                else:
+                    # print "did not find csv file"
+                    break
+
+            percentage_solved = float(solved)/total_boards
+            percentage_solved = percentage_solved
+            mean_its = iterations/float(solved)
+            mean_moves = moves/float(solved)
+            mean_hv_ratio = "%d:%d" %(horizontal,vertical)
+            mean_type_ratio = "%d:%d:%d:%d:%d" %(type1, type2, type3, type4, type5)
+            outputwriter.writerow(["mean", mean_its, mean_moves, percentage_solved, mean_hv_ratio, mean_type_ratio, "dim"])
+            print "Percentage solvable: %2f. Mean number of iterations: %f. Mean number of moves: %f" %(percentage_solved, mean_its, mean_moves)
 
     except ValueError:
         print "no proper input was given, try again"
-
-
-    # for filename in os.listdir(path):
-    #     dimension = loadDataset(filename, cars)
-    #     game = Game(dimension, cars)
-    #     game.deque()
