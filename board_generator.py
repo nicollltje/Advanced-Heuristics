@@ -439,7 +439,7 @@ def generateBoards(boards, foldername, dimension):
                     filled_tiles -= 2
 
 
-                    j -= 2
+                    j = 2
                     car_types = car_types_OG
 
 
@@ -508,7 +508,7 @@ def generateBoards(boards, foldername, dimension):
             # update the filled tiles
             filled_tiles -= 2
 
-            j -= 2
+            j = 2
             car_types = car_types_OG
 
         else:
