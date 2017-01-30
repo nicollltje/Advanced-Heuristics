@@ -217,7 +217,7 @@ def generateBoards(boards, foldername, dimension):
     parameter_file = open("%s/zzparameters%s.txt" %(foldername, foldername), "w")
 
     # set the filling
-    filling = 0.7
+    filling = 0.8
 
     for i in range (boards):
 

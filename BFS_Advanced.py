@@ -1,8 +1,9 @@
-# Rush Hour
-# Names (student id): Nicol Heijtbrink (10580611), Nicole Silverio (10521933) & Sander de Wijs (10582134)
-# Course: Heuristieken
+# Rush Hour Parametrisation
+# Names (student id): Nicol Heijtbrink (10580611), Nicole Silverio (10521933)
+# Course: Advanced Heuristics
 # University of Amsterdam
-# Time: November-December, 2016
+# Time: January 2017
+
 import numpy as np
 import matplotlib
 matplotlib.use("TkAgg")
@@ -18,14 +19,14 @@ import os
 class Car(object):
 
     """
-    A Car represents an object with length 2 or 3 and a certain orientation (horizontal or vertical),
-    which can move around the board.
+    A Car represents a vehicle object with a type, a start coordinate and a certain orientation
+    (horizontal or vertical), which can move around the board.
     """
 
     def __init__(self, x, y, type, orientation, id):
 
         """
-        Initializes a car with a position with coordinates [x, y] on a board with a given length,
+        Initializes a car with a position with coordinates [x, y] on a board with a given type,
         orientation and id.
         :param x, y, length, orientation, id: All parameters are defined in a separate list.
         """
@@ -42,7 +43,7 @@ class Game(object):
     A Game represents a board (grid), on which Car objects can move around on.
     The grid is a 2D array of 0's and has a width and length (given by dimension parameter).
     A 0 indicates that position to be empty, while any non-zero value indicates the
-    presence of a Car object (where the number indicates which Car).
+    presence of a Car object (where the number indicates which the id of the vehicle).
     """
 
     def __init__(self, dimension, cars):
@@ -62,7 +63,7 @@ class Game(object):
         self.horizontals = 0
         self.verticals = 0
 
-        # keep track of amounts of different cartypes
+        # keep track of amounts of different car types
         self.counter1 = 0
         self.counter2 = 0
         self.counter3 = 0
@@ -84,12 +85,10 @@ class Game(object):
         # create set to store board states
         self.state_set = set()
 
-
         # create key of starting grid state
         start = self.gridToString()
 
-        # create dictionary of grid state (key) paired to
-        # corresponding number of performed moves (value)
+        # create dictionary of grid state (key) paired to corresponding number of performed moves (value)
         self.moves = {}
 
         # set start key value
@@ -104,19 +103,19 @@ class Game(object):
         # create a start state to check for the end of the path
         self.start_state = start
 
-        self.solvable = "yes"
-
         # set starting number of iterations to 0
         self.iterations = 0
+
+        self.solvable = "yes"
 
     def addCarToGrid(self, car):
 
         """
         Fill the board with a given Car.
         Checks orientation and starting coordinates of Car,
-        then fills in the rest of the Car according to the given length.
-        :param car: Car object with given x, y, length, orientation and idcar
-        :return: a filled grid.
+        then fills in the rest of the Car according to the given type.
+        :param car: Car object with given x, y, type, orientation and id
+        :return: a grid with the car placed on the grid.
         """
 
         # get coordinates of car
@@ -127,21 +126,23 @@ class Game(object):
         orientation = car.orientation
         type = car.type
 
-
+        # check for type
         if type == 1:
-
+                # update type counter
                 self.counter1 += 1
+                self.grid[x, y] = car.id
+
+                # update orientation counters
                 if orientation == "H":
                     self.horizontals += 1
-                    self.grid[x, y] = car.id
 
                 else:
                     self.verticals += 1
-                    self.grid[x, y] = car.id
 
         elif type == 2:
 
             self.counter2 += 1
+
             if orientation == "H":
 
                 self.horizontals += 1
@@ -686,6 +687,11 @@ class Game(object):
         # calculate time needed to solve board
         # time_duration = time.clock() - start_time
         # hor_ver_ratio = float(self.horizontals) / self.verticals
+        while not self.gridQueue.empty():
+            self.gridQueue.get()
+        while not self.carsQueue.empty():
+            self.carsQueue.get()
+
         types_ratio = "%d:%d:%d:%d:%d" %(self.counter1, self.counter2, self.counter3, self.counter4, self.counter5)
         if self.solvable == "yes":
 
@@ -699,6 +705,7 @@ class Game(object):
         else:
             print "\n No solution possible"
             return self.iterations, "-", self.solvable, self.horizontals, self.verticals, types_ratio, self.counter1, self.counter2, self.counter3, self.counter4, self.counter5
+
         # print "Seconds needed to run program: ", time_duration
 
 
