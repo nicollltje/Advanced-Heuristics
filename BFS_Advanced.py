@@ -236,7 +236,7 @@ class Game(object):
             # check if movement to the right would cause collision between Cars
             if self.grid[car.x + length, car.y] == 0:
                 if car.type == 4 or car.type == 5:
-                    if self.grid[car.x + car.lenght, car.y + 1] == 0:
+                    if self.grid[car.x + length, car.y + 1] == 0:
                         return True
                     else:
                         return False
@@ -657,24 +657,20 @@ class Game(object):
 
         # print starting grid
         print "Starting grid:"
-        print self.grid.T
+        starting_grid = copy.deepcopy(self.grid.T)
+        #print self.grid.T
+        print starting_grid
         print "\n"
 
 
         # check if board has reached the winning state, if not, keep executing body
 
-        print "Before while loop, self.solvable: ", self.solvable
         while self.grid[self.dimension - 1, self.cars[0].y] != 1 and self.solvable == "yes":
 
-            print "After while, before if, self.solvable: ", self.solvable
-            for item in iter(self.gridQueue.get, None):
-            #if self.gridQueue.qsize > 0:
-
-                print "After if, self.solvable: ", self.solvable
+            if self.gridQueue.qsize() > 0:
 
                 # obtain first grid and car from corresponding queues
-                self.grid = item
-                #self.grid = self.gridQueue.get()
+                self.grid = self.gridQueue.get()
                 # print "\n"
                 # print self.grid.T
                 self.cars = self.carsQueue.get()
@@ -682,17 +678,12 @@ class Game(object):
                 # add 1 iteration after each movement
                 self.iterations += 1
 
-                print self.iterations
-
                 # start solving algorithm
                 self.queueAllPossibleMoves()
-
-                print self.gridQueue.qsize()
 
             else:
 
                 self.solvable = "no"
-                print "After else, self.solvable: ", self.solvable
 
 
 
@@ -704,10 +695,14 @@ class Game(object):
         if self.solvable == "yes":
             print "Winning position:"
             print self.grid.T
-            print "Number of moves needed to finish game: " + str(self.moves[self.gridToString()])
+            moves_needed = self.moves[self.gridToString()]
+            print "Number of moves needed to finish game: " + str(moves_needed)
             print "Number of iterations: ", self.iterations
+            return self.iterations, moves_needed
         else:
+            print "\n"
             print "No solution possible"
+            return None
         # print "Seconds needed to run program: ", time_duration
 
 
@@ -822,17 +817,35 @@ else:
 
         directory = str(sys.argv[1])
 
+        total_boards = 0
+        solved = 0
+        iterations = 0
+        moves = 0
+
+
         for filename in os.listdir(directory):
 
             if filename.endswith(".csv"):
                 # print(os.path.join(directory, filename))
                 print "found csv file"
+                total_boards += 1
                 dimension = loadDataset(directory, filename, cars)
                 game = Game(dimension, cars)
-                game.deque()
+                result = game.deque()
+                if result != None:
+                    solved += 1.0
+                    iterations += result[0]
+                    moves += result[1]
                 #game.writeFile(directory)
             else:
                 print "did not find csv file"
+
+
+        percentage_solved = solved/total_boards
+        percentage_solved = float(percentage_solved)
+        mean_its = iterations/solved
+        mean_moves = moves/solved
+        print "Percentage solvable: %2f. Mean number of iterations: %d. Mean number of moves: %d" %(percentage_solved, mean_its, mean_moves)
 
     except ValueError:
         print "no proper input was given, try again"
