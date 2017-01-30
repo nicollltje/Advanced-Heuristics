@@ -98,6 +98,11 @@ class Game(object):
         # self.horizontals = 0
         # self.verticals = 0
 
+        self.solved = 0
+        self.totalboards = 0
+        self.mean_its = 0
+        self.mean_steps = 0
+
         self.solvable = "yes"
 
         # set starting number of iterations to 0
@@ -236,7 +241,7 @@ class Game(object):
             # check if movement to the right would cause collision between Cars
             if self.grid[car.x + length, car.y] == 0:
                 if car.type == 4 or car.type == 5:
-                    if self.grid[car.x + car.lenght, car.y + 1] == 0:
+                    if self.grid[car.x + length, car.y + 1] == 0:
                         return True
                     else:
                         return False
@@ -657,24 +662,20 @@ class Game(object):
 
         # print starting grid
         print "Starting grid:"
-        print self.grid.T
+        starting_grid = copy.deepcopy(self.grid.T)
+        #print self.grid.T
+        print starting_grid
         print "\n"
 
 
         # check if board has reached the winning state, if not, keep executing body
 
-        print "Before while loop, self.solvable: ", self.solvable
         while self.grid[self.dimension - 1, self.cars[0].y] != 1 and self.solvable == "yes":
 
-            print "After while, before if, self.solvable: ", self.solvable
-            for item in iter(self.gridQueue.get, None):
-            #if self.gridQueue.qsize > 0:
-
-                print "After if, self.solvable: ", self.solvable
+            if self.gridQueue.qsize() > 0:
 
                 # obtain first grid and car from corresponding queues
-                self.grid = item
-                #self.grid = self.gridQueue.get()
+                self.grid = self.gridQueue.get()
                 # print "\n"
                 # print self.grid.T
                 self.cars = self.carsQueue.get()
@@ -682,17 +683,12 @@ class Game(object):
                 # add 1 iteration after each movement
                 self.iterations += 1
 
-                print self.iterations
-
                 # start solving algorithm
                 self.queueAllPossibleMoves()
-
-                print self.gridQueue.qsize()
 
             else:
 
                 self.solvable = "no"
-                print "After else, self.solvable: ", self.solvable
 
 
 
@@ -707,6 +703,7 @@ class Game(object):
             print "Number of moves needed to finish game: " + str(self.moves[self.gridToString()])
             print "Number of iterations: ", self.iterations
         else:
+            print "\n"
             print "No solution possible"
         # print "Seconds needed to run program: ", time_duration
 

@@ -251,8 +251,8 @@ def generateBoards(boards, foldername, dimension):
             boardwriter.writerow([dimension])
 
             # define which types will be present on the board
-            car_types = [2, 3]
-            car_types_OG = [2, 3]
+            car_types = [2,3]
+            car_types_OG = [2,3]
 
             # position of the red car (x, y, type, orientation, id)
             y = (dimension / 2) - 1
@@ -288,7 +288,7 @@ def generateBoards(boards, foldername, dimension):
                 j += 1
 
                 # determine which car types are available based on the amount of filled tiles
-                print "tiles left: %d" %(filled_tiles)
+                #print "tiles left: %d" %(filled_tiles)
                 if filled_tiles == 5:
                     if 5 in car_types:
                         car_types.remove(5)
@@ -416,8 +416,8 @@ def generateBoards(boards, foldername, dimension):
                     boardwriter.writerow([dimension])
 
                     # define which types will be present on the board
-                    car_types = [2, 3]
-                    car_types_OG = [2, 3]
+                    car_types = [2,3]
+                    car_types_OG = [2,3]
 
                     # position of the red car (x, y, type, orientation, id)
                     y = (dimension / 2) - 1
@@ -465,7 +465,6 @@ def generateBoards(boards, foldername, dimension):
             for ycoor in range(dimension):
                 hash += str(board[xcoor,ycoor])
 
-        print hash
 
         # add hash to set
         a = len(boardArchive)
@@ -487,8 +486,8 @@ def generateBoards(boards, foldername, dimension):
             boardwriter.writerow([dimension])
 
             # define which types will be present on the board
-            car_types = [2, 3]
-            car_types_OG = [2, 3]
+            car_types = [2,3]
+            car_types_OG = [2,3]
 
             # position of the red car (x, y, type, orientation, id)
             y = (dimension / 2) - 1
