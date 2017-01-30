@@ -1,0 +1,21 @@
+Output:
+
+per board:
+
+- board dimension
+- amount of cars type 1 (parameter file in folder)
+- amount of cars type 2
+- amount of cars type 3
+- amount of cars type 4
+- amount of cars type 5
+- ratio of present cars (must calculate in board generator)
+- solvable yes/no
+- amount of moves
+- amount of iterations
+- amount of cars with horizontal orientation
+- amount of cars with vertical orientation
+- ratio of orientation
+
+total:
+
+- ratio solvable vs unsolvable
