@@ -32,8 +32,8 @@ class Car(object):
 
         self.x = x
         self.y = y
-        self.orientation = orientation
         self.type = type
+        self.orientation = orientation
         self.id = id
 
 class Game(object):
@@ -94,8 +94,11 @@ class Game(object):
         self.start_state = start
 
         # keep track of the amount of horizontal and vertical vehicles
-        self.horizontals = 0
-        self.verticals = 0
+
+        # self.horizontals = 0
+        # self.verticals = 0
+
+        self.solvable = "yes"
 
         # set starting number of iterations to 0
         self.iterations = 0
@@ -118,88 +121,91 @@ class Game(object):
         orientation = car.orientation
         type = car.type
 
+
         if type == 1:
 
                 if orientation == "H":
-                    self.horizontals += 1
-                    self.board[x, y] = car.id
+                    #self.horizontals += 1
+                    self.grid[x, y] = car.id
 
                 else:
-                    self.verticals += 1
-                    self.board[x, y] = car.id
+                    #self.verticals += 1
+                    self.grid[x, y] = car.id
 
         elif type == 2:
 
             if orientation == "H":
 
-                self.horizontals += 1
+                #self.horizontals += 1
 
-                self.board[x, y] = car.id
-                self.board[x + 1, y] = car.id
+                self.grid[x, y] = car.id
+                self.grid[x + 1, y] = car.id
 
             elif orientation == "V":
 
-                self.verticals += 1
+                #self.verticals += 1
 
-                self.board[x, y] = car.id
-                self.board[x, y + 1] = car.id
+                self.grid[x, y] = car.id
+                self.grid[x, y + 1] = car.id
 
         elif type == 3:
 
             if orientation == "H":
-                self.horizontals += 2
 
-                self.board[x, y] = car.id
-                self.board[x + 1, y] = car.id
-                self.board[x + 2, y] = car.id
+                #self.horizontals += 1
+
+                self.grid[x, y] = car.id
+                self.grid[x + 1, y] = car.id
+                self.grid[x + 2, y] = car.id
 
             elif orientation == "V":
-                self.verticals += 1
+                #self.verticals += 1
 
-                self.board[x, y] = car.id
-                self.board[x, y + 1] = car.id
-                self.board[x, y + 2] = car.id
+                self.grid[x, y] = car.id
+                self.grid[x, y + 1] = car.id
+                self.grid[x, y + 2] = car.id
 
         elif type == 4:
 
             if orientation == "H":
 
-                self.horizontals += 1
+                #self.horizontals += 1
 
-                self.board[x, y] = car.id
-                self.board[x + 1, y] = car.id
-                self.board[x, y + 1] = car.id
-                self.board[x + 1, y + 1] = car.id
+                self.grid[x, y] = car.id
+                self.grid[x + 1, y] = car.id
+                self.grid[x, y + 1] = car.id
+                self.grid[x + 1, y + 1] = car.id
 
             else:
-                self.verticals += 1
+                #self.verticals += 1
 
-                self.board[x, y] = car.id
-                self.board[x + 1, y] = car.id
-                self.board[x, y + 1] = car.id
-                self.board[x + 1, y + 1] = car.id
+                self.grid[x, y] = car.id
+                self.grid[x + 1, y] = car.id
+                self.grid[x, y + 1] = car.id
+                self.grid[x + 1, y + 1] = car.id
 
         elif type == 5:
 
             if orientation == "H":
-                self.horizontals += 1
 
-                self.board[x, y] = car.id
-                self.board[x, y + 1] = car.id
-                self.board[x + 1, y] = car.id
-                self.board[x + 1, y + 1] = car.id
-                self.board[x + 2, y] = car.id
-                self.board[x + 2, y + 1] = car.id
+                #self.horizontals += 1
+
+                self.grid[x, y] = car.id
+                self.grid[x, y + 1] = car.id
+                self.grid[x + 1, y] = car.id
+                self.grid[x + 1, y + 1] = car.id
+                self.grid[x + 2, y] = car.id
+                self.grid[x + 2, y + 1] = car.id
 
             elif orientation == "V":
-                self.verticals += 1
+                #self.verticals += 1
 
-                self.board[x, y] = car.id
-                self.board[x + 1, y] = car.id
-                self.board[x, y + 1] = car.id
-                self.board[x + 1, y + 1] = car.id
-                self.board[x, y + 2] = car.id
-                self.board[x + 1, y + 2] = car.id
+                self.grid[x, y] = car.id
+                self.grid[x + 1, y] = car.id
+                self.grid[x, y + 1] = car.id
+                self.grid[x + 1, y + 1] = car.id
+                self.grid[x, y + 2] = car.id
+                self.grid[x + 1, y + 2] = car.id
 
     def canMoveRight(self, car):
 
@@ -213,11 +219,22 @@ class Game(object):
         if car.orientation == "V":
             return False
 
+        length = 0
+
+        if car.type == 1:
+            length = 1
+        elif car.type == 2 or car.type == 4:
+            length = 2
+        else:
+            length = 3
+
+        #print length
+
         # check if movement to the right would place Car outside of the grid
-        if car.x < (self.dimension - car.length):
+        if car.x < (self.dimension - length):
 
             # check if movement to the right would cause collision between Cars
-            if self.grid[car.x + car.length, car.y] == 0:
+            if self.grid[car.x + length, car.y] == 0:
                 if car.type == 4 or car.type == 5:
                     if self.grid[car.x + car.lenght, car.y + 1] == 0:
                         return True
@@ -239,6 +256,15 @@ class Game(object):
         # if orientation is not horizontal, moving to the left is not possible
         if car.orientation == "V":
             return False
+
+        length = 0
+
+        if car.type == 1:
+            length = 1
+        elif car.type == 2 or car.type == 4:
+            length = 2
+        else:
+            length = 3
 
         # check if movement to the left would place Car outside of the grid
         if car.x > 0:
@@ -265,6 +291,15 @@ class Game(object):
         if car.orientation == "H":
             return False
 
+        length = 0
+
+        if car.type == 1:
+            length = 1
+        elif car.type == 2 or car.type == 4:
+            length = 2
+        else:
+            length = 3
+
         # check if upward movement would place Car outside of the grid
         if car.y > 0:
 
@@ -290,13 +325,22 @@ class Game(object):
         if car.orientation == "H":
             return False
 
+        length = 0
+
+        if car.type == 1:
+            length = 1
+        elif car.type == 2 or car.type == 4:
+            length = 2
+        else:
+            length = 3
+
         # check if downward movement would place Car outside of the grid
-        if car.y < (self.dimension - car.length):
+        if car.y < (self.dimension - length):
 
             # check if downward movement would cause collision between Cars
-            if self.grid[car.x, car.y + car.length] == 0:
+            if self.grid[car.x, car.y + length] == 0:
                 if car.type == 4 or car.type == 5:
-                    if self.grid[car.x + 1, car.y + car.lenght] == 0:
+                    if self.grid[car.x + 1, car.y + length] == 0:
                         return True
                     else:
                         return False
@@ -315,14 +359,23 @@ class Game(object):
         # obtain given car out of Car list
         car = self.cars[carId.id - 1]
 
+        length = 0
+
+        if car.type == 1:
+            length = 1
+        elif car.type == 2 or car.type == 4:
+            length = 2
+        else:
+            length = 3
+
         # replace right side next to the Car with integer idcar
-        self.grid[car.x + car.length, car.y] = car.id
+        self.grid[car.x + length, car.y] = car.id
 
         # replace the left side of the Car with a 0 (empty)
         self.grid[car.x, car.y] = 0
 
         if car.type == 4 or car.type == 5:
-            self.grid[car.x + car.lenght, car.y + 1] = car.id
+            self.grid[car.x + length, car.y + 1] = car.id
             self.grid[car.x, car.y + 1] = 0
 
         # update x coordinate
@@ -343,15 +396,24 @@ class Game(object):
         # obtain given Car out of list of Cars
         car = self.cars[carId.id - 1]
 
+        length = 0
+
+        if car.type == 1:
+            length = 1
+        elif car.type == 2 or car.type == 4:
+            length = 2
+        else:
+            length = 3
+
         # replace left side next to the Car with integer idcar
         self.grid[car.x - 1, car.y] = car.id
 
         # replace the right side of the Car with a 0 (empty)
-        self.grid[car.x + (car.length - 1), car.y] = 0
+        self.grid[car.x + (length - 1), car.y] = 0
 
         if car.type == 4 or car.type == 5:
             self.grid[car.x - 1, car.y + 1] = car.id
-            self.grid[car.x + (car.lenght - 1), car.y + 1] = 0
+            self.grid[car.x + (length - 1), car.y + 1] = 0
 
         # update x coordinate
         car.x = car.x - 1
@@ -371,14 +433,23 @@ class Game(object):
         # obtain given Car out of list of Cars
         car = self.cars[carId.id - 1]
 
+        length = 0
+
+        if car.type == 1:
+            length = 1
+        elif car.type == 2 or car.type == 4:
+            length = 2
+        else:
+            length = 3
+
         # replace one place underneath the Car with integer idcar
-        self.grid[car.x, car.y + car.length] = car.id
+        self.grid[car.x, car.y + length] = car.id
 
         # replace the top of the Car with a 0 (empty)
         self.grid[car.x, car.y] = 0
 
         if car.type == 4 or car.type == 5:
-            self.grid[car.x + 1, car.y + car.length] = car.id
+            self.grid[car.x + 1, car.y + length] = car.id
             self.grid[car.x + 1, car.y] = 0
 
         # update y coordinate
@@ -399,15 +470,24 @@ class Game(object):
         # obtain given Car out of list of Cars
         car = self.cars[carId.id - 1]
 
+        length = 0
+
+        if car.type == 1:
+            length = 1
+        elif car.type == 2 or car.type == 4:
+            length = 2
+        else:
+            length = 3
+
         # replace one place above the Car with integer idcar
         self.grid[car.x, car.y - 1] = car.id
 
         # replace the bottom of the Car with a 0 (empty)
-        self.grid[car.x, car.y + (car.length - 1)] = 0
+        self.grid[car.x, car.y + (length - 1)] = 0
 
         if car.type == 4 or car.type == 5:
             self.grid[car.x + 1, car.y - 1] = car.id
-            self.grid[car.x + 1, car.y + (car.lenght - 1)] = 0
+            self.grid[car.x + 1, car.y + (length - 1)] = 0
 
         # update y coordinate
         car.y = car.y - 1
@@ -550,17 +630,19 @@ class Game(object):
                     self.addToPath(parent_string)
                 self.moveRight(car)
 
-    def writeFile(self, directory):
-
-        filename = "%s-output.csv" %(directory)
-        with open(filename, 'wb') as csvfile:
-            outputwriter = csv.writer(csvfile, delimiter=',', quotechar='|', quoting=csv.QUOTE_MINIMAL)
-
-            # write the board size as the first line of the csv
-            outputwriter.writerow(["iterations", "moves", "solved", "H/V", dimension])
-            # solved yes or no
-            stats = iterations, self.moves[self.gridToString()], "yes", (self.horizontals / self.vercals)
-            outputwriter.writerow([stats])
+    # def writeFile(self, directory):
+    #
+    #     filename = "%s-output.csv" %(directory)
+    #
+    #     with open(filename, 'wb') as csvfile:
+    #         outputwriter = csv.writer(csvfile, delimiter=',', quotechar='|', quoting=csv.QUOTE_MINIMAL)
+    #
+    #         # write the board size as the first line of the csv
+    #         outputwriter.writeheader(["iterations", "moves", "solved", "H/V", dimension])
+    #         # solved yes or no
+    #         stats = self.iterations, self.moves[self.gridToString()], "yes"
+    #         #stats = self.iterations, self.moves[self.gridToString()], "yes", (self.horizontals / self.verticals)
+    #         outputwriter.writerow([stats])
 
     def deque(self):
 
@@ -580,96 +662,124 @@ class Game(object):
 
 
         # check if board has reached the winning state, if not, keep executing body
-        while self.grid[self.dimension - 1, self.cars[0].y] != 1:
 
-            # obtain first grid and car from corresponding queues
-            self.grid = self.gridQueue.get()
-            self.cars = self.carsQueue.get()
+        print "Before while loop, self.solvable: ", self.solvable
+        while self.grid[self.dimension - 1, self.cars[0].y] != 1 and self.solvable == "yes":
 
-            # add 1 iteration after each movement
-            self.iterations += 1
+            print "After while, before if, self.solvable: ", self.solvable
+            for item in iter(self.gridQueue.get, None):
+            #if self.gridQueue.qsize > 0:
 
-            # start solving algorithm
-            self.queueAllPossibleMoves()
+                print "After if, self.solvable: ", self.solvable
+
+                # obtain first grid and car from corresponding queues
+                self.grid = item
+                #self.grid = self.gridQueue.get()
+                # print "\n"
+                # print self.grid.T
+                self.cars = self.carsQueue.get()
+
+                # add 1 iteration after each movement
+                self.iterations += 1
+
+                print self.iterations
+
+                # start solving algorithm
+                self.queueAllPossibleMoves()
+
+                print self.gridQueue.qsize()
+
+            else:
+
+                self.solvable = "no"
+                print "After else, self.solvable: ", self.solvable
+
+
+
+
+
 
         # calculate time needed to solve board
         time_duration = time.clock() - start_time
-        # print "Winning position:"
-        # print self.grid.T
-        # print "Number of moves needed to finish game: " + str(self.moves[self.gridToString()])
-        # print "Number of iterations: ", iterations
+        if self.solvable == "yes":
+            print "Winning position:"
+            print self.grid.T
+            print "Number of moves needed to finish game: " + str(self.moves[self.gridToString()])
+            print "Number of iterations: ", self.iterations
+        else:
+            print "No solution possible"
         # print "Seconds needed to run program: ", time_duration
 
 
         # save the board states for the fastest path from start to finish
         #self.makeBestPath()
 
-    def makeBestPath(self):
-
-        """
-        Makes a list of every board state in strings of the fastest path from the final state to the start state.
-        Then each board state, from start to finish, will be converted from a string into a 2d array and saved in a
-        list, to be able to visualize the path.
-        """
-
-        # make a string of the winning board
-        path_state = self.gridToString()
-
-        # initialise an empty list to fill with all the board states of the fastest path in strings
-        fastest_path = []
-
-        # add the winning state to the list
-        fastest_path.append(path_state)
-
-        # while path_state is not the start state
-        while path_state != self.start_state:
-
-            # the previous board state is the value of the current board state key in self.path
-            path_previous = self.path.get(path_state)
-
-            # add this state to the list
-            fastest_path.append(path_previous)
-
-            # set the current board state to the previous board state
-            path_state = path_previous
-
-        # add the start state to the list
-        fastest_path.append(self.start_state)
-
-        # for all board states of the fastest path, but from start to finish
-        for board_string in reversed(fastest_path):
-
-            # initialise an empty list to fill with the rows of the board
-            board_path = []
-
-            # initialise y to zero
-            y = 0
-
-            # split the board state by commas
-            board_split = board_string.split(",")
-
-            # create as many rows as the dimension
-            for i in range(1, self.dimension + 1):
-
-                x = self.dimension * i
-
-                # a row of the board is the split string, index y to x
-                board_row = board_split[y:x]
-
-                # append this row to the list
-                board_path.append(board_row)
-
-                # set y to x
-                y = x
-
-            # make a 2d array of all the rows
-            board_path = np.vstack(board_path)
-
-            # make the 2d array into an numpy array with integers
-            board_path = np.array(board_path, dtype=int)
-
-            # add this board to the list of all the boards in the path
-            self.all_boards_path.append(board_path)
+    # def makeBestPath(self):
+    #
+    #     """
+    #     Makes a list of every board state in strings of the fastest path from the final state to the start state.
+    #     Then each board state, from start to finish, will be converted from a string into a 2d array and saved in a
+    #     list, to be able to visualize the path.
+    #     """
+    #
+    #     # make a string of the winning board
+    #     path_state = self.gridToString()
+    #
+    #     # initialise an empty list to fill with all the board states of the fastest path in strings
+    #     fastest_path = []
+    #
+    #     # add the winning state to the list
+    #     fastest_path.append(path_state)
+    #
+    #     # while path_state is not the start state
+    #     while path_state != self.start_state:
+    #
+    #         # the previous board state is the value of the current board state key in self.path
+    #         path_previous = self.path.get(path_state)
+    #
+    #         # add this state to the list
+    #         fastest_path.append(path_previous)
+    #
+    #         # set the current board state to the previous board state
+    #         path_state = path_previous
+    #
+    #     # add the start state to the list
+    #     fastest_path.append(self.start_state)
+    #
+    #     # for all board states of the fastest path, but from start to finish
+    #     for board_string in reversed(fastest_path):
+    #
+    #         # initialise an empty list to fill with the rows of the board
+    #         board_path = []
+    #
+    #         # initialise y to zero
+    #         y = 0
+    #
+    #         # split the board state by commas
+    #         board_split = board_string.split(",")
+    #
+    #         # create as many rows as the dimension
+    #         for i in range(1, self.dimension + 1):
+    #
+    #             x = self.dimension * i
+    #
+    #             # a row of the board is the split string, index y to x
+    #             board_row = board_split[y:x]
+    #
+    #             # append this row to the list
+    #             board_path.append(board_row)
+    #
+    #             # set y to x
+    #             y = x
+    #
+    #         # make a 2d array of all the rows
+    #         board_path = np.vstack(board_path)
+    #
+    #         # make the 2d array into an numpy array with integers
+    #         board_path = np.array(board_path, dtype=int)
+    #
+    #         # add this board to the list of all the boards in the path
+    #         self.all_boards_path.append(board_path)
 
 def loadDataset(directory, filename, cars):
     """
@@ -684,6 +794,8 @@ def loadDataset(directory, filename, cars):
     with open(path, 'rb') as csvfile:
 
         print "opened", path
+
+        del cars[:]
         lines = csv.reader(csvfile)
         dataset = list(lines)
 
@@ -692,12 +804,11 @@ def loadDataset(directory, filename, cars):
 
         # the rest of the lines contains the parameters needed to create car objects
         for carLine in dataset[1:]:
-            if len(carLine) > 3:
-                
-                car = Car(int(carLine[0]), int(carLine[1]), int(carLine[2]), carLine[3], int(carLine[4]))
 
-                # appends all cars to a list of cars
-                cars.append(car)
+            car = Car(int(carLine[0]), int(carLine[1]), int(carLine[2]), carLine[3], int(carLine[4]))
+
+            # appends all cars to a list of cars
+            cars.append(car)
         return int(dimension)
 
 # if the usage is incorrect the user is informed with a print statement
@@ -718,8 +829,8 @@ else:
                 print "found csv file"
                 dimension = loadDataset(directory, filename, cars)
                 game = Game(dimension, cars)
-                # game.deque()
-                game.writeFile(directory)
+                game.deque()
+                #game.writeFile(directory)
             else:
                 print "did not find csv file"
 
