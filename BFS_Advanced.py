@@ -98,11 +98,6 @@ class Game(object):
         # self.horizontals = 0
         # self.verticals = 0
 
-        self.solved = 0
-        self.totalboards = 0
-        self.mean_its = 0
-        self.mean_steps = 0
-
         self.solvable = "yes"
 
         # set starting number of iterations to 0
@@ -700,11 +695,14 @@ class Game(object):
         if self.solvable == "yes":
             print "Winning position:"
             print self.grid.T
-            print "Number of moves needed to finish game: " + str(self.moves[self.gridToString()])
+            moves_needed = self.moves[self.gridToString()]
+            print "Number of moves needed to finish game: " + str(moves_needed)
             print "Number of iterations: ", self.iterations
+            return self.iterations, moves_needed
         else:
             print "\n"
             print "No solution possible"
+            return None
         # print "Seconds needed to run program: ", time_duration
 
 
@@ -819,17 +817,35 @@ else:
 
         directory = str(sys.argv[1])
 
+        total_boards = 0
+        solved = 0
+        iterations = 0
+        moves = 0
+
+
         for filename in os.listdir(directory):
 
             if filename.endswith(".csv"):
                 # print(os.path.join(directory, filename))
                 print "found csv file"
+                total_boards += 1
                 dimension = loadDataset(directory, filename, cars)
                 game = Game(dimension, cars)
-                game.deque()
+                result = game.deque()
+                if result != None:
+                    solved += 1.0
+                    iterations += result[0]
+                    moves += result[1]
                 #game.writeFile(directory)
             else:
                 print "did not find csv file"
+
+
+        percentage_solved = solved/total_boards
+        percentage_solved = float(percentage_solved)
+        mean_its = iterations/solved
+        mean_moves = moves/solved
+        print "Percentage solvable: %2f. Mean number of iterations: %d. Mean number of moves: %d" %(percentage_solved, mean_its, mean_moves)
 
     except ValueError:
         print "no proper input was given, try again"
