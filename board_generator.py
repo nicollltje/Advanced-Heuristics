@@ -399,6 +399,9 @@ def generateBoards(boards, foldername, dimension):
                     print filename
                     # print "test"
 
+                    csvfile.seek(0)
+                    csvfile.truncate
+
                     filled_tiles = int((dimension * dimension) * filling)
                     # set counters to keep track of how many vehicles per type are generated
                     counter1 = 0
@@ -473,6 +476,9 @@ def generateBoards(boards, foldername, dimension):
 
         if a == b:
             print "************* duplicate board; resetting ****************"
+
+            csvfile.seek(0)
+            csvfile.truncate
 
             filled_tiles = int((dimension * dimension) * filling)
             # set counters to keep track of how many vehicles per type are generated
