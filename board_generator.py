@@ -217,7 +217,7 @@ def generateBoards(boards, foldername, dimension):
     parameter_file = open("%s/zzparameters%s.txt" %(foldername, foldername), "w")
 
     # set the filling
-    filling = 0.8
+    filling = 0.9
 
     for i in range (boards):
 
@@ -236,14 +236,12 @@ def generateBoards(boards, foldername, dimension):
         counter5 = 0
         counter6 = 0
 
+        car_types_OG = [2, 3]
+
         # create an empty board
         board = np.zeros(shape=(dimension, dimension), dtype=object)
 
         with open(filename, 'wb') as csvfile:
-
-            # print "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
-            # print "MAKING NEW BOARD - MAKING NEW BOARD - MAKING NEW BOARD - MAKING NEW BOARD - MAKING NEW BOARD"
-            # print "vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv"
 
             boardwriter = csv.writer(csvfile, delimiter=',', quotechar='|', quoting=csv.QUOTE_MINIMAL)
 
@@ -251,8 +249,7 @@ def generateBoards(boards, foldername, dimension):
             boardwriter.writerow([dimension])
 
             # define which types will be present on the board
-            car_types = [2, 3]
-            car_types_OG = [2, 3]
+            car_types = [2,3]
 
             # position of the red car (x, y, type, orientation, id)
             y = (dimension / 2) - 1
@@ -263,7 +260,6 @@ def generateBoards(boards, foldername, dimension):
             board[x + 1, y] = 'CH'
 
             resetPositionList(board, dimension)
-            # print "position list length: %d" %(len(position_list)), position_list
 
             # write the red car to the output csv file
             boardwriter.writerow([1, y, 2, "H", 1])
@@ -273,8 +269,6 @@ def generateBoards(boards, foldername, dimension):
 
             j = 2
             while filled_tiles > 0:
-
-                # print " ############### NEW CAR ######### NEW CAR ############## "
 
                 # picks a random orientation
                 orientation = random.randrange (1, 3, 1)
@@ -290,21 +284,20 @@ def generateBoards(boards, foldername, dimension):
                 j += 1
 
                 # determine which car types are available based on the amount of filled tiles
-                #print "tiles left: %d" %(filled_tiles)
                 if filled_tiles == 5:
                     if 5 in car_types:
                         car_types.remove(5)
                     if 1 not in car_types:
                         if 4 in car_types:
                             car_types.remove(4)
-                    # print "car types left: ", car_types
+
                 elif filled_tiles == 4:
                     if 5 in car_types:
                         car_types.remove(5)
                     if 1 not in car_types:
                         if 3 in car_types:
                             car_types.remove(3)
-                    # print "car types left: ", car_types
+
                 elif filled_tiles == 3:
                     if 5 in car_types:
                         car_types.remove(5)
@@ -313,7 +306,7 @@ def generateBoards(boards, foldername, dimension):
                     if 1 not in car_types:
                         if 2 in car_types:
                             car_types.remove(2)
-                    # print "car types left: ", car_types
+
                 elif filled_tiles == 2:
                     if 5 in car_types:
                         car_types.remove(5)
@@ -321,9 +314,6 @@ def generateBoards(boards, foldername, dimension):
                         car_types.remove(4)
                     if 3 in car_types:
                         car_types.remove(3)
-                    # print "car types left: ", car_types
-
-                # print "car types left: ", car_types
 
                 # pick a vehicle type from the available vehicle types
                 type = random.choice(car_types)
@@ -343,19 +333,17 @@ def generateBoards(boards, foldername, dimension):
                     vehicle = car.x, car.y, car.type, car.orientation, car.id
                     boardwriter.writerow(vehicle)
                 else:
-                    # print "changing orientation"
+
                     if car.orientation == "H":
                         car.orientation ="V"
                     else:
                         car.orientation ="H"
-                    # print "trying to place car with different orienation"
+
                     result = validateCar(car, dimension, board, x_pos, y_pos)
 
                     resetPositionList(board, dimension)
 
                     old_cars = []
-
-                    # print "...............", car_types
 
                     if result != False:
                         board = result[0]
@@ -363,12 +351,11 @@ def generateBoards(boards, foldername, dimension):
                         vehicle = car.x, car.y, car.type, car.orientation, car.id
                         boardwriter.writerow(vehicle)
                     else:
-                        # print "changing car type"
+
                         while len(car_types) > 1:
                             old_type = car.type
                             old_cars.append(old_type)
                             car_types.remove(old_type)
-                            # print "TEMPORARY car types", car_types
                             car.type = random.choice(car_types)
                             result = validateCar(car, dimension, board, x_pos, y_pos)
                             if result != False:
@@ -378,15 +365,7 @@ def generateBoards(boards, foldername, dimension):
                                 boardwriter.writerow(vehicle)
 
                             else:
-                                # print "could not place vehicle"
-                                # clear csv
-                                # clear board
-
                                 type = "STOP"
-
-                                # delete the whole board and start over with the same board number.
-                                # break
-                        # print "could not change car type"
                         type = "STOP"
 
                     for item in old_cars:
@@ -395,6 +374,19 @@ def generateBoards(boards, foldername, dimension):
                 if type == 1:
                     counter1 += 1
                     filled_tiles -= 1
+                elif type == 2:
+                    counter2 += 1
+                    filled_tiles -= 2
+                elif type == 3:
+                    counter3 += 1
+                    filled_tiles -= 3
+                elif type == 4:
+                    counter4 += 1
+                    filled_tiles -= 4
+                elif type == 5:
+                    counter5 += 1
+                    filled_tiles -= 6
+                # reset board because no other vehicle could be placed
                 elif type == "STOP":
 
                     print "%%%%%%%%%%%%%% resetting board %%%%%%%%%%%%%%%%%"
@@ -413,16 +405,13 @@ def generateBoards(boards, foldername, dimension):
                     counter5 = 0
                     counter6 = 0
 
-                    csvfile.seek(0)
-                    csvfile.truncate()
-
                     # write the board size as the first line of the csv
 
                     boardwriter.writerow([dimension])
 
                     # define which types will be present on the board
-                    car_types = [2, 3]
-                    car_types_OG = [2, 3]
+                    # car_types = [2,3]
+                    # car_types_OG = [2,3]
 
                     # position of the red car (x, y, type, orientation, id)
                     y = (dimension / 2) - 1
@@ -446,84 +435,75 @@ def generateBoards(boards, foldername, dimension):
 
                     j = 2
                     car_types = car_types_OG
-
-
-                elif type == 2:
-                    counter2 += 1
-                    filled_tiles -= 2
-                elif type == 3:
-                    counter3 += 1
-                    filled_tiles -= 3
-                elif type == 4:
-                    counter4 += 1
-                    filled_tiles -= 4
-                elif type == 5:
-                    counter5 += 1
-                    filled_tiles -= 6
                 else:
                     counter6 += 1
                     filled_tiles -= 4
 
-        hash = ""
+            hash = ""
 
-        for xcoor in range(dimension):
-            for ycoor in range(dimension):
-                hash += str(board[xcoor,ycoor])
+            # create board hash to be able to check for duplicates
+            for xcoor in range(dimension):
+                for ycoor in range(dimension):
+                    hash += str(board[xcoor,ycoor])
 
 
-        # add hash to set
-        a = len(boardArchive)
-        boardArchive.add(hash)
-        b = len(boardArchive)
+            # add hash to set
+            a = len(boardArchive)
+            boardArchive.add(hash)
+            b = len(boardArchive)
 
-        if a == b:
-            print "************* duplicate board; resetting ****************"
+            # reset when duplicate board
+            if a == b:
+                print "************* duplicate board; resetting ****************"
+                print filename
 
-            csvfile.seek(0)
-            csvfile.truncate
+                csvfile.seek(0)
+                csvfile.truncate
 
-            filled_tiles = int((dimension * dimension) * filling)
-            # set counters to keep track of how many vehicles per type are generated
-            counter1 = 0
-            counter2 = 0
-            counter3 = 0
-            counter4 = 0
-            counter5 = 0
-            counter6 = 0
-            # write the board size as the first line of the csv
-            boardwriter.writerow([dimension])
+                filled_tiles = int((dimension * dimension) * filling)
+                # set counters to keep track of how many vehicles per type are generated
+                counter1 = 0
+                counter2 = 0
+                counter3 = 0
+                counter4 = 0
+                counter5 = 0
+                counter6 = 0
 
-            # define which types will be present on the board
-            car_types = [2,3]
-            car_types_OG = [2,3]
+                # write the board size as the first line of the csv
 
-            # position of the red car (x, y, type, orientation, id)
-            y = (dimension / 2) - 1
-            x = 1
+                boardwriter.writerow([dimension])
 
-            board = np.zeros(shape=(dimension, dimension), dtype=object)
+                # define which types will be present on the board
+                # car_types = [2,3]
+                # car_types_OG = [2,3]
 
-            # place red car on the board
-            board[x, y] = 'CH'
-            board[x + 1, y] = 'CH'
+                # position of the red car (x, y, type, orientation, id)
+                y = (dimension / 2) - 1
+                x = 1
 
-            resetPositionList(board, dimension)
-            # print "position list length: %d" % (len(position_list)), position_list
+                board = np.zeros(shape=(dimension, dimension), dtype=object)
 
-            # write the red car to the output csv file
-            boardwriter.writerow([1, y, 2, "H", 1])
+                # place red car on the board
+                board[x, y] = 'CH'
+                board[x + 1, y] = 'CH'
 
-            # update the filled tiles
-            filled_tiles -= 2
+                resetPositionList(board, dimension)
+                # print "position list length: %d" % (len(position_list)), position_list
 
-            j = 2
-            car_types = car_types_OG
+                # write the red car to the output csv file
+                boardwriter.writerow([1, y, 2, "H", 1])
 
-        else:
-            # write all parameters of the board into a parameter file
-            counters = "type1 = %d, type2 = %d, type3 = %d, type4 = %d, type5 = %d" %(counter1, counter2, counter3, counter4, counter5)
-            params = "board: %d, dimension: %d, filling: %f \n %s \n \n" %(i, dimension, filling, counters)
-            parameter_file.write(params)
+                # update the filled tiles
+                filled_tiles -= 2
+
+                j = 2
+                car_types = car_types_OG
+
+        #else:
+        # write all parameters of the board into a parameter file
+        counters = "type1 = %d, type2 = %d, type3 = %d, type4 = %d, type5 = %d" %(counter1, counter2, counter3, counter4, counter5)
+        params = "board: %d, dimension: %d, filling: %f \n %s \n \n" %(i, dimension, filling, counters)
+        parameter_file.write(params)
 
 
 if (len(sys.argv) != 4):
