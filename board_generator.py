@@ -274,6 +274,8 @@ def generateBoards(boards, foldername, dimension):
                 orientation = random.randrange (1, 3, 1)
                 if orientation == 1:
                     orientation = "H"
+                    # make sure that no horizontal vehicle will be placed between the entrance and the red car
+                    position_list.remove("32", "42", "52")
                 else:
                     orientation = "V"
 
