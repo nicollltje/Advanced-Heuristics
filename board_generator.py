@@ -217,7 +217,7 @@ def generateBoards(boards, foldername, dimension):
     parameter_file = open("%s/zzparameters%s.txt" %(foldername, foldername), "w")
 
     # set the filling
-    filling = 0.8
+    filling = 0.4
 
     for i in range (boards):
 
@@ -236,6 +236,8 @@ def generateBoards(boards, foldername, dimension):
         counter5 = 0
         counter6 = 0
 
+        car_types_OG = [2, 3]
+
         # create an empty board
         board = np.zeros(shape=(dimension, dimension), dtype=object)
 
@@ -252,7 +254,6 @@ def generateBoards(boards, foldername, dimension):
 
             # define which types will be present on the board
             car_types = [2,3]
-            car_types_OG = [2,3]
 
             # position of the red car (x, y, type, orientation, id)
             y = (dimension / 2) - 1
@@ -393,6 +394,18 @@ def generateBoards(boards, foldername, dimension):
                 if type == 1:
                     counter1 += 1
                     filled_tiles -= 1
+                elif type == 2:
+                    counter2 += 1
+                    filled_tiles -= 2
+                elif type == 3:
+                    counter3 += 1
+                    filled_tiles -= 3
+                elif type == 4:
+                    counter4 += 1
+                    filled_tiles -= 4
+                elif type == 5:
+                    counter5 += 1
+                    filled_tiles -= 6
                 elif type == "STOP":
 
                     print "%%%%%%%%%%%%%% resetting board %%%%%%%%%%%%%%%%%"
@@ -416,8 +429,8 @@ def generateBoards(boards, foldername, dimension):
                     boardwriter.writerow([dimension])
 
                     # define which types will be present on the board
-                    car_types = [2,3]
-                    car_types_OG = [2,3]
+                    # car_types = [2,3]
+                    # car_types_OG = [2,3]
 
                     # position of the red car (x, y, type, orientation, id)
                     y = (dimension / 2) - 1
@@ -441,20 +454,6 @@ def generateBoards(boards, foldername, dimension):
 
                     j = 2
                     car_types = car_types_OG
-
-
-                elif type == 2:
-                    counter2 += 1
-                    filled_tiles -= 2
-                elif type == 3:
-                    counter3 += 1
-                    filled_tiles -= 3
-                elif type == 4:
-                    counter4 += 1
-                    filled_tiles -= 4
-                elif type == 5:
-                    counter5 += 1
-                    filled_tiles -= 6
                 else:
                     counter6 += 1
                     filled_tiles -= 4
@@ -473,6 +472,7 @@ def generateBoards(boards, foldername, dimension):
 
         if a == b:
             print "************* duplicate board; resetting ****************"
+            print filename
 
             filled_tiles = int((dimension * dimension) * filling)
             # set counters to keep track of how many vehicles per type are generated
@@ -486,8 +486,8 @@ def generateBoards(boards, foldername, dimension):
             boardwriter.writerow([dimension])
 
             # define which types will be present on the board
-            car_types = [2,3]
-            car_types_OG = [2,3]
+            # car_types = [2,3]
+            # car_types_OG = [2,3]
 
             # position of the red car (x, y, type, orientation, id)
             y = (dimension / 2) - 1
