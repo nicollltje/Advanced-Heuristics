@@ -37,7 +37,7 @@ def resetPositionList(board, dimension):
 
     for i in range(dimension):
         for j in range(dimension):
-            if board[i,j] == 0:
+            if board[i, j] == 0:
                 pos = str(i)+str(j)
                 position_list.append(pos)
 
@@ -249,7 +249,7 @@ def generateBoards(boards, foldername, dimension):
             boardwriter.writerow([dimension])
 
             # define which types will be present on the board
-            car_types = [2,3]
+            car_types = [2, 3]
 
             # position of the red car (x, y, type, orientation, id)
             y = (dimension / 2) - 1
@@ -271,13 +271,16 @@ def generateBoards(boards, foldername, dimension):
             while filled_tiles > 0:
 
                 # picks a random orientation
-                orientation = random.randrange (1, 3, 1)
+                orientation = random.randrange(1, 3, 1)
                 if orientation == 1:
                     orientation = "H"
                     # make sure that no horizontal vehicle will be placed between the entrance and the red car
-                    # position_list.remove("32")
-                    # position_list.remove("42")
-                    # position_list.remove("52")
+                    if '32' in position_list:
+                        position_list.remove('32')
+                    if '42' in position_list:
+                        position_list.remove('42')
+                    if '52' in position_list:
+                        position_list.remove('52')
                 else:
                     orientation = "V"
 
@@ -337,9 +340,16 @@ def generateBoards(boards, foldername, dimension):
                 else:
 
                     if car.orientation == "H":
-                        car.orientation ="V"
+                        car.orientation = "V"
                     else:
-                        car.orientation ="H"
+                        car.orientation = "H"
+
+                        # if '32' in position_list:
+                        #     position_list.remove('32')
+                        # if '42' in position_list:
+                        #     position_list.remove('42')
+                        # if '52' in position_list:
+                        #     position_list.remove('52')
                         # position_list.remove("32")
                         # position_list.remove("42")
                         # position_list.remove("52")
