@@ -1,0 +1,3000 @@
+board: 0, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 1, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 2, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 3, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 4, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 3, type3 = 8, type4 = 0, type5 = 0 
+ 
+board: 5, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 6, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 7, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 8, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 9, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 10, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 11, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 12, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 13, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 14, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 15, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 16, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 17, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 18, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 19, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 20, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 21, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 12, type3 = 2, type4 = 0, type5 = 0 
+ 
+board: 22, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 15, type3 = 0, type4 = 0, type5 = 0 
+ 
+board: 23, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 24, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 25, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 26, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 27, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 28, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 29, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 30, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 31, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 32, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 33, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 34, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 35, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 36, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 37, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 38, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 12, type3 = 2, type4 = 0, type5 = 0 
+ 
+board: 39, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 40, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 41, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 42, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 43, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 44, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 45, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 46, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 47, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 48, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 3, type3 = 8, type4 = 0, type5 = 0 
+ 
+board: 49, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 50, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 51, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 52, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 53, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 54, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 55, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 56, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 57, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 58, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 59, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 60, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 61, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 62, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 63, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 64, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 65, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 66, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 67, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 68, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 69, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 70, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 71, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 72, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 73, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 74, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 75, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 76, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 77, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 78, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 79, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 80, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 81, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 82, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 83, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 84, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 85, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 86, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 87, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 88, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 3, type3 = 8, type4 = 0, type5 = 0 
+ 
+board: 89, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 90, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 91, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 92, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 93, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 94, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 95, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 96, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 97, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 98, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 99, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 3, type3 = 8, type4 = 0, type5 = 0 
+ 
+board: 100, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 101, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 102, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 103, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 104, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 3, type3 = 8, type4 = 0, type5 = 0 
+ 
+board: 105, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 3, type3 = 8, type4 = 0, type5 = 0 
+ 
+board: 106, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 107, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 108, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 109, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 110, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 111, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 112, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 113, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 114, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 115, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 116, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 117, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 118, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 12, type3 = 2, type4 = 0, type5 = 0 
+ 
+board: 119, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 120, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 3, type3 = 8, type4 = 0, type5 = 0 
+ 
+board: 121, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 122, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 123, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 124, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 125, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 126, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 127, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 128, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 3, type3 = 8, type4 = 0, type5 = 0 
+ 
+board: 129, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 130, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 131, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 132, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 133, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 134, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 15, type3 = 0, type4 = 0, type5 = 0 
+ 
+board: 135, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 136, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 137, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 3, type3 = 8, type4 = 0, type5 = 0 
+ 
+board: 138, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 139, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 140, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 141, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 3, type3 = 8, type4 = 0, type5 = 0 
+ 
+board: 142, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 143, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 144, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 145, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 146, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 147, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 148, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 149, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 150, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 3, type3 = 8, type4 = 0, type5 = 0 
+ 
+board: 151, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 152, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 153, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 154, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 155, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 0, type4 = 0, type5 = 0 
+ 
+board: 156, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 157, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 158, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 159, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 160, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 161, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 162, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 163, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 164, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 165, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 166, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 0, type4 = 0, type5 = 0 
+ 
+board: 167, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 168, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 12, type3 = 2, type4 = 0, type5 = 0 
+ 
+board: 169, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 170, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 171, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 172, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 173, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 174, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 175, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 176, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 177, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 178, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 179, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 180, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 0, type4 = 0, type5 = 0 
+ 
+board: 181, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 182, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 3, type3 = 8, type4 = 0, type5 = 0 
+ 
+board: 183, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 184, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 185, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 3, type3 = 8, type4 = 0, type5 = 0 
+ 
+board: 186, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 187, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 188, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 189, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 190, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 191, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 192, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 193, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 194, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 195, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 196, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 3, type3 = 8, type4 = 0, type5 = 0 
+ 
+board: 197, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 198, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 199, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 200, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 201, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 12, type3 = 2, type4 = 0, type5 = 0 
+ 
+board: 202, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 203, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 204, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 205, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 206, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 3, type3 = 8, type4 = 0, type5 = 0 
+ 
+board: 207, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 208, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 209, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 210, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 211, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 212, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 213, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 214, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 215, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 216, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 0, type4 = 0, type5 = 0 
+ 
+board: 217, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 218, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 219, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 220, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 3, type3 = 8, type4 = 0, type5 = 0 
+ 
+board: 221, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 222, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 223, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 224, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 225, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 226, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 227, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 228, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 229, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 230, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 3, type3 = 8, type4 = 0, type5 = 0 
+ 
+board: 231, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 232, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 233, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 234, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 235, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 236, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 237, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 238, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 239, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 240, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 241, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 242, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 243, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 244, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 245, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 246, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 247, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 3, type3 = 8, type4 = 0, type5 = 0 
+ 
+board: 248, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 249, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 250, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 15, type3 = 0, type4 = 0, type5 = 0 
+ 
+board: 251, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 252, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 253, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 254, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 255, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 256, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 257, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 258, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 259, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 3, type3 = 8, type4 = 0, type5 = 0 
+ 
+board: 260, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 261, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 3, type3 = 8, type4 = 0, type5 = 0 
+ 
+board: 262, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 3, type3 = 8, type4 = 0, type5 = 0 
+ 
+board: 263, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 264, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 265, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 266, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 267, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 268, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 269, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 3, type3 = 8, type4 = 0, type5 = 0 
+ 
+board: 270, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 271, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 272, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 273, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 12, type3 = 2, type4 = 0, type5 = 0 
+ 
+board: 274, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 275, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 276, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 277, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 278, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 279, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 0, type4 = 0, type5 = 0 
+ 
+board: 280, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 281, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 282, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 283, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 284, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 285, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 286, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 12, type3 = 2, type4 = 0, type5 = 0 
+ 
+board: 287, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 12, type3 = 2, type4 = 0, type5 = 0 
+ 
+board: 288, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 289, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 290, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 291, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 292, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 293, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 294, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 295, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 296, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 297, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 3, type3 = 8, type4 = 0, type5 = 0 
+ 
+board: 298, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 299, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 300, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 301, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 302, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 303, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 304, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 305, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 0, type4 = 0, type5 = 0 
+ 
+board: 306, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 307, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 308, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 309, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 310, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 3, type3 = 8, type4 = 0, type5 = 0 
+ 
+board: 311, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 312, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 3, type3 = 8, type4 = 0, type5 = 0 
+ 
+board: 313, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 314, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 315, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 316, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 0, type4 = 0, type5 = 0 
+ 
+board: 317, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 318, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 319, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 320, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 321, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 322, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 323, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 324, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 325, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 326, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 327, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 328, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 3, type3 = 8, type4 = 0, type5 = 0 
+ 
+board: 329, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 12, type3 = 2, type4 = 0, type5 = 0 
+ 
+board: 330, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 331, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 332, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 333, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 334, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 335, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 336, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 337, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 338, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 0, type4 = 0, type5 = 0 
+ 
+board: 339, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 340, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 341, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 342, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 343, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 344, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 0, type4 = 0, type5 = 0 
+ 
+board: 345, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 346, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 347, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 348, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 349, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 350, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 351, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 352, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 353, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 354, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 3, type3 = 8, type4 = 0, type5 = 0 
+ 
+board: 355, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 356, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 357, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 358, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 359, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 360, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 361, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 362, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 3, type3 = 8, type4 = 0, type5 = 0 
+ 
+board: 363, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 15, type3 = 0, type4 = 0, type5 = 0 
+ 
+board: 364, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 365, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 366, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 367, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 368, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 369, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 370, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 371, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 372, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 373, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 374, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 375, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 376, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 0, type4 = 0, type5 = 0 
+ 
+board: 377, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 378, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 379, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 380, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 381, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 382, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 383, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 384, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 385, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 386, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 387, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 388, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 389, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 0, type4 = 0, type5 = 0 
+ 
+board: 390, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 391, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 3, type3 = 8, type4 = 0, type5 = 0 
+ 
+board: 392, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 393, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 394, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 0, type4 = 0, type5 = 0 
+ 
+board: 395, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 396, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 397, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 398, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 399, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 400, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 401, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 402, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 12, type3 = 2, type4 = 0, type5 = 0 
+ 
+board: 403, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 404, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 405, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 406, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 407, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 3, type3 = 8, type4 = 0, type5 = 0 
+ 
+board: 408, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 409, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 410, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 411, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 412, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 413, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 414, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 415, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 416, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 0, type4 = 0, type5 = 0 
+ 
+board: 417, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 418, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 419, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 420, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 421, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 422, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 423, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 3, type3 = 8, type4 = 0, type5 = 0 
+ 
+board: 424, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 425, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 3, type3 = 8, type4 = 0, type5 = 0 
+ 
+board: 426, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 427, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 428, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 429, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 430, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 431, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 432, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 433, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 15, type3 = 0, type4 = 0, type5 = 0 
+ 
+board: 434, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 3, type3 = 8, type4 = 0, type5 = 0 
+ 
+board: 435, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 15, type3 = 0, type4 = 0, type5 = 0 
+ 
+board: 436, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 437, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 0, type4 = 0, type5 = 0 
+ 
+board: 438, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 12, type3 = 2, type4 = 0, type5 = 0 
+ 
+board: 439, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 440, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 441, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 442, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 443, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 444, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 445, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 446, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 447, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 448, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 449, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 450, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 451, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 452, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 453, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 454, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 455, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 456, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 3, type3 = 8, type4 = 0, type5 = 0 
+ 
+board: 457, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 458, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 459, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 460, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 461, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 462, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 463, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 464, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 465, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 466, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 467, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 468, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 469, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 470, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 471, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 472, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 473, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 474, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 475, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 476, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 477, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 478, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 479, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 480, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 481, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 482, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 3, type3 = 8, type4 = 0, type5 = 0 
+ 
+board: 483, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 0, type4 = 0, type5 = 0 
+ 
+board: 484, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 485, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 486, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 15, type3 = 0, type4 = 0, type5 = 0 
+ 
+board: 487, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 488, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 489, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 490, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 491, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 492, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 493, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 494, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 495, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 496, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 497, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 498, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 499, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 3, type3 = 8, type4 = 0, type5 = 0 
+ 
+board: 500, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 12, type3 = 2, type4 = 0, type5 = 0 
+ 
+board: 501, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 12, type3 = 2, type4 = 0, type5 = 0 
+ 
+board: 502, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 0, type4 = 0, type5 = 0 
+ 
+board: 503, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 0, type4 = 0, type5 = 0 
+ 
+board: 504, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 505, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 506, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 507, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 508, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 509, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 510, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 511, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 512, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 513, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 514, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 515, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 3, type3 = 8, type4 = 0, type5 = 0 
+ 
+board: 516, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 517, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 0, type4 = 0, type5 = 0 
+ 
+board: 518, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 519, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 520, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 521, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 3, type3 = 8, type4 = 0, type5 = 0 
+ 
+board: 522, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 523, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 524, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 525, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 526, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 527, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 528, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 529, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 530, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 12, type3 = 2, type4 = 0, type5 = 0 
+ 
+board: 531, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 12, type3 = 2, type4 = 0, type5 = 0 
+ 
+board: 532, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 0, type4 = 0, type5 = 0 
+ 
+board: 533, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 12, type3 = 2, type4 = 0, type5 = 0 
+ 
+board: 534, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 535, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 536, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 3, type3 = 8, type4 = 0, type5 = 0 
+ 
+board: 537, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 538, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 12, type3 = 2, type4 = 0, type5 = 0 
+ 
+board: 539, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 540, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 541, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 542, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 0, type4 = 0, type5 = 0 
+ 
+board: 543, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 544, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 545, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 546, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 547, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 548, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 549, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 550, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 551, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 552, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 553, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 3, type3 = 8, type4 = 0, type5 = 0 
+ 
+board: 554, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 555, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 556, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 557, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 12, type3 = 2, type4 = 0, type5 = 0 
+ 
+board: 558, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 559, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 560, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 561, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 562, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 563, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 564, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 565, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 566, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 567, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 568, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 569, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 570, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 571, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 572, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 573, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 574, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 575, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 576, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 3, type3 = 8, type4 = 0, type5 = 0 
+ 
+board: 577, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 578, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 579, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 580, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 581, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 3, type3 = 8, type4 = 0, type5 = 0 
+ 
+board: 582, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 583, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 584, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 3, type3 = 8, type4 = 0, type5 = 0 
+ 
+board: 585, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 3, type3 = 8, type4 = 0, type5 = 0 
+ 
+board: 586, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 587, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 588, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 589, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 3, type3 = 8, type4 = 0, type5 = 0 
+ 
+board: 590, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 591, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 592, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 593, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 594, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 595, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 596, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 597, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 598, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 599, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 600, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 601, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 0, type4 = 0, type5 = 0 
+ 
+board: 602, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 12, type3 = 2, type4 = 0, type5 = 0 
+ 
+board: 603, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 604, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 3, type3 = 8, type4 = 0, type5 = 0 
+ 
+board: 605, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 606, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 607, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 608, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 609, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 610, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 3, type3 = 8, type4 = 0, type5 = 0 
+ 
+board: 611, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 612, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 613, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 614, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 615, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 12, type3 = 2, type4 = 0, type5 = 0 
+ 
+board: 616, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 0, type4 = 0, type5 = 0 
+ 
+board: 617, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 618, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 619, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 620, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 621, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 0, type4 = 0, type5 = 0 
+ 
+board: 622, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 623, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 624, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 625, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 626, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 3, type3 = 8, type4 = 0, type5 = 0 
+ 
+board: 627, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 3, type3 = 8, type4 = 0, type5 = 0 
+ 
+board: 628, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 629, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 630, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 0, type4 = 0, type5 = 0 
+ 
+board: 631, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 632, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 633, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 634, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 635, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 636, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 12, type3 = 2, type4 = 0, type5 = 0 
+ 
+board: 637, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 638, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 639, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 640, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 641, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 642, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 643, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 12, type3 = 2, type4 = 0, type5 = 0 
+ 
+board: 644, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 3, type3 = 8, type4 = 0, type5 = 0 
+ 
+board: 645, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 3, type3 = 8, type4 = 0, type5 = 0 
+ 
+board: 646, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 647, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 3, type3 = 8, type4 = 0, type5 = 0 
+ 
+board: 648, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 649, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 3, type3 = 8, type4 = 0, type5 = 0 
+ 
+board: 650, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 651, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 652, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 653, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 654, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 655, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 656, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 657, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 658, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 659, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 660, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 661, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 3, type3 = 8, type4 = 0, type5 = 0 
+ 
+board: 662, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 663, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 664, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 665, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 666, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 667, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 668, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 669, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 670, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 671, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 672, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 673, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 15, type3 = 0, type4 = 0, type5 = 0 
+ 
+board: 674, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 675, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 676, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 677, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 3, type3 = 8, type4 = 0, type5 = 0 
+ 
+board: 678, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 3, type3 = 8, type4 = 0, type5 = 0 
+ 
+board: 679, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 3, type3 = 8, type4 = 0, type5 = 0 
+ 
+board: 680, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 681, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 682, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 683, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 684, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 685, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 686, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 687, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 688, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 689, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 690, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 691, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 692, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 693, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 694, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 695, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 696, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 697, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 698, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 699, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 3, type3 = 8, type4 = 0, type5 = 0 
+ 
+board: 700, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 701, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 702, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 703, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 704, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 705, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 706, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 707, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 708, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 709, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 710, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 711, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 712, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 713, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 0, type4 = 0, type5 = 0 
+ 
+board: 714, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 15, type3 = 0, type4 = 0, type5 = 0 
+ 
+board: 715, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 0, type4 = 0, type5 = 0 
+ 
+board: 716, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 717, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 718, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 719, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 720, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 721, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 722, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 723, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 724, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 725, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 726, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 727, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 728, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 15, type3 = 0, type4 = 0, type5 = 0 
+ 
+board: 729, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 730, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 731, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 732, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 733, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 734, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 735, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 736, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 737, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 738, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 0, type4 = 0, type5 = 0 
+ 
+board: 739, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 3, type3 = 8, type4 = 0, type5 = 0 
+ 
+board: 740, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 741, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 3, type3 = 8, type4 = 0, type5 = 0 
+ 
+board: 742, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 743, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 744, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 745, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 746, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 747, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 748, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 749, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 750, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 751, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 12, type3 = 2, type4 = 0, type5 = 0 
+ 
+board: 752, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 753, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 3, type3 = 8, type4 = 0, type5 = 0 
+ 
+board: 754, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 755, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 3, type3 = 8, type4 = 0, type5 = 0 
+ 
+board: 756, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 757, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 758, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 759, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 12, type3 = 2, type4 = 0, type5 = 0 
+ 
+board: 760, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 0, type4 = 0, type5 = 0 
+ 
+board: 761, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 762, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 763, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 764, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 765, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 0, type4 = 0, type5 = 0 
+ 
+board: 766, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 767, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 768, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 769, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 770, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 771, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 772, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 773, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 774, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 775, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 3, type3 = 8, type4 = 0, type5 = 0 
+ 
+board: 776, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 777, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 778, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 779, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 780, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 781, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 782, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 783, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 784, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 785, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 0, type4 = 0, type5 = 0 
+ 
+board: 786, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 787, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 788, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 789, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 0, type4 = 0, type5 = 0 
+ 
+board: 790, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 791, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 792, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 793, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 794, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 795, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 796, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 797, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 798, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 799, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 800, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 801, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 802, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 803, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 804, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 805, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 3, type3 = 8, type4 = 0, type5 = 0 
+ 
+board: 806, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 807, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 3, type3 = 8, type4 = 0, type5 = 0 
+ 
+board: 808, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 809, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 810, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 811, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 812, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 813, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 0, type4 = 0, type5 = 0 
+ 
+board: 814, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 815, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 816, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 3, type3 = 8, type4 = 0, type5 = 0 
+ 
+board: 817, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 0, type4 = 0, type5 = 0 
+ 
+board: 818, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 0, type4 = 0, type5 = 0 
+ 
+board: 819, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 820, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 821, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 822, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 3, type3 = 8, type4 = 0, type5 = 0 
+ 
+board: 823, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 0, type4 = 0, type5 = 0 
+ 
+board: 824, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 825, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 826, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 827, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 828, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 0, type4 = 0, type5 = 0 
+ 
+board: 829, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 830, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 831, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 832, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 833, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 834, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 835, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 836, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 837, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 838, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 839, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 840, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 841, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 842, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 0, type4 = 0, type5 = 0 
+ 
+board: 843, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 844, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 845, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 846, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 847, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 848, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 849, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 850, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 851, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 852, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 853, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 854, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 855, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 856, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 857, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 858, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 859, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 860, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 861, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 862, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 863, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 864, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 865, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 0, type4 = 0, type5 = 0 
+ 
+board: 866, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 867, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 868, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 869, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 870, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 871, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 872, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 873, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 874, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 875, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 15, type3 = 0, type4 = 0, type5 = 0 
+ 
+board: 876, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 3, type3 = 8, type4 = 0, type5 = 0 
+ 
+board: 877, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 878, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 879, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 880, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 881, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 882, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 15, type3 = 0, type4 = 0, type5 = 0 
+ 
+board: 883, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 884, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 885, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 886, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 887, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 888, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 889, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 890, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 3, type3 = 8, type4 = 0, type5 = 0 
+ 
+board: 891, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 892, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 893, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 3, type3 = 8, type4 = 0, type5 = 0 
+ 
+board: 894, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 895, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 896, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 897, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 898, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 899, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 900, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 0, type4 = 0, type5 = 0 
+ 
+board: 901, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 902, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 903, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 904, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 905, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 906, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 907, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 908, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 909, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 910, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 3, type3 = 8, type4 = 0, type5 = 0 
+ 
+board: 911, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 912, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 913, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 914, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 915, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 916, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 917, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 0, type4 = 0, type5 = 0 
+ 
+board: 918, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 919, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 920, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 921, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 0, type4 = 0, type5 = 0 
+ 
+board: 922, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 923, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 924, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 925, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 926, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 0, type4 = 0, type5 = 0 
+ 
+board: 927, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 928, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 929, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 0, type4 = 0, type5 = 0 
+ 
+board: 930, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 0, type4 = 0, type5 = 0 
+ 
+board: 931, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 932, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 933, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 934, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 935, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 936, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 937, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 938, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 939, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 940, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 941, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 942, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 943, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 0, type4 = 0, type5 = 0 
+ 
+board: 944, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 0, type4 = 0, type5 = 0 
+ 
+board: 945, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 946, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 947, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 948, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 949, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 15, type3 = 0, type4 = 0, type5 = 0 
+ 
+board: 950, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 3, type3 = 8, type4 = 0, type5 = 0 
+ 
+board: 951, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 0, type4 = 0, type5 = 0 
+ 
+board: 952, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 3, type3 = 8, type4 = 0, type5 = 0 
+ 
+board: 953, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 954, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 0, type4 = 0, type5 = 0 
+ 
+board: 955, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 956, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 0, type4 = 0, type5 = 0 
+ 
+board: 957, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 958, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 959, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 960, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 961, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 962, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 0, type4 = 0, type5 = 0 
+ 
+board: 963, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 964, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 965, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 966, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 12, type3 = 2, type4 = 0, type5 = 0 
+ 
+board: 967, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 0, type4 = 0, type5 = 0 
+ 
+board: 968, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 12, type3 = 2, type4 = 0, type5 = 0 
+ 
+board: 969, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 970, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 0, type4 = 0, type5 = 0 
+ 
+board: 971, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 972, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 973, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 3, type3 = 8, type4 = 0, type5 = 0 
+ 
+board: 974, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 975, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 976, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 977, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 978, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 979, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 980, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 981, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 982, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 983, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 3, type3 = 8, type4 = 0, type5 = 0 
+ 
+board: 984, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 985, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 986, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 987, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 0, type4 = 0, type5 = 0 
+ 
+board: 988, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 989, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 0, type3 = 10, type4 = 0, type5 = 0 
+ 
+board: 990, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 991, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 3, type3 = 8, type4 = 0, type5 = 0 
+ 
+board: 992, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 993, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 3, type3 = 8, type4 = 0, type5 = 0 
+ 
+board: 994, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 9, type3 = 4, type4 = 0, type5 = 0 
+ 
+board: 995, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 996, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 997, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 998, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
+board: 999, dimension: 6, filling: 0.900000 
+ type1 = 0, type2 = 6, type3 = 6, type4 = 0, type5 = 0 
+ 
