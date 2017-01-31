@@ -197,7 +197,7 @@ def validateCar(car, dimension, board, x, y):
             # print "old pos %d, %d, new pos %d, %d" %(x,y,x2,y2)
             return validateCar(car, dimension, board, x2, y2)
         else:
-            print "No available positions"
+            # print "No available positions"
             return False
 
 def generateBoards(boards, foldername, dimension):
@@ -217,7 +217,7 @@ def generateBoards(boards, foldername, dimension):
     parameter_file = open("%s/zzparameters%s.txt" %(foldername, foldername), "w")
 
     # set the filling
-    filling = 0.5
+    filling = 0.8
 
     for i in range (boards):
 
@@ -341,12 +341,12 @@ def generateBoards(boards, foldername, dimension):
                     vehicle = car.x, car.y, car.type, car.orientation, car.id
                     boardwriter.writerow(vehicle)
                 else:
-                    print "changing orientation"
+                    # print "changing orientation"
                     if car.orientation == "H":
                         car.orientation ="V"
                     else:
                         car.orientation ="H"
-                    print "trying to place car with different orienation"
+                    # print "trying to place car with different orienation"
                     result = validateCar(car, dimension, board, x_pos, y_pos)
 
                     resetPositionList(board, dimension)
@@ -361,7 +361,7 @@ def generateBoards(boards, foldername, dimension):
                         vehicle = car.x, car.y, car.type, car.orientation, car.id
                         boardwriter.writerow(vehicle)
                     else:
-                        print "changing car type"
+                        # print "changing car type"
                         while len(car_types) > 1:
                             old_type = car.type
                             old_cars.append(old_type)
@@ -376,7 +376,7 @@ def generateBoards(boards, foldername, dimension):
                                 boardwriter.writerow(vehicle)
 
                             else:
-                                print "could not place vehicle"
+                                # print "could not place vehicle"
                                 # clear csv
                                 # clear board
 
@@ -384,7 +384,7 @@ def generateBoards(boards, foldername, dimension):
 
                                 # delete the whole board and start over with the same board number.
                                 # break
-                        print "could not change car type"
+                        # print "could not change car type"
                         type = "STOP"
 
                     for item in old_cars:
@@ -397,7 +397,7 @@ def generateBoards(boards, foldername, dimension):
 
                     print "%%%%%%%%%%%%%% resetting board %%%%%%%%%%%%%%%%%"
                     print filename
-                    print "test"
+                    # print "test"
 
                     filled_tiles = int((dimension * dimension) * filling)
                     # set counters to keep track of how many vehicles per type are generated
@@ -439,7 +439,7 @@ def generateBoards(boards, foldername, dimension):
                     filled_tiles -= 2
 
 
-                    j -= 1
+                    j = 2
                     car_types = car_types_OG
 
 
@@ -508,7 +508,7 @@ def generateBoards(boards, foldername, dimension):
             # update the filled tiles
             filled_tiles -= 2
 
-            j -= 1
+            j = 2
             car_types = car_types_OG
 
         else:

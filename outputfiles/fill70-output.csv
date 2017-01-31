@@ -1,0 +1,11 @@
+filename,iterations,moves,solved,H/V,types,dimension
+board0.csv,916,8,yes,3:7,0:5:5:0:0,6
+board1.csv,1933,-,no,6:4,0:5:5:0:0,6
+board10.csv,507,7,yes,8:2,0:5:5:0:0,6
+board100.csv,457,5,yes,6:5,0:8:3:0:0,6
+board101.csv,9371,-,no,7:3,0:5:5:0:0,6
+board102.csv,189,-,no,8:2,0:5:5:0:0,6
+board103.csv,4838,10,yes,7:4,0:8:3:0:0,6
+board104.csv,188,-,no,4:6,0:5:5:0:0,6
+board105.csv,8175,-,no,6:5,0:8:3:0:0,6
+board106.csv,102,-,no,3:7,0:5:5:0:0,6
