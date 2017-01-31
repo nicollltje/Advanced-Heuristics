@@ -275,7 +275,9 @@ def generateBoards(boards, foldername, dimension):
                 if orientation == 1:
                     orientation = "H"
                     # make sure that no horizontal vehicle will be placed between the entrance and the red car
-                    position_list.remove("32", "42", "52")
+                    # position_list.remove("32")
+                    # position_list.remove("42")
+                    # position_list.remove("52")
                 else:
                     orientation = "V"
 
@@ -338,6 +340,9 @@ def generateBoards(boards, foldername, dimension):
                         car.orientation ="V"
                     else:
                         car.orientation ="H"
+                        # position_list.remove("32")
+                        # position_list.remove("42")
+                        # position_list.remove("52")
 
                     result = validateCar(car, dimension, board, x_pos, y_pos)
 
