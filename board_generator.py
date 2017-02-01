@@ -289,7 +289,12 @@ def generateBoards(boards, foldername, dimension):
                 j += 1
 
                 # determine which car types are available based on the amount of filled tiles
-                if filled_tiles == 5:
+                if filled_tiles == 7:
+                    if 1 not in car_types:
+                        if 5 in car_types:
+                            car_types.remove(5)
+                            
+                elif filled_tiles == 5:
                     if 5 in car_types:
                         car_types.remove(5)
                     if 1 not in car_types:
@@ -513,6 +518,7 @@ def generateBoards(boards, foldername, dimension):
 
                 j = 2
                 car_types = car_types_OG
+
 
         #else:
         # write all parameters of the board into a parameter file
