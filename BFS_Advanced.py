@@ -703,7 +703,7 @@ class Game(object):
             # print "Number of iterations: ", self.iterations
             return self.iterations, moves_needed, self.solvable, self.horizontals, self.verticals, types_ratio, self.counter1, self.counter2, self.counter3, self.counter4, self.counter5
         else:
-            print "\n No solution possible"
+            print "No solution possible"
             return self.iterations, "-", self.solvable, self.horizontals, self.verticals, types_ratio, self.counter1, self.counter2, self.counter3, self.counter4, self.counter5
 
         # print "Seconds needed to run program: ", time_duration

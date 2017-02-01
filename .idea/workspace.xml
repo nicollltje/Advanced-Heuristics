@@ -26,8 +26,8 @@
       <file leaf-file-name="board_generator.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/board_generator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="282" column="50" selection-start-line="0" selection-start-column="0" selection-end-line="540" selection-end-column="0" />
+            <state relative-caret-position="5475">
+              <caret line="539" column="27" selection-start-line="539" selection-start-column="27" selection-end-line="539" selection-end-column="27" />
               <folding>
                 <element signature="e#68#81#0" expanded="true" />
                 <element signature="e#178#750#0" expanded="false" />
@@ -38,11 +38,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gererator2.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="gererator2.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gererator2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="514" column="0" selection-start-line="514" selection-start-column="0" selection-end-line="514" selection-end-column="0" />
+            <state relative-caret-position="120">
+              <caret line="409" column="39" selection-start-line="409" selection-start-column="39" selection-end-line="409" selection-end-column="39" />
               <folding>
                 <element signature="e#68#81#0" expanded="true" />
                 <element signature="e#178#750#0" expanded="false" />
@@ -58,11 +58,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BFS_Advanced.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BFS_Advanced.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/BFS_Advanced.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2452">
-              <caret line="863" column="21" selection-start-line="863" selection-start-column="21" selection-end-line="863" selection-end-column="21" />
+            <state relative-caret-position="223">
+              <caret line="705" column="19" selection-start-line="705" selection-start-column="19" selection-end-line="705" selection-end-column="19" />
               <folding>
                 <element signature="e#184#202#0" expanded="true" />
                 <element signature="e#378#968#0" expanded="false" />
@@ -80,7 +80,7 @@
                 <element signature="e#15668#16192#0" expanded="false" />
                 <element signature="e#16242#17014#0" expanded="false" />
                 <element signature="e#17062#19700#0" expanded="false" />
-                <element signature="e#24831#25710#0" expanded="false" />
+                <element signature="e#24828#25707#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -109,8 +109,8 @@
         <option value="$PROJECT_DIR$/outputfiles/fill70_3-output.csv" />
         <option value="$PROJECT_DIR$/board_generator.py" />
         <option value="$PROJECT_DIR$/test.py" />
-        <option value="$PROJECT_DIR$/BFS_Advanced.py" />
         <option value="$PROJECT_DIR$/gererator2.py" />
+        <option value="$PROJECT_DIR$/BFS_Advanced.py" />
       </list>
     </option>
   </component>
@@ -144,7 +144,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -155,7 +155,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -346,7 +346,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="705" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19777602" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -354,7 +354,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291815" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4045677" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4045677" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -419,7 +419,7 @@
             <element signature="e#15668#16192#0" expanded="false" />
             <element signature="e#16242#17014#0" expanded="false" />
             <element signature="e#17062#19700#0" expanded="false" />
-            <element signature="e#24831#25710#0" expanded="false" />
+            <element signature="e#24828#25707#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -466,7 +466,7 @@
             <element signature="e#15668#16192#0" expanded="false" />
             <element signature="e#16242#17014#0" expanded="false" />
             <element signature="e#17062#19700#0" expanded="false" />
-            <element signature="e#24831#25710#0" expanded="false" />
+            <element signature="e#24828#25707#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -513,7 +513,7 @@
             <element signature="e#15668#16192#0" expanded="false" />
             <element signature="e#16242#17014#0" expanded="false" />
             <element signature="e#17062#19700#0" expanded="false" />
-            <element signature="e#24831#25710#0" expanded="false" />
+            <element signature="e#24828#25707#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -531,27 +531,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rewrite_try5/board99.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rewrite_try1/board0.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/supertry_1/board3.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="1" column="3" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/rewrite_try5/board99.csv" />
+    <entry file="file://$PROJECT_DIR$/rewrite_try1/board0.csv" />
+    <entry file="file://$PROJECT_DIR$/supertry_1/board3.csv" />
     <entry file="file://$PROJECT_DIR$/BFS_Advanced.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -573,7 +555,7 @@
             <element signature="e#15668#16192#0" expanded="false" />
             <element signature="e#16242#17014#0" expanded="false" />
             <element signature="e#17062#19700#0" expanded="false" />
-            <element signature="e#24831#25710#0" expanded="false" />
+            <element signature="e#24828#25707#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -591,27 +573,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rewrite_try5/board99.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rewrite_try1/board0.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/supertry_1/board3.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="1" column="3" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/rewrite_try5/board99.csv" />
+    <entry file="file://$PROJECT_DIR$/rewrite_try1/board0.csv" />
+    <entry file="file://$PROJECT_DIR$/supertry_1/board3.csv" />
     <entry file="file://$PROJECT_DIR$/BFS_Advanced.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -633,7 +597,7 @@
             <element signature="e#15668#16192#0" expanded="false" />
             <element signature="e#16242#17014#0" expanded="false" />
             <element signature="e#17062#19700#0" expanded="false" />
-            <element signature="e#24831#25710#0" expanded="false" />
+            <element signature="e#24828#25707#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -692,7 +656,7 @@
             <element signature="e#15668#16192#0" expanded="false" />
             <element signature="e#16242#17014#0" expanded="false" />
             <element signature="e#17062#19700#0" expanded="false" />
-            <element signature="e#24831#25710#0" expanded="false" />
+            <element signature="e#24828#25707#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -738,7 +702,7 @@
             <element signature="e#15668#16192#0" expanded="false" />
             <element signature="e#16242#17014#0" expanded="false" />
             <element signature="e#17062#19700#0" expanded="false" />
-            <element signature="e#24831#25710#0" expanded="false" />
+            <element signature="e#24828#25707#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -763,97 +727,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/supertry_1/board12.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/supertry_1/board2.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/supertry_1/board1.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/supertry_1/board0.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rewrite_try3/board0.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rewrite_try1/board0.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/try4BFS_newcars_1/board0.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/try4BFS_newcars_1/board1.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/try4BFS_newcars_1/board2.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/try4BFS_newcars_1/board3.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/try4BFS_newcars_1/board4.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rewrite_try5/board99.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/supertry_1/board3.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="1" column="3" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/supertry_1/board12.csv" />
+    <entry file="file://$PROJECT_DIR$/supertry_1/board2.csv" />
+    <entry file="file://$PROJECT_DIR$/supertry_1/board1.csv" />
+    <entry file="file://$PROJECT_DIR$/supertry_1/board0.csv" />
+    <entry file="file://$PROJECT_DIR$/rewrite_try3/board0.csv" />
+    <entry file="file://$PROJECT_DIR$/rewrite_try1/board0.csv" />
+    <entry file="file://$PROJECT_DIR$/try4BFS_newcars_1/board0.csv" />
+    <entry file="file://$PROJECT_DIR$/try4BFS_newcars_1/board1.csv" />
+    <entry file="file://$PROJECT_DIR$/try4BFS_newcars_1/board2.csv" />
+    <entry file="file://$PROJECT_DIR$/try4BFS_newcars_1/board3.csv" />
+    <entry file="file://$PROJECT_DIR$/try4BFS_newcars_1/board4.csv" />
+    <entry file="file://$PROJECT_DIR$/rewrite_try5/board99.csv" />
+    <entry file="file://$PROJECT_DIR$/supertry_1/board3.csv" />
     <entry file="file://$PROJECT_DIR$/fill70/board106.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -904,10 +790,11 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test.py" />
     <entry file="file://$PROJECT_DIR$/board_generator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="282" column="50" selection-start-line="0" selection-start-column="0" selection-end-line="540" selection-end-column="0" />
+        <state relative-caret-position="5475">
+          <caret line="539" column="27" selection-start-line="539" selection-start-column="27" selection-end-line="539" selection-end-column="27" />
           <folding>
             <element signature="e#68#81#0" expanded="true" />
             <element signature="e#178#750#0" expanded="false" />
@@ -917,18 +804,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
+    <entry file="file://$PROJECT_DIR$/gererator2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
-          <folding />
+        <state relative-caret-position="120">
+          <caret line="409" column="39" selection-start-line="409" selection-start-column="39" selection-end-line="409" selection-end-column="39" />
+          <folding>
+            <element signature="e#68#81#0" expanded="true" />
+            <element signature="e#178#750#0" expanded="false" />
+            <element signature="e#798#1087#0" expanded="false" />
+            <element signature="e#1116#1423#0" expanded="false" />
+            <element signature="e#1480#2467#0" expanded="false" />
+            <element signature="e#2539#4467#0" expanded="false" />
+            <element signature="e#4520#7706#0" expanded="false" />
+            <element signature="e#7761#9518#0" expanded="false" />
+            <element signature="e#9547#9862#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/BFS_Advanced.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2452">
-          <caret line="863" column="21" selection-start-line="863" selection-start-column="21" selection-end-line="863" selection-end-column="21" />
+        <state relative-caret-position="223">
+          <caret line="705" column="19" selection-start-line="705" selection-start-column="19" selection-end-line="705" selection-end-column="19" />
           <folding>
             <element signature="e#184#202#0" expanded="true" />
             <element signature="e#378#968#0" expanded="false" />
@@ -946,25 +843,7 @@
             <element signature="e#15668#16192#0" expanded="false" />
             <element signature="e#16242#17014#0" expanded="false" />
             <element signature="e#17062#19700#0" expanded="false" />
-            <element signature="e#24831#25710#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gererator2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="514" column="0" selection-start-line="514" selection-start-column="0" selection-end-line="514" selection-end-column="0" />
-          <folding>
-            <element signature="e#68#81#0" expanded="true" />
-            <element signature="e#178#750#0" expanded="false" />
-            <element signature="e#798#1087#0" expanded="false" />
-            <element signature="e#1116#1423#0" expanded="false" />
-            <element signature="e#1480#2467#0" expanded="false" />
-            <element signature="e#2539#4467#0" expanded="false" />
-            <element signature="e#4520#7706#0" expanded="false" />
-            <element signature="e#7761#9518#0" expanded="false" />
-            <element signature="e#9547#9862#0" expanded="false" />
+            <element signature="e#24828#25707#0" expanded="false" />
           </folding>
         </state>
       </provider>
