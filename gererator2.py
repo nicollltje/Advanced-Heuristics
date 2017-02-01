@@ -346,7 +346,7 @@ def generateBoards(boards, foldername, dimension):
     parameter_file = open("%s/zzparameters%s.txt" %(foldername, foldername), "w")
 
     # set the filling
-    filling = 0.20
+    filling = 0.65
 
     # set an iterator to keep track of the amount of valid boards that were made
     i = 0
