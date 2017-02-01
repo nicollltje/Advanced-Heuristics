@@ -703,7 +703,7 @@ class Game(object):
             # print "Number of iterations: ", self.iterations
             return self.iterations, moves_needed, self.solvable, self.horizontals, self.verticals, types_ratio, self.counter1, self.counter2, self.counter3, self.counter4, self.counter5
         else:
-            print "\n No solution possible"
+            print "No solution possible"
             return self.iterations, "-", self.solvable, self.horizontals, self.verticals, types_ratio, self.counter1, self.counter2, self.counter3, self.counter4, self.counter5
 
         # print "Seconds needed to run program: ", time_duration
@@ -862,7 +862,6 @@ else:
                     outputwriter.writerow([filename, result[0], result[1], result[2], hor_ver, result[5], dimension])
 
                 else:
-                    # print "did not find csv file"
                     break
 
             percentage_solved = float(solved)/total_boards
