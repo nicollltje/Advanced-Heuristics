@@ -346,7 +346,7 @@ def generateBoards(boards, foldername, dimension):
     parameter_file = open("%s/zzparameters%s.txt" %(foldername, foldername), "w")
 
     # set the filling
-    filling = 0.65
+    filling = 0.05
 
     # set an iterator to keep track of the amount of valid boards that were made
     i = 0
@@ -407,7 +407,7 @@ def generateBoards(boards, foldername, dimension):
                 j += 1
 
                 # determines which car types can be on the board
-                car_types_OG = [2, 3, 5]
+                car_types_OG = [2, 3]
 
                 # creates a list of car types the loop can chose from
                 car_types = car_types_OG

@@ -293,7 +293,7 @@ def generateBoards(boards, foldername, dimension):
                     if 1 not in car_types:
                         if 5 in car_types:
                             car_types.remove(5)
-                            
+
                 elif filled_tiles == 5:
                     if 5 in car_types:
                         car_types.remove(5)
