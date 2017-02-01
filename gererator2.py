@@ -346,7 +346,7 @@ def generateBoards(boards, foldername, dimension):
     parameter_file = open("%s/zzparameters%s.txt" %(foldername, foldername), "w")
 
     # set the filling
-    filling = 0.65
+    filling = 0.95
 
     # set an iterator to keep track of the amount of valid boards that were made
     i = 0
@@ -407,7 +407,7 @@ def generateBoards(boards, foldername, dimension):
                 j += 1
 
                 # determines which car types can be on the board
-                car_types_OG = [2, 3, 5]
+                car_types_OG = [2, 3]
 
                 # creates a list of car types the loop can chose from
                 car_types = car_types_OG
@@ -461,9 +461,6 @@ def generateBoards(boards, foldername, dimension):
                     i -= 1
                     break
 
-            # once a valid board has been found increment the iterator
-            i += 1
-
             # create board hash to be able to check for duplicates
             hash = ""
             for xcoor in range(dimension):
@@ -478,16 +475,19 @@ def generateBoards(boards, foldername, dimension):
             # reset when duplicate board
             if a == b:
                 # decrement the iterator
-                i -= 2
+                i -= 1
                 # remove the file if possible
                 if os.path.isfile(filename):
                     os.remove(filename)
 
             # final check if the board is trivial or not, if so we reset
             if board[3,2] == 0 and board[4,2] == 0 and board[5,2] == 0:
-                i -= 2
+                i -= 1
                 if os.path.isfile(filename):
                     os.remove(filename)
+
+            # once a valid board has been found increment the iterator
+            i += 1
 
         # write all parameters of the board into a parameter file
         counters = "type1 = %d, type2 = %d, type3 = %d, type4 = %d, type5 = %d" %(counter1, counter2, counter3, counter4, counter5)

@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23a45af5-ceb0-41a5-bfa0-5598417593fd" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BFS_Advanced.py" afterPath="$PROJECT_DIR$/BFS_Advanced.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gererator2.py" afterPath="$PROJECT_DIR$/gererator2.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/outputfiles/NN001-output.csv" afterPath="$PROJECT_DIR$/outputfiles/NN001-output.csv" />
     </list>
     <ignored path="Avanced-Heuristics.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,11 +39,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gererator2.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="gererator2.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/gererator2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="409" column="39" selection-start-line="409" selection-start-column="39" selection-end-line="409" selection-end-column="39" />
+            <state relative-caret-position="82">
+              <caret line="348" column="18" selection-start-line="348" selection-start-column="18" selection-end-line="348" selection-end-column="18" />
               <folding>
                 <element signature="e#68#81#0" expanded="true" />
                 <element signature="e#178#750#0" expanded="false" />
@@ -50,19 +51,17 @@
                 <element signature="e#1116#1423#0" expanded="false" />
                 <element signature="e#1480#2467#0" expanded="false" />
                 <element signature="e#2539#4467#0" expanded="false" />
-                <element signature="e#4520#7706#0" expanded="false" />
-                <element signature="e#7761#9518#0" expanded="false" />
                 <element signature="e#9547#9862#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BFS_Advanced.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BFS_Advanced.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BFS_Advanced.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="223">
-              <caret line="705" column="19" selection-start-line="705" selection-start-column="19" selection-end-line="705" selection-end-column="19" />
+              <caret line="705" column="40" selection-start-line="705" selection-start-column="40" selection-end-line="705" selection-end-column="40" />
               <folding>
                 <element signature="e#184#202#0" expanded="true" />
                 <element signature="e#378#968#0" expanded="false" />
@@ -109,8 +108,8 @@
         <option value="$PROJECT_DIR$/outputfiles/fill70_3-output.csv" />
         <option value="$PROJECT_DIR$/board_generator.py" />
         <option value="$PROJECT_DIR$/test.py" />
-        <option value="$PROJECT_DIR$/gererator2.py" />
         <option value="$PROJECT_DIR$/BFS_Advanced.py" />
+        <option value="$PROJECT_DIR$/gererator2.py" />
       </list>
     </option>
   </component>
@@ -151,6 +150,16 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="Avanced-Heuristics" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Avanced-Heuristics" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Avanced-Heuristics" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -804,28 +813,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gererator2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="409" column="39" selection-start-line="409" selection-start-column="39" selection-end-line="409" selection-end-column="39" />
-          <folding>
-            <element signature="e#68#81#0" expanded="true" />
-            <element signature="e#178#750#0" expanded="false" />
-            <element signature="e#798#1087#0" expanded="false" />
-            <element signature="e#1116#1423#0" expanded="false" />
-            <element signature="e#1480#2467#0" expanded="false" />
-            <element signature="e#2539#4467#0" expanded="false" />
-            <element signature="e#4520#7706#0" expanded="false" />
-            <element signature="e#7761#9518#0" expanded="false" />
-            <element signature="e#9547#9862#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BFS_Advanced.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="223">
-          <caret line="705" column="19" selection-start-line="705" selection-start-column="19" selection-end-line="705" selection-end-column="19" />
+          <caret line="705" column="40" selection-start-line="705" selection-start-column="40" selection-end-line="705" selection-end-column="40" />
           <folding>
             <element signature="e#184#202#0" expanded="true" />
             <element signature="e#378#968#0" expanded="false" />
@@ -844,6 +835,22 @@
             <element signature="e#16242#17014#0" expanded="false" />
             <element signature="e#17062#19700#0" expanded="false" />
             <element signature="e#24828#25707#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gererator2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="348" column="18" selection-start-line="348" selection-start-column="18" selection-end-line="348" selection-end-column="18" />
+          <folding>
+            <element signature="e#68#81#0" expanded="true" />
+            <element signature="e#178#750#0" expanded="false" />
+            <element signature="e#798#1087#0" expanded="false" />
+            <element signature="e#1116#1423#0" expanded="false" />
+            <element signature="e#1480#2467#0" expanded="false" />
+            <element signature="e#2539#4467#0" expanded="false" />
+            <element signature="e#9547#9862#0" expanded="false" />
           </folding>
         </state>
       </provider>
