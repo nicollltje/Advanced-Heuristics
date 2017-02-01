@@ -862,7 +862,6 @@ else:
                     outputwriter.writerow([filename, result[0], result[1], result[2], hor_ver, result[5], dimension])
 
                 else:
-                    # print "did not find csv file"
                     break
 
             percentage_solved = float(solved)/total_boards

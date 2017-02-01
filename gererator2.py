@@ -33,8 +33,10 @@ class Car(object):
 
 def resetPositionList(board, dimension):
 
+    # clear the position list
     del position_list[:]
 
+    # all available positions are added to the position list
     for i in range(dimension):
         for j in range(dimension):
             if board[i, j] == 0:
@@ -42,20 +44,19 @@ def resetPositionList(board, dimension):
                 position_list.append(pos)
 
 def removeTrivials():
-    # print "removing trivials"
+
+    # No horizontal car can be placed in front of the red car, so these positions are removed from the position list
     if "32" in position_list:
         position_list.remove('32')
-        # print "32 removed"
     if "42" in position_list:
         position_list.remove('42')
-        # print "42 removed"
     if "52" in position_list:
         position_list.remove("52")
-        # print "52 removed"
-    # print "removed trivials"
 
 def checkAvailableTypes(filled_tiles, car_types):
 
+    # based on the amount of filled tiles, some types are not possible anymore, this function removes them from the
+    # list of available car types
     if filled_tiles == 5:
         if 5 in car_types:
             car_types.remove(5)
@@ -90,11 +91,14 @@ def checkAvailableTypes(filled_tiles, car_types):
     return car_types
 
 def validatePosition(dimension, board, type, orientation, x, y):
+
+    # Horizontal cars can not be placed in front of the red car
     if orientation == "H":
         if y == 2:
             if x == 4 or x == 3 or x == 2:
                 return False
 
+    # for all types the board is checked if all needed positions for that type are free
     if type == 1:
         if board[x, y] == 0:
             return True
@@ -136,20 +140,21 @@ def validatePosition(dimension, board, type, orientation, x, y):
                 if board[x + 1, y] == 0 and board[x + 1, y + 1] == 0 and board[x + 1, y + 2] == 0:
                     return True
 
+    # if the positons are not free the function retruns False
     return False
 
 def validateCar(car, dimension, board, x, y):
 
-    # print "validating car", car.type
-    # get the parameters from the car object
+    # get parameters from the car
     orientation = car.orientation
     type = car.type
-
     car.x = x
     car.y = y
 
+    # checks if the car can placed on the board
     valid_position = validatePosition(dimension, board, type, orientation, x, y)
 
+    # sets the board to the vehicle encoding if the vehicle can be placed
     if type == 1:
         if valid_position == True:
 
@@ -175,9 +180,8 @@ def validateCar(car, dimension, board, x, y):
             return (board, car)
 
     elif type == 3:
-        # print "truck founc", valid_position
+
         if valid_position == True:
-            # print "can place ANY truck"
 
             if orientation == "H":
                 board[x, y] = "TH"
@@ -195,7 +199,6 @@ def validateCar(car, dimension, board, x, y):
     elif type == 4:
         if valid_position == True:
 
-            # print "can and will place a stupid quad"
 
             if orientation == "H":
 
@@ -228,7 +231,6 @@ def validateCar(car, dimension, board, x, y):
                 return (board, car)
 
             elif orientation == "V":
-                # set board positions
                 board[x, y] = "BV"
                 board[x + 1, y] = "BV"
                 board[x, y + 1] = "BV"
@@ -238,85 +240,89 @@ def validateCar(car, dimension, board, x, y):
 
             return (board, car)
 
+    # if the car can not be placed a different starting coordinate is chosen and the old starting coordinate is
+    # (tempararily) removed from the position list
     if valid_position == False:
-        # print "changing position", len(position_list)
         if len(position_list) > 1:
             pos = str(x)+str(y)
-            # print "old", pos
+
+            # remove old position from positon list if this is possible
             if pos in position_list:
-                # print "removing pos"
                 position_list.remove(pos)
-            # else:
-            #     print "how the fuck can this not be in the position list***************"
-            # print "new length", len(position_list)
+
+            # pick a new position
             new_position = random.choice(position_list)
-            # print "new", new_position
             x2 = int(new_position[0])
             y2 = int(new_position[1])
-            # print "old pos %d, %d, new pos %d, %d" %(x,y,x2,y2)
+
+            # and rerun the function with the new position
             return validateCar(car, dimension, board, x2, y2)
         else:
-            # print "No available positions"
+            # if on no position the car could be placed the function returns false
             return False
 
 def checkCar(car, board, dimension, car_types):
 
+    # checks if the car can be placed on any place of the grid using the validateCar function
     result = validateCar(car, dimension, board, car.x, car.y)
     resetPositionList(board, dimension)
 
+    # if this is possible the fucntion returns the new board and the new car with its position
     if result != False:
         theboard = result[0]
         thecar = result[1]
         return theboard, thecar
 
+    # if the car could not be placed the orientation is changed
     else:
         if car.orientation == "H":
             car.orientation = "V"
         else:
             car.orientation = "H"
             removeTrivials()
-            # print "1Trivials correctly removed"
 
-        # print "orienataion was changed"
+        # a new result is calculated
         result = validateCar(car, dimension, board, car.x, car.y)
         resetPositionList(board, dimension)
-        # print result
 
         if result != False:
             theboard = result[0]
             thecar = result[1]
             return theboard, thecar
 
+        # if the car could still not be placed the type was changed
         else:
-            # print "car with different orienatation could not be placed"
             if car.orientation == "H":
                 removeTrivials()
-                # print "2Trivials correctly removed"
 
             while len(car_types) > 1:
 
-                old_type = car.type
+                # the old cartype is removed from the list of available car types
+                car_types.remove(car.type)
 
-                car_types.remove(old_type)
+                # a new type is chosen
                 car.type = random.choice(car_types)
+
+                # and a new result is calculated
                 result = validateCar(car, dimension, board, car.x, car.y)
                 resetPositionList(board, dimension)
-                if car.orientation == "H":
-                    removeTrivials()
-                    # print "3Trivials correctly removed"
+
                 if result != False:
                     theboard = result[0]
                     thecar = result[1]
                     return theboard, thecar
+
+    # if no car with any type or orientation could be placed the function evaluates to false
     return False
 
 def pickOrientaion():
+
+    # picks a random orienation
     orientation = random.randrange(1, 3, 1)
     if orientation == 1:
         theorientation = "H"
         # make sure that no horizontal vehicle will be placed between the entrance and the red car
         removeTrivials()
-        # print "Trivials correctly removed"
     else:
         theorientation = "V"
 
@@ -330,6 +336,7 @@ def generateBoards(boards, foldername, dimension):
     # amount of boards to generate
     boardscounter = boards
 
+    # create an archive to store boards, this helps with finding duplicate boards
     boardArchive = set()
 
     # give the board size
@@ -341,9 +348,7 @@ def generateBoards(boards, foldername, dimension):
     # set the filling
     filling = 0.9
 
-    # set the car types
-
-
+    # set an iterator to keep track of the amount of valid boards that were made
     i = 0
     while i < boardscounter:
 
@@ -354,8 +359,6 @@ def generateBoards(boards, foldername, dimension):
         board = "board"+str(i)+".csv"
         filename = '%s/%s' %(foldername, board)
 
-        # print filename
-
         # set counters to keep track of how many vehicles per type are generated
         counter1 = 0
         counter2 = 0
@@ -363,20 +366,16 @@ def generateBoards(boards, foldername, dimension):
         counter4 = 0
         counter5 = 0
 
-        # car_types = car_types_OG
-
         # create an empty board
         board = np.zeros(shape=(dimension, dimension), dtype=object)
 
+        # open a csv file to store the board in
         with open(filename, 'wb') as csvfile:
 
             boardwriter = csv.writer(csvfile, delimiter=',', quotechar='|', quoting=csv.QUOTE_MINIMAL)
 
             # write the board size as the first line of the csv
             boardwriter.writerow([dimension])
-
-            # define which types will be present on the board
-            # car_types = car_types_OG
 
             # position of the red car (x, y, type, orientation, id)
             y = (dimension / 2) - 1
@@ -386,6 +385,7 @@ def generateBoards(boards, foldername, dimension):
             board[x, y] = 'CH'
             board[x + 1, y] = 'CH'
 
+            # remove the above positions from the position list, because no other vehicle can be placed there
             resetPositionList(board, dimension)
 
             # write the red car to the output csv file
@@ -394,7 +394,9 @@ def generateBoards(boards, foldername, dimension):
             # update the filled tiles
             filled_tiles -= 2
 
+            # set a counter for the id of the vehicle
             j = 2
+            # keep putting cars on the board until the filling is reached
             while filled_tiles > 0:
 
                 # picks a random orientation
@@ -404,33 +406,36 @@ def generateBoards(boards, foldername, dimension):
                 vehicle_id = j
                 j += 1
 
+                # determines which car types can be on the board
                 car_types_OG = [2, 3]
-                # print car_types_OG
+
+                # creates a list of car types the loop can chose from
                 car_types = car_types_OG
-                # print car_types
+
                 # determine which car types are available based on the amount of filled tiles
                 car_types = checkAvailableTypes(filled_tiles, car_types)
 
                 # pick a vehicle type from the available vehicle types
-                # print "after check",car_types
                 type = random.choice(car_types)
 
+                # pick a random starting positon for the car
                 start_position = random.choice(position_list)
                 x_pos = int(start_position[0])
                 y_pos = int(start_position[1])
 
+                # make al chosen parameters into a car object
                 car = Car(x_pos, y_pos, type, orientation, vehicle_id)
 
+                # check if it is possible to place the car on the board
                 possible = checkCar(car, board, dimension, car_types)
 
                 # if the car is possible, write it to the csv and update filled tiles and type counters
                 if possible != False:
-                    # print "is possible"
                     car = possible[1]
                     board = possible[0]
-                    # print board
                     vehicle = car.x, car.y, car.type, car.orientation, car.id
                     boardwriter.writerow(vehicle)
+
                     type = car.type
 
                     if type == 1:
@@ -448,39 +453,38 @@ def generateBoards(boards, foldername, dimension):
                     elif type == 5:
                         counter5 += 1
                         filled_tiles -= 6
+
                 # reset board because no other vehicle could be placed
                 else:
-                    # print "no car was possible, reset====================================================="
+                    # remove the csv and start over
                     os.remove(filename)
                     i -= 1
                     break
 
+            # once a valid board has been found increment the iterator
             i += 1
-            hash = ""
 
             # create board hash to be able to check for duplicates
+            hash = ""
             for xcoor in range(dimension):
                 for ycoor in range(dimension):
                     hash += str(board[xcoor,ycoor])
 
-            # add hash to set
+            # add hash to set and check if the length of the set changes
             a = len(boardArchive)
             boardArchive.add(hash)
             b = len(boardArchive)
 
-            # print a, b
-
             # reset when duplicate board
             if a == b:
-                # print "duplicate board found, reset#####################################################################"
-                # print filename
+                # decrement the iterator
                 i -= 2
+                # remove the file if possible
                 if os.path.isfile(filename):
                     os.remove(filename)
-                # break
+
+            # final check if the board is trivial or not, if so we reset
             if board[3,2] == 0 and board[4,2] == 0 and board[5,2] == 0:
-                print board.T
-                print "trivial board"
                 i -= 2
                 if os.path.isfile(filename):
                     os.remove(filename)
@@ -490,11 +494,12 @@ def generateBoards(boards, foldername, dimension):
         params = "board: %d, dimension: %d, filling: %f \n %s \n \n" %(i, dimension, filling, counters)
         parameter_file.write(params)
 
-
+# ensure proper usage, else inform the user with a print statement
 if (len(sys.argv) != 4):
     print "improper usage. USAGE: board_generator.py dimension boards foldername"
 else:
     try:
+
         # try and get the proper parameters from command line argument
         dimension = int(sys.argv[1])
         boards = int(sys.argv[2])
@@ -506,5 +511,4 @@ else:
     except ValueError:
 
         # if the input is invalid inform the user with a print statement
-        # print ValueError
         print("boards and dimension should be of type integer")
