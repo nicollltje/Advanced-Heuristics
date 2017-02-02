@@ -40,53 +40,74 @@ def resetPositionList(board, dimension):
     for i in range(dimension):
         for j in range(dimension):
             if board[i, j] == 0:
-                pos = str(i)+str(j)
+                pos = str(i)+","+str(j)
                 position_list.append(pos)
 
 def removeTrivials():
 
     # No horizontal car can be placed in front of the red car, so these positions are removed from the position list
-    if "32" in position_list:
-        position_list.remove('32')
-    if "42" in position_list:
-        position_list.remove('42')
-    if "52" in position_list:
-        position_list.remove("52")
+    if "4,4" in position_list:
+        position_list.remove("4,4")
+    if "4,5" in position_list:
+        position_list.remove("4,5")
+    if "4,6" in position_list:
+        position_list.remove("4,6")
+    if "4,7" in position_list:
+        position_list.remove('4,7')
+    if "4,8" in position_list:
+        position_list.remove('4,8')
+    if "4,9" in position_list:
+        position_list.remove("4,9")
+    if "4,10" in position_list:
+        position_list.remove('4,10')
+    if "4,11" in position_list:
+        position_list.remove('4,11')
+    if "5,4" in position_list:
+        position_list.remove("5,4")
+    if "5,5" in position_list:
+        position_list.remove("5,5")
+    if "5,6" in position_list:
+        position_list.remove("5,6")
+    if "5,7" in position_list:
+        position_list.remove('5,7')
+    if "5,8" in position_list:
+        position_list.remove('5,8')
+    if "5,9" in position_list:
+        position_list.remove("5,9")
+    if "5,10" in position_list:
+        position_list.remove('5,10')
+    if "5,11" in position_list:
+        position_list.remove('5,11')
 
 def checkAvailableTypes(filled_tiles, car_types):
 
     # based on the amount of filled tiles, some types are not possible anymore, this function removes them from the
     # list of available car types
-    if filled_tiles == 5:
+    if filled_tiles == 12:
+        if 6 in car_types:
+            car_types.remove(6)
+
+    elif filled_tiles == 9:
         if 5 in car_types:
             car_types.remove(5)
-        if 1 not in car_types:
-            if 4 in car_types:
-                car_types.remove(4)
+        if 4 in car_types:
+            car_types.remove(4)
+
+    elif filled_tiles == 8:
+        if 5 in car_types:
+            car_types.remove(5)
+
+    elif filled_tiles == 6:
+        if 6 in car_types:
+            car_types.remove(6)
+        if 4 in car_types:
+            car_types.remove(4)
 
     elif filled_tiles == 4:
         if 5 in car_types:
             car_types.remove(5)
-        if 1 not in car_types:
-            if 3 in car_types:
-                car_types.remove(3)
-
-    elif filled_tiles == 3:
-        if 5 in car_types:
-            car_types.remove(5)
-        if 4 in car_types:
-            car_types.remove(4)
-        if 1 not in car_types:
-            if 2 in car_types:
-                car_types.remove(2)
-
-    elif filled_tiles == 2:
-        if 5 in car_types:
-            car_types.remove(5)
-        if 4 in car_types:
-            car_types.remove(4)
-        if 3 in car_types:
-            car_types.remove(3)
+        if 6 in car_types:
+            car_types.remove(6)
 
     return car_types
 
@@ -94,36 +115,12 @@ def validatePosition(dimension, board, type, orientation, x, y):
 
     # Horizontal cars can not be placed in front of the red car
     if orientation == "H":
-        if y == 2:
-            if x == 4 or x == 3 or x == 2:
+        if y == 4 or y == 5:
+            if x == 4 or x == 5 or x == 6 or x == 7 or x == 8 or x == 9 or x == 10 or x == 11:
                 return False
 
     # for all types the board is checked if all needed positions for that type are free
-    if type == 1:
-        if board[x, y] == 0:
-            return True
-
-    elif type == 2 and orientation == "H":
-        if x < dimension - 1:
-            if board[x, y] == 0 and board[x + 1, y] == 0:
-                return True
-
-    elif type == 2 and orientation == "V":
-        if y < dimension - 1:
-            if board[x, y] == 0 and board[x, y + 1] == 0:
-                return True
-
-    elif type == 3 and orientation == "H":
-        if x < dimension - 2:
-            if board[x, y] == 0 and board[x + 1, y] == 0 and board[x + 2, y] == 0:
-                return True
-
-    elif type == 3 and orientation == "V":
-        if y < dimension - 2:
-            if board[x, y] == 0 and board[x, y + 1] == 0 and board[x, y + 2] == 0:
-                return True
-
-    elif type == 4:
+    if type == 4:
         if x < dimension - 1 and y < dimension - 1:
             if board[x,y] == 0 and board[x+1,y] == 0 and board[x,y+1] == 0 and board[x+1,y+1] == 0:
                 return True
@@ -140,6 +137,46 @@ def validatePosition(dimension, board, type, orientation, x, y):
                 if board[x + 1, y] == 0 and board[x + 1, y + 1] == 0 and board[x + 1, y + 2] == 0:
                     return True
 
+    elif type == 6:
+        if x < dimension - 2 and y < dimension - 2:
+            if board[x, y] == 0 and board[x + 1, y] == 0 and board[x + 2, y] == 0:
+                if board[x + 1, y] == 0 and board[x + 1, y + 1] == 0 and board[x + 1, y + 2] == 0:
+                    if board[x + 2, y] == 0 and board[x + 2, y + 1] == 0 and board[x + 2, y + 2] == 0:
+                        return True
+
+    elif type == 7 and orientation == "H":
+        if x < dimension - 3:
+            if board[x, y] == 0 and board[x + 1, y] == 0 and board[x + 2, y] == 0 and board[x + 3, y] == 0:
+                return True
+
+    elif type == 7 and orientation == "V":
+        if y < dimension - 3:
+            if board[x, y] == 0 and board[x, y + 1] == 0 and board[x, y + 2] == 0 and board[x, y + 3] == 0:
+                return True
+
+    elif type == 8 and orientation == "H":
+        if x < dimension - 5:
+            if board[x, y] == 0 and board[x + 1, y] == 0 and board[x + 2, y] == 0 and board[x + 3, y] == 0 and board[x + 4, y] == 0 and board[x + 5, y] == 0:
+                return True
+
+    elif type == 8 and orientation == "V":
+        if y < dimension - 5:
+            if board[x, y] == 0 and board[x, y + 1] == 0 and board[x, y + 2] == 0 and board[x, y + 3] == 0 and board[x, y + 4] == 0 and board[x, y + 5] == 0:
+                return True
+
+    elif type == 9 and orientation == "H":
+        if x < dimension - 8:
+            if board[x, y] == 0 and board[x + 1, y] == 0 and board[x + 2, y] == 0 and board[x + 3, y] == 0 and \
+                            board[x + 4, y] == 0 and board[x + 5, y] == 0 and board[x + 6, y] == 0 and board[x + 6, y] == 0 and board[x + 8, y] == 0:
+                return True
+
+    elif type == 9 and orientation == "V":
+        if y < dimension - 8:
+            if board[x, y] == 0 and board[x, y + 1] == 0 and board[x, y + 2] == 0 and board[x, y + 3] == 0 and \
+                            board[x, y + 4] == 0 and board[x, y + 5] == 0 and board[x, y + 6] == 0 and board[x, y + 6] == 0 and board[x, y + 8] == 0:
+                return True
+
+
     # if the positons are not free the function retruns False
     return False
 
@@ -155,50 +192,8 @@ def validateCar(car, dimension, board, x, y):
     valid_position = validatePosition(dimension, board, type, orientation, x, y)
 
     # sets the board to the vehicle encoding if the vehicle can be placed
-    if type == 1:
+    if type == 4:
         if valid_position == True:
-
-            if orientation == "H":
-                board[x,y] = "SH"
-
-            else:
-                board[x, y] = "SV"
-
-            return (board, car)
-
-    elif type == 2:
-        if valid_position == True:
-            if orientation == "H":
-
-                board[x, y] = "CH"
-                board[x + 1, y] = "CH"
-
-            elif orientation == "V":
-
-                board[x, y] = "CV"
-                board[x, y + 1] = "CV"
-            return (board, car)
-
-    elif type == 3:
-
-        if valid_position == True:
-
-            if orientation == "H":
-                board[x, y] = "TH"
-                board[x + 1, y] = "TH"
-                board[x + 2, y] = "TH"
-
-            elif orientation == "V":
-
-                board[x, y] = "TV"
-                board[x, y + 1] = "TV"
-                board[x, y + 2] = "TV"
-            return (board, car)
-
-
-    elif type == 4:
-        if valid_position == True:
-
 
             if orientation == "H":
 
@@ -240,11 +235,45 @@ def validateCar(car, dimension, board, x, y):
 
             return (board, car)
 
+    elif type == 6:
+        if valid_position == True:
+
+            if orientation == "H":
+
+                board[x, y] = "PH"
+                board[x, y + 1] = "PH"
+                board[x, y + 2] = "PH"
+
+                board[x + 1, y] = "PH"
+                board[x + 1, y + 1] = "PH"
+                board[x + 1, y + 2] = "PH"
+
+                board[x + 2, y] = "PH"
+                board[x + 2, y + 1] = "PH"
+                board[x + 2, y + 2] = "PH"
+
+            else:
+
+                board[x, y] = "PV"
+                board[x, y + 1] = "PV"
+                board[x, y + 2] = "PV"
+
+                board[x + 1, y] = "PV"
+                board[x + 1, y + 1] = "PV"
+                board[x + 1, y + 2] = "PV"
+
+                board[x + 2, y] = "PV"
+                board[x + 2, y + 1] = "PV"
+                board[x + 2, y + 2] = "PV"
+
+            return (board, car)
+
     # if the car can not be placed a different starting coordinate is chosen and the old starting coordinate is
-    # (tempararily) removed from the position list
+    # (temporarily) removed from the position list
     if valid_position == False:
+        # print len(position_list)
         if len(position_list) > 1:
-            pos = str(x)+str(y)
+            pos = str(x)+","+str(y)
 
             # remove old position from positon list if this is possible
             if pos in position_list:
@@ -252,8 +281,27 @@ def validateCar(car, dimension, board, x, y):
 
             # pick a new position
             new_position = random.choice(position_list)
-            x2 = int(new_position[0])
-            y2 = int(new_position[1])
+
+            x2 = 0
+            y2 = 0
+
+            if len(new_position) == 4:
+                if new_position[1] == ",":
+                    x2 = int(new_position[0])
+                    a = new_position[2]
+                    b = new_position[3]
+                    c = a + b
+                    y2 = int(c)
+                else:
+                    y2 = int(new_position[3])
+                    a = new_position[0]
+                    b = new_position[1]
+                    c = a + b
+                    x2 = int(c)
+            else:
+                if new_position[1] == ",":
+                    x2 = int(new_position[0])
+                    y2 = int(new_position[2])
 
             # and rerun the function with the new position
             return validateCar(car, dimension, board, x2, y2)
@@ -365,6 +413,10 @@ def generateBoards(boards, foldername, dimension):
         counter3 = 0
         counter4 = 0
         counter5 = 0
+        counter6 = 0
+        counter7 = 0
+        counter8 = 0
+        counter9 = 0
 
         # create an empty board
         board = np.zeros(shape=(dimension, dimension), dtype=object)
@@ -379,7 +431,7 @@ def generateBoards(boards, foldername, dimension):
 
             # position of the red car (x, y, type, orientation, id)
             y = (dimension / 2) - 1
-            x = 1
+            x = 2
 
             # place red car on the board
             board[x, y] = 'CH'
@@ -408,21 +460,40 @@ def generateBoards(boards, foldername, dimension):
                 j += 1
 
                 # determines which car types can be on the board
-                car_types_OG = [2, 3, 4, 5]
+                car_types_OG = [4, 5]
 
                 # creates a list of car types the loop can chose from
                 car_types = car_types_OG
-
+                print car_types
                 # determine which car types are available based on the amount of filled tiles
                 car_types = checkAvailableTypes(filled_tiles, car_types)
+                print car_types
 
                 # pick a vehicle type from the available vehicle types
                 type = random.choice(car_types)
 
                 # pick a random starting positon for the car
                 start_position = random.choice(position_list)
-                x_pos = int(start_position[0])
-                y_pos = int(start_position[1])
+                x_pos = 0
+                y_pos = 0
+
+                if len(start_position) == 4:
+                    if start_position[1] == ",":
+                        x_pos = int(start_position[0])
+                        a = start_position[2]
+                        b = start_position[3]
+                        c = a + b
+                        y_pos = int(c)
+                    else:
+                        y_pos = int(start_position[3])
+                        a = start_position[0]
+                        b = start_position[1]
+                        c = a + b
+                        x_pos = int(c)
+                else:
+                    if start_position[1] == ",":
+                        x_pos = int(start_position[0])
+                        y_pos = int(start_position[2])
 
                 # make al chosen parameters into a car object
                 car = Car(x_pos, y_pos, type, orientation, vehicle_id)
@@ -439,21 +510,25 @@ def generateBoards(boards, foldername, dimension):
 
                     type = car.type
 
-                    if type == 1:
-                        counter1 += 1
-                        filled_tiles -= 1
-                    elif type == 2:
-                        counter2 += 1
-                        filled_tiles -= 2
-                    elif type == 3:
-                        counter3 += 1
-                        filled_tiles -= 3
-                    elif type == 4:
+                    if type == 4:
                         counter4 += 1
                         filled_tiles -= 4
                     elif type == 5:
                         counter5 += 1
                         filled_tiles -= 6
+                    elif type == 6:
+                        counter6 += 1
+                        filled_tiles -= 9
+                    elif type == 7:
+                        counter7 += 1
+                        filled_tiles -= 4
+                    elif type == 8:
+                        counter8 += 1
+                        filled_tiles -= 6
+                    elif type == 9:
+                        counter9 += 1
+                        filled_tiles -= 9
+                    # print board.T
 
                 # reset board because no other vehicle could be placed
                 else:
@@ -491,7 +566,7 @@ def generateBoards(boards, foldername, dimension):
             i += 1
 
         # write all parameters of the board into a parameter file
-        counters = "type1 = %d, type2 = %d, type3 = %d, type4 = %d, type5 = %d" %(counter1, counter2, counter3, counter4, counter5)
+        counters = "type4 = %d, type5 = %d, type6 = %d, type7 = %d, type8 = %d, type9 = %d" %(counter4, counter4, counter6, counter7, counter8, counter9)
         params = "board: %d, dimension: %d, filling: %f \n %s \n \n" %(i, dimension, filling, counters)
         parameter_file.write(params)
 
