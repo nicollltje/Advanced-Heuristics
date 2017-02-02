@@ -7,6 +7,7 @@ import csv
 import os
 import sys
 import numpy as np
+import traceback
 
 position_list = []
 
@@ -40,7 +41,7 @@ def resetPositionList(board, dimension):
     for i in range(dimension):
         for j in range(dimension):
             if board[i, j] == 0:
-                pos = str(i)+","+str(j)
+                pos = (i,j)
                 position_list.append(pos)
 
 def removeTrivials():
@@ -273,7 +274,8 @@ def validateCar(car, dimension, board, x, y):
     if valid_position == False:
         # print len(position_list)
         if len(position_list) > 1:
-            pos = str(x)+","+str(y)
+            # pos = str(x)+","+str(y)
+            pos = (x,y)
 
             # remove old position from positon list if this is possible
             if pos in position_list:
@@ -281,28 +283,32 @@ def validateCar(car, dimension, board, x, y):
 
             # pick a new position
             new_position = random.choice(position_list)
-
-            x2 = 0
-            y2 = 0
-
-            if len(new_position) == 4:
-                if new_position[1] == ",":
-                    x2 = int(new_position[0])
-                    a = new_position[2]
-                    b = new_position[3]
-                    c = a + b
-                    y2 = int(c)
-                else:
-                    y2 = int(new_position[3])
-                    a = new_position[0]
-                    b = new_position[1]
-                    c = a + b
-                    x2 = int(c)
-            else:
-                if new_position[1] == ",":
-                    x2 = int(new_position[0])
-                    y2 = int(new_position[2])
-
+            x2 = new_position[0]
+            y2 = new_position[1]
+            # # x2 = 0
+            # # y2 = 0
+            #
+            # if len(new_position) == 4:
+            #     if new_position[1] == ",":
+            #         x2 = new_position[0]
+            #         # a = new_position[2]
+            #         # b = new_position[3]
+            #         # c = a + b
+            #         y2 = new_position[1]
+            #     else:
+            #         y2 = int(new_position[3])
+            #         a = new_position[0]
+            #         b = new_position[1]
+            #         c = a + b
+            #         x2 = int(c)
+            # else:
+            #     # if new_position[1] == ",":
+            #     x2 = int(new_position[0])
+            #     y2 = int(new_position[2])
+                # else:
+                #     print "Position list not correct"
+                #     print position_list
+            print x2, y2
             # and rerun the function with the new position
             return validateCar(car, dimension, board, x2, y2)
         else:
@@ -378,8 +384,25 @@ def pickOrientaion():
 
 def generateBoards(boards, foldername, dimension):
 
+    print boards
+    print foldername
+    print dimension
+
+
     # make a folder to save the boards in
-    os.makedirs(os.path.dirname('%s/' %(foldername)))
+    dir = os.path.dirname('%s/' %(foldername))
+
+    if not os.path.exists(dir):  # if the directory does not exist
+        os.makedirs(dir)  # make the directory
+    else:  # the directory exists
+        # removes all files in a folder
+        for the_file in os.listdir(dir):
+            file_path = os.path.join(dir, the_file)
+            try:
+                if os.path.isfile(file_path):
+                    os.unlink(file_path)  # unlink (delete) the file
+            except Exception, e:
+                print e
 
     # amount of boards to generate
     boardscounter = boards
@@ -401,11 +424,12 @@ def generateBoards(boards, foldername, dimension):
     while i < boardscounter:
 
         # calculate the filling
-        filled_tiles = int((dimension * dimension) * filling)
+        filled_tiles = 92#int((dimension * dimension) * filling)
+        print "Filled tiles : ", filled_tiles
 
         # make a new file for each board
-        board = "board"+str(i)+".csv"
-        filename = '%s/%s' %(foldername, board)
+        boardName = "board"+str(i)+".csv"
+        filename = '%s/%s' %(foldername, boardName)
 
         # set counters to keep track of how many vehicles per type are generated
         counter1 = 0
@@ -460,14 +484,14 @@ def generateBoards(boards, foldername, dimension):
                 j += 1
 
                 # determines which car types can be on the board
-                car_types_OG = [4, 5]
+                car_types_OG = [5, 6]
 
                 # creates a list of car types the loop can chose from
                 car_types = car_types_OG
-                print car_types
+                # print car_types, filled_tiles
                 # determine which car types are available based on the amount of filled tiles
-                car_types = checkAvailableTypes(filled_tiles, car_types)
-                print car_types
+                # car_types = checkAvailableTypes(filled_tiles, car_types)
+                # print car_types
 
                 # pick a vehicle type from the available vehicle types
                 type = random.choice(car_types)
@@ -586,5 +610,8 @@ else:
 
     except ValueError:
 
+        exc_type, exc_value, exc_traceback = sys.exc_info()
+        lines = traceback.format_exception(exc_type, exc_value, exc_traceback)
+        print ''.join('!! ' + line for line in lines)  # Log it or whatever here
         # if the input is invalid inform the user with a print statement
         print("boards and dimension should be of type integer")

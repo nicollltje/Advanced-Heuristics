@@ -1,0 +1,18 @@
+board: 1, dimension: 12, filling: 0.650000 
+ type4 = 0, type5 = 0, type6 = 5, type7 = 0, type8 = 0, type9 = 0 
+ 
+board: 2, dimension: 12, filling: 0.650000 
+ type4 = 0, type5 = 0, type6 = 7, type7 = 0, type8 = 0, type9 = 0 
+ 
+board: 2, dimension: 12, filling: 0.650000 
+ type4 = 0, type5 = 0, type6 = 5, type7 = 0, type8 = 0, type9 = 0 
+ 
+board: 3, dimension: 12, filling: 0.650000 
+ type4 = 0, type5 = 0, type6 = 5, type7 = 0, type8 = 0, type9 = 0 
+ 
+board: 4, dimension: 12, filling: 0.650000 
+ type4 = 0, type5 = 0, type6 = 6, type7 = 0, type8 = 0, type9 = 0 
+ 
+board: 5, dimension: 12, filling: 0.650000 
+ type4 = 0, type5 = 0, type6 = 4, type7 = 0, type8 = 0, type9 = 0 
+ 
