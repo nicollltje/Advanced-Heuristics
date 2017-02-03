@@ -2,85 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23a45af5-ceb0-41a5-bfa0-5598417593fd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dataprocesser.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/huge1/board0.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/huge1/zzparametershuge1.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/huge10/board0.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/huge10/zzparametershuge10.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/huge11/board0.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/huge11/board1.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/huge11/zzparametershuge11.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/huge12/board0.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/huge12/board1.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/huge12/board2.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/huge12/zzparametershuge12.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/huge13/board0.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/huge13/zzparametershuge13.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/huge15/board0.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/huge15/zzparametershuge15.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/huge16/board0.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/huge16/zzparametershuge16.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/huge17/board0.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/huge17/zzparametershuge17.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/huge18/board0.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/huge18/board1.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/huge18/zzparametershuge18.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/huge19/board0.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/huge19/zzparametershuge19.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/huge2/board0.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/huge2/board1.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/huge2/zzparametershuge2.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/huge3/board0.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/huge3/board1.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/huge3/zzparametershuge3.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/huge4/board0.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/huge4/board1.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/huge4/zzparametershuge4.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/huge5/board0.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/huge5/board1.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/huge5/board2.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/huge5/board3.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/huge5/board4.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/huge5/zzparametershuge5.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/huge6/board0.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/huge6/zzparametershuge6.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/huge7/board0.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/huge7/zzparametershuge7.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/huge8/board0.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/huge8/board1.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/huge8/board2.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/huge8/zzparametershuge8.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/huge9/board0.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/huge9/zzparametershuge9.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/largetry1/board0.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/largetry1/zzparameterslargetry1.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/largetry11/board0.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/largetry11/zzparameterslargetry11.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/largetry2/board0.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/largetry2/board1.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/largetry2/zzparameterslargetry2.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/largetry3/board0.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/largetry3/zzparameterslargetry3.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/largetry4/board0.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/largetry4/zzparameterslargetry4.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/largetry5/board0.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/largetry5/board1.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/largetry5/zzparameterslargetry5.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/largetry6/board0.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/largetry6/zzparameterslargetry6.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/largetry7/board0.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/largetry7/board1.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/largetry7/board2.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/largetry7/board3.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/largetry7/board4.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/largetry7/zzparameterslargetry7.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/largetry8/board0.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/largetry8/board1.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/largetry8/zzparameterslargetry8.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/largetry9/board0.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/largetry9/board1.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/largetry9/zzparameterslargetry9.txt" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BFS_Advanced.py" afterPath="$PROJECT_DIR$/BFS_Advanced.py" />
     </list>
     <ignored path="Avanced-Heuristics.iws" />
@@ -139,14 +60,24 @@
       <file leaf-file-name="BFS_Advanced.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BFS_Advanced.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
-              <caret line="276" column="36" selection-start-line="276" selection-start-column="36" selection-end-line="276" selection-end-column="36" />
+            <state relative-caret-position="-1461">
+              <caret line="762" column="0" selection-start-line="762" selection-start-column="0" selection-end-line="762" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dataprocesser.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="board0.csv" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/NN015/board0.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dataprocesser.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dataprocesser.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
@@ -237,6 +168,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="outputfiles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Avanced-Heuristics" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Avanced-Heuristics" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NN015" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -446,7 +391,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19777602" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -454,7 +399,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291815" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40273973" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40273973" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -485,13 +430,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/board_generator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BFS_Advanced.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -727,14 +665,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BFS_Advanced.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="276" column="36" selection-start-line="276" selection-start-column="36" selection-end-line="276" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dataprocesser.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -742,6 +672,22 @@
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BFS_Advanced.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1461">
+          <caret line="762" column="0" selection-start-line="762" selection-start-column="0" selection-end-line="762" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NN015/board0.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

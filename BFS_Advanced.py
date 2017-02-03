@@ -225,17 +225,23 @@ class Game(object):
 
         elif type == 6:
 
-                    self.grid[x, y] = car.id
-                    self.grid[x, y + 1] = car.id
-                    self.grid[x, y + 2] = car.id
+            self.grid[x, y] = car.id
+            self.grid[x, y + 1] = car.id
+            self.grid[x, y + 2] = car.id
 
-                    self.grid[x + 1, y] = car.id
-                    self.grid[x + 1, y + 1] = car.id
-                    self.grid[x + 1, y + 2] = car.id
+            self.grid[x + 1, y] = car.id
+            self.grid[x + 1, y + 1] = car.id
+            self.grid[x + 1, y + 2] = car.id
 
-                    self.grid[x + 2, y] = car.id
-                    self.grid[x + 2, y + 1] = car.id
-                    self.grid[x + 2, y + 2] = car.id
+            self.grid[x + 2, y] = car.id
+            self.grid[x + 2, y + 1] = car.id
+            self.grid[x + 2, y + 2] = car.id
+
+            self.counter6 += 1
+            if orientation == "H":
+                self.horizontals += 1
+            else:
+                self.verticals += 1
 
     def canMoveRight(self, car):
 
@@ -311,6 +317,12 @@ class Game(object):
                         return True
                     else:
                         return False
+                elif car.type == 6:
+                    if self.grid[car.x - 1, car.y + 1] == 0 and self.grid[car.x - 1, car.y + 2] == 0:
+                        return True
+                    else:
+                        return False
+
                 return True
         return False
 
@@ -342,6 +354,11 @@ class Game(object):
             if self.grid[car.x, car.y - 1] == 0:
                 if car.type == 4 or car.type == 5:
                     if self.grid[car.x + 1, car.y - 1] == 0:
+                        return True
+                    else:
+                        return False
+                elif car.type == 6:
+                    if self.grid[car.x + 1, car.y - 1] == 0 and self.grid[car.x + 2, car.y - 1] == 0:
                         return True
                     else:
                         return False
@@ -379,6 +396,11 @@ class Game(object):
                         return True
                     else:
                         return False
+                elif car.type == 6:
+                    if self.grid[car.x + 1, car.y + length] == 0 and self.grid[car.x + 2, car.y + length] == 0:
+                        return True
+                    else:
+                        return False
                 return True
         return False
 
@@ -409,9 +431,13 @@ class Game(object):
         # replace the left side of the Car with a 0 (empty)
         self.grid[car.x, car.y] = 0
 
-        if car.type == 4 or car.type == 5:
+        if car.type == 4 or car.type == 5 or car.type == 6:
             self.grid[car.x + length, car.y + 1] = car.id
             self.grid[car.x, car.y + 1] = 0
+            if car.type == 6:
+                self.grid[car.x + length, car.y + 2] = car.id
+                self.grid[car.x, car.y + 2] = 0
+
 
         # update x coordinate
         car.x = car.x + 1
@@ -446,9 +472,12 @@ class Game(object):
         # replace the right side of the Car with a 0 (empty)
         self.grid[car.x + (length - 1), car.y] = 0
 
-        if car.type == 4 or car.type == 5:
+        if car.type == 4 or car.type == 5 or car.type == 6:
             self.grid[car.x - 1, car.y + 1] = car.id
             self.grid[car.x + (length - 1), car.y + 1] = 0
+            if car.type == 6:
+                self.grid[car.x - 1, car.y + 2] = car.id
+                self.grid[car.x + (length - 1), car.y + 2] = 0
 
         # update x coordinate
         car.x = car.x - 1
@@ -483,9 +512,12 @@ class Game(object):
         # replace the top of the Car with a 0 (empty)
         self.grid[car.x, car.y] = 0
 
-        if car.type == 4 or car.type == 5:
+        if car.type == 4 or car.type == 5 or car.type == 6:
             self.grid[car.x + 1, car.y + length] = car.id
             self.grid[car.x + 1, car.y] = 0
+            if car.type == 6:
+                self.grid[car.x + 2, car.y + length] = car.id
+                self.grid[car.x + 2, car.y] = 0
 
         # update y coordinate
         car.y = car.y + 1
@@ -520,9 +552,12 @@ class Game(object):
         # replace the bottom of the Car with a 0 (empty)
         self.grid[car.x, car.y + (length - 1)] = 0
 
-        if car.type == 4 or car.type == 5:
+        if car.type == 4 or car.type == 5 or car.type ==6:
             self.grid[car.x + 1, car.y - 1] = car.id
             self.grid[car.x + 1, car.y + (length - 1)] = 0
+            if car.type == 6:
+                self.grid[car.x + 2, car.y - 1] = car.id
+                self.grid[car.x + 2, car.y + (length - 1)] = 0
 
         # update y coordinate
         car.y = car.y - 1
@@ -712,7 +747,7 @@ class Game(object):
         while not self.carsQueue.empty():
             self.carsQueue.get()
 
-        types_ratio = "%d:%d:%d:%d:%d" %(self.counter1, self.counter2, self.counter3, self.counter4, self.counter5)
+        types_ratio = "%d:%d:%d:%d:%d:%d" %(self.counter1, self.counter2, self.counter3, self.counter4, self.counter5, self.counter6)
         if self.solvable == "yes":
 
             print "SOLVED"
@@ -721,10 +756,10 @@ class Game(object):
             moves_needed = self.moves[self.gridToString()]
             # print "Number of moves needed to finish game: " + str(moves_needed)
             # print "Number of iterations: ", self.iterations
-            return self.iterations, moves_needed, self.solvable, self.horizontals, self.verticals, types_ratio, self.counter1, self.counter2, self.counter3, self.counter4, self.counter5
+            return self.iterations, moves_needed, self.solvable, self.horizontals, self.verticals, types_ratio, self.counter1, self.counter2, self.counter3, self.counter4, self.counter5, self.counter6
         else:
             print "No solution possible"
-            return self.iterations, "-", self.solvable, self.horizontals, self.verticals, types_ratio, self.counter1, self.counter2, self.counter3, self.counter4, self.counter5
+            return self.iterations, "-", self.solvable, self.horizontals, self.verticals, types_ratio, self.counter1, self.counter2, self.counter3, self.counter4, self.counter5, self.counter6
 
         # print "Seconds needed to run program: ", time_duration
 
