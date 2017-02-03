@@ -69,6 +69,7 @@ class Game(object):
         self.counter3 = 0
         self.counter4 = 0
         self.counter5 = 0
+        self.counter6 = 0
 
         # add every given car to the grid
         for car in self.cars:
@@ -222,6 +223,20 @@ class Game(object):
                 self.grid[x, y + 2] = car.id
                 self.grid[x + 1, y + 2] = car.id
 
+        elif type == 6:
+
+                    self.grid[x, y] = car.id
+                    self.grid[x, y + 1] = car.id
+                    self.grid[x, y + 2] = car.id
+
+                    self.grid[x + 1, y] = car.id
+                    self.grid[x + 1, y + 1] = car.id
+                    self.grid[x + 1, y + 2] = car.id
+
+                    self.grid[x + 2, y] = car.id
+                    self.grid[x + 2, y + 1] = car.id
+                    self.grid[x + 2, y + 2] = car.id
+
     def canMoveRight(self, car):
 
         """
@@ -252,6 +267,11 @@ class Game(object):
             if self.grid[car.x + length, car.y] == 0:
                 if car.type == 4 or car.type == 5:
                     if self.grid[car.x + length, car.y + 1] == 0:
+                        return True
+                    else:
+                        return False
+                elif car.type == 6:
+                    if self.grid[car.x + length, car.y + 1] == 0 and self.grid[car.x + length, car.y + 2] == 0:
                         return True
                     else:
                         return False
@@ -831,6 +851,7 @@ else:
         type3 = 0
         type4 = 0
         type5 = 0
+        type6 = 0
 
         filename = "outputfiles/%s-output.csv" %(directory)
 
@@ -841,7 +862,7 @@ else:
             outputwriter.writerow(["filename", "iterations", "moves", "solved", "H/V", "types", "dimension"])
 
             for filename in os.listdir(directory):
-
+                print filename
                 if filename.endswith(".csv"):
                     total_boards += 1
                     dimension = loadDataset(directory, filename, cars)
@@ -858,6 +879,7 @@ else:
                         type3 += result[8]
                         type4 += result[9]
                         type5 += result[10]
+                        type6 += result[11]
                     hor_ver = "%d:%d" %(result[3], result[4])
                     outputwriter.writerow([filename, result[0], result[1], result[2], hor_ver, result[5], dimension])
 
@@ -869,7 +891,7 @@ else:
             mean_its = iterations/float(solved)
             mean_moves = moves/float(solved)
             mean_hv_ratio = "%d:%d" %(horizontal,vertical)
-            mean_type_ratio = "%d:%d:%d:%d:%d" %(type1, type2, type3, type4, type5)
+            mean_type_ratio = "%d:%d:%d:%d:%d:d" %(type1, type2, type3, type4, type5, type6)
             outputwriter.writerow(["mean", mean_its, mean_moves, percentage_solved, mean_hv_ratio, mean_type_ratio, "dim"])
             print "Percentage solvable: %2f. Mean number of iterations: %f. Mean number of moves: %f" %(percentage_solved, mean_its, mean_moves)
 

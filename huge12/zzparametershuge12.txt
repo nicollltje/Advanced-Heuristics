@@ -1,6 +1,0 @@
-board: 1, dimension: 12, filling: 0.650000 
- type4 = 8, type5 = 8, type6 = 0, type7 = 0, type8 = 0, type9 = 0 
- 
-board: 2, dimension: 12, filling: 0.650000 
- type4 = 13, type5 = 13, type6 = 0, type7 = 0, type8 = 0, type9 = 0 
- 
