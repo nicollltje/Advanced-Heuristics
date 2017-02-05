@@ -714,7 +714,7 @@ class Game(object):
         # print starting grid
         # print "Starting grid:"
         starting_grid = copy.deepcopy(self.grid.T)
-        # print starting_grid
+        print starting_grid
         # print "\n"
 
         # check if board has reached the winning state, if not, keep executing body

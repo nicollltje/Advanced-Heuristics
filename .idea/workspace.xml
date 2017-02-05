@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23a45af5-ceb0-41a5-bfa0-5598417593fd" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/averages.numbers" afterPath="$PROJECT_DIR$/averages.numbers" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BFS_Advanced.py" afterPath="$PROJECT_DIR$/BFS_Advanced.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataprocesser.py" afterPath="$PROJECT_DIR$/dataprocesser.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/outputfiles/NN001-output.csv" afterPath="$PROJECT_DIR$/outputfiles/NN001-output.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/outputfiles/NN015-output.csv" afterPath="$PROJECT_DIR$/outputfiles/NN015-output.csv" />
     </list>
     <ignored path="Avanced-Heuristics.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,12 +48,11 @@
       <file leaf-file-name="generator_large.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/generator_large.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
+            <state relative-caret-position="1544">
               <caret line="267" column="42" selection-start-line="238" selection-start-column="4" selection-end-line="267" selection-end-column="42" />
               <folding>
                 <element signature="e#68#81#0" expanded="true" />
                 <element signature="e#195#767#0" expanded="false" />
-                <element signature="e#1125#2317#0" expanded="false" />
                 <element signature="e#2374#3156#0" expanded="false" />
                 <element signature="e#3228#6519#0" expanded="false" />
               </folding>
@@ -60,31 +63,31 @@
       <file leaf-file-name="BFS_Advanced.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BFS_Advanced.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1461">
-              <caret line="762" column="0" selection-start-line="762" selection-start-column="0" selection-end-line="762" selection-end-column="0" />
+            <state relative-caret-position="159">
+              <caret line="852" column="29" selection-start-line="851" selection-start-column="8" selection-end-line="852" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="board0.csv" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/NN015/board0.csv">
+      <file leaf-file-name="dataprocesser.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dataprocesser.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="348">
+              <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NN006-output.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/outputfiles/NN006-output.csv">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dataprocesser.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dataprocesser.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="47" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -104,8 +107,8 @@
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/gererator2.py" />
         <option value="$PROJECT_DIR$/generator_large.py" />
-        <option value="$PROJECT_DIR$/dataprocesser.py" />
         <option value="$PROJECT_DIR$/BFS_Advanced.py" />
+        <option value="$PROJECT_DIR$/dataprocesser.py" />
       </list>
     </option>
   </component>
@@ -168,20 +171,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="outputfiles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Avanced-Heuristics" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Avanced-Heuristics" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NN015" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -430,13 +419,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/BFS_Advanced.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="153" column="0" selection-start-line="153" selection-start-column="0" selection-end-line="153" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/board_generator.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -634,6 +616,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/NN015/board0.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generator_large.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1544">
+          <caret line="267" column="42" selection-start-line="238" selection-start-column="4" selection-end-line="267" selection-end-column="42" />
+          <folding>
+            <element signature="e#68#81#0" expanded="true" />
+            <element signature="e#195#767#0" expanded="false" />
+            <element signature="e#2374#3156#0" expanded="false" />
+            <element signature="e#3228#6519#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/gererator2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="258">
@@ -651,43 +654,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/generator_large.py">
+    <entry file="file://$PROJECT_DIR$/BFS_Advanced.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="267" column="42" selection-start-line="238" selection-start-column="4" selection-end-line="267" selection-end-column="42" />
-          <folding>
-            <element signature="e#68#81#0" expanded="true" />
-            <element signature="e#195#767#0" expanded="false" />
-            <element signature="e#1125#2317#0" expanded="false" />
-            <element signature="e#2374#3156#0" expanded="false" />
-            <element signature="e#3228#6519#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="159">
+          <caret line="852" column="29" selection-start-line="851" selection-start-column="8" selection-end-line="852" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/outputfiles/NN006-output.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dataprocesser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="47" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
+        <state relative-caret-position="348">
+          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BFS_Advanced.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1461">
-          <caret line="762" column="0" selection-start-line="762" selection-start-column="0" selection-end-line="762" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NN015/board0.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
